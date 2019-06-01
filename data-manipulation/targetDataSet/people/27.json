@@ -1,0 +1,20 @@
+{
+  "people": {
+    "name": "Ackbar",
+    "height": "180",
+    "mass": "83",
+    "hair_color": "none",
+    "skin_color": "brown mottle",
+    "eye_color": "orange",
+    "birth_year": "41BBY",
+    "gender": "male",
+    "homeworld": 31,
+    "films": [
+      3,
+      7
+    ],
+    "species": 8,
+    "url": "http://swapi.co/api/people/27/",
+    "idSwapi": 27
+  }
+}

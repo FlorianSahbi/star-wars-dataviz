@@ -1,0 +1,17 @@
+{
+  "planet": {
+    "name": "Cerea",
+    "rotation_period": "27",
+    "orbital_period": "386",
+    "climate": "temperate",
+    "gravity": "1",
+    "terrain": "verdant",
+    "surface_water": "20",
+    "population": "450000000",
+    "residents": [
+      52
+    ],
+    "url": "http://swapi.co/api/planets/43/",
+    "idSwapi": 43
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "planet": {
+    "name": "Mirial",
+    "terrain": "deserts",
+    "residents": [
+      64,
+      65
+    ],
+    "url": "http://swapi.co/api/planets/51/",
+    "idSwapi": 51
+  }
+}

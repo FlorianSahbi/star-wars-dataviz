@@ -1,0 +1,18 @@
+{
+  "people": {
+    "name": "Saesee Tiin",
+    "height": "188",
+    "hair_color": "none",
+    "skin_color": "pale",
+    "eye_color": "orange",
+    "gender": "male",
+    "homeworld": 47,
+    "films": [
+      4,
+      6
+    ],
+    "species": 24,
+    "url": "http://swapi.co/api/people/56/",
+    "idSwapi": 56
+  }
+}

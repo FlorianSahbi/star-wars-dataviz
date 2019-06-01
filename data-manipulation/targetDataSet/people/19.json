@@ -1,0 +1,18 @@
+{
+  "people": {
+    "name": "Jek Tono Porkins",
+    "height": "180",
+    "mass": "110",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "gender": "male",
+    "homeworld": 26,
+    "films": [
+      1
+    ],
+    "species": 1,
+    "url": "http://swapi.co/api/people/19/",
+    "idSwapi": 19
+  }
+}

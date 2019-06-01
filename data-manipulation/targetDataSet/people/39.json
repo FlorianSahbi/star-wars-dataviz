@@ -1,0 +1,17 @@
+{
+  "people": {
+    "name": "Ric Olié",
+    "height": "183",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "gender": "male",
+    "homeworld": 8,
+    "films": [
+      4
+    ],
+    "species": null,
+    "url": "http://swapi.co/api/people/39/",
+    "idSwapi": 39
+  }
+}

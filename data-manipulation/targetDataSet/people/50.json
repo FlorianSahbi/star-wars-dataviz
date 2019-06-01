@@ -1,0 +1,18 @@
+{
+  "people": {
+    "name": "Ben Quadinaros",
+    "height": "163",
+    "mass": "65",
+    "hair_color": "none",
+    "skin_color": "grey, green, yellow",
+    "eye_color": "orange",
+    "gender": "male",
+    "homeworld": 41,
+    "films": [
+      4
+    ],
+    "species": 19,
+    "url": "http://swapi.co/api/people/50/",
+    "idSwapi": 50
+  }
+}

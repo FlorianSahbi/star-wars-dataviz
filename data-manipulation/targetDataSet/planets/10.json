@@ -1,0 +1,20 @@
+{
+  "planet": {
+    "name": "Kamino",
+    "rotation_period": "27",
+    "orbital_period": "463",
+    "diameter": "19720",
+    "climate": "temperate",
+    "gravity": "1 standard",
+    "terrain": "ocean",
+    "surface_water": "100",
+    "population": "1000000000",
+    "residents": [
+      22,
+      72,
+      73
+    ],
+    "url": "http://swapi.co/api/planets/10/",
+    "idSwapi": 10
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "planet": {
+    "name": "Cato Neimoidia",
+    "rotation_period": "25",
+    "orbital_period": "278",
+    "diameter": "0",
+    "climate": "temperate, moist",
+    "gravity": "1 standard",
+    "terrain": "mountains, fields, forests, rock arches",
+    "population": "10000000",
+    "residents": [
+      33
+    ],
+    "url": "http://swapi.co/api/planets/18/",
+    "idSwapi": 18
+  }
+}

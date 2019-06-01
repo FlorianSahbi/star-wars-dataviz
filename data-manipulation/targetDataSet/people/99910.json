@@ -1,0 +1,19 @@
+{
+    "people": {
+        "name": "Ozzel",
+        "gender": null,
+        "homeworld": null,
+        "films": [
+            2
+        ],
+        "species": null,
+        "url": null,
+        "desc": [],
+        "idSwapi": 99910,
+        "height": null,
+        "mass": null,
+        "skin_color": null,
+        "eye_color": null,
+        "birth_year": null
+    }
+}

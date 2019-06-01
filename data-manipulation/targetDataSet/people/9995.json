@@ -1,0 +1,19 @@
+{
+    "people": {
+        "name": "Captain antilles",
+        "gender": null,
+        "homeworld": null,
+        "films": [
+            6
+        ],
+        "species": null,
+        "url": null,
+        "desc": [],
+        "idSwapi": 9995,
+        "height": null,
+        "mass": null,
+        "skin_color": null,
+        "eye_color": null,
+        "birth_year": null
+    }
+}

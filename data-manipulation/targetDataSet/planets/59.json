@@ -1,0 +1,17 @@
+{
+  "planet": {
+    "name": "Kalee",
+    "rotation_period": "23",
+    "orbital_period": "378",
+    "diameter": "13850",
+    "climate": "arid, temperate, tropical",
+    "gravity": "1",
+    "terrain": "rainforests, cliffs, canyons, seas",
+    "population": "4000000000",
+    "residents": [
+      79
+    ],
+    "url": "http://swapi.co/api/planets/59/",
+    "idSwapi": 59
+  }
+}

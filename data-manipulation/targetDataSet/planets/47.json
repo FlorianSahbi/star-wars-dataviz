@@ -1,0 +1,15 @@
+{
+  "planet": {
+    "name": "Iktotch",
+    "rotation_period": "22",
+    "orbital_period": "481",
+    "climate": "arid, rocky, windy",
+    "gravity": "1",
+    "terrain": "rocky",
+    "residents": [
+      56
+    ],
+    "url": "http://swapi.co/api/planets/47/",
+    "idSwapi": 47
+  }
+}

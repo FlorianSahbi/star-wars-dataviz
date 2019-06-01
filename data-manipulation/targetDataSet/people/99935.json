@@ -1,0 +1,19 @@
+{
+    "people": {
+        "name": "Bravo two",
+        "gender": null,
+        "homeworld": null,
+        "films": [
+            4
+        ],
+        "species": null,
+        "url": null,
+        "desc": [],
+        "idSwapi": 99935,
+        "height": null,
+        "mass": null,
+        "skin_color": null,
+        "eye_color": null,
+        "birth_year": null
+    }
+}

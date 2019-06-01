@@ -1,0 +1,16 @@
+{
+  "planet": {
+    "name": "Ord Mantell",
+    "rotation_period": "26",
+    "orbital_period": "334",
+    "diameter": "14050",
+    "climate": "temperate",
+    "gravity": "1 standard",
+    "terrain": "plains, seas, mesas",
+    "surface_water": "10",
+    "population": "4000000000",
+    "residents": [],
+    "url": "http://swapi.co/api/planets/27/",
+    "idSwapi": 27
+  }
+}

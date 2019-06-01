@@ -1,0 +1,10 @@
+{
+  "planet": {
+    "name": "Umbara",
+    "residents": [
+      82
+    ],
+    "url": "http://swapi.co/api/planets/60/",
+    "idSwapi": 60
+  }
+}

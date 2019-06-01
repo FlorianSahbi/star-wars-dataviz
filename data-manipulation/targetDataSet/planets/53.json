@@ -1,0 +1,11 @@
+{
+  "planet": {
+    "name": "Concord Dawn",
+    "terrain": "jungles, forests, deserts",
+    "residents": [
+      69
+    ],
+    "url": "http://swapi.co/api/planets/53/",
+    "idSwapi": 53
+  }
+}

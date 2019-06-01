@@ -1,0 +1,17 @@
+{
+  "planet": {
+    "name": "Socorro",
+    "rotation_period": "20",
+    "orbital_period": "326",
+    "diameter": "0",
+    "climate": "arid",
+    "gravity": "1 standard",
+    "terrain": "deserts, mountains",
+    "population": "300000000",
+    "residents": [
+      25
+    ],
+    "url": "http://swapi.co/api/planets/30/",
+    "idSwapi": 30
+  }
+}

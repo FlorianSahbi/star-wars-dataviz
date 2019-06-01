@@ -1,0 +1,19 @@
+{
+  "species": {
+    "name": "Besalisk",
+    "classification": "amphibian",
+    "designation": "sentient",
+    "average_height": "178",
+    "skin_colors": "brown",
+    "hair_colors": "none",
+    "eye_colors": "yellow",
+    "average_lifespan": "75",
+    "homeworld": 55,
+    "language": "besalisk",
+    "people": [
+      71
+    ],
+    "url": "http://swapi.co/api/species/31/",
+    "idSwapi": 31
+  }
+}

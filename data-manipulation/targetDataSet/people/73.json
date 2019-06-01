@@ -1,0 +1,17 @@
+{
+  "people": {
+    "name": "Taun We",
+    "height": "213",
+    "hair_color": "none",
+    "skin_color": "grey",
+    "eye_color": "black",
+    "gender": "female",
+    "homeworld": 10,
+    "films": [
+      5
+    ],
+    "species": 32,
+    "url": "http://swapi.co/api/people/73/",
+    "idSwapi": 73
+  }
+}

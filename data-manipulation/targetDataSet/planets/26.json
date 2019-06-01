@@ -1,0 +1,17 @@
+{
+  "planet": {
+    "name": "Bestine IV",
+    "rotation_period": "26",
+    "orbital_period": "680",
+    "diameter": "6400",
+    "climate": "temperate",
+    "terrain": "rocky islands, oceans",
+    "surface_water": "98",
+    "population": "62000000",
+    "residents": [
+      19
+    ],
+    "url": "http://swapi.co/api/planets/26/",
+    "idSwapi": 26
+  }
+}

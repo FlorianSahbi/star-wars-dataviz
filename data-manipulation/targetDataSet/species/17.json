@@ -1,0 +1,17 @@
+{
+  "species": {
+    "name": "Vulptereen",
+    "designation": "sentient",
+    "average_height": "100",
+    "skin_colors": "grey",
+    "hair_colors": "none",
+    "eye_colors": "yellow",
+    "homeworld": 39,
+    "language": "vulpterish",
+    "people": [
+      48
+    ],
+    "url": "http://swapi.co/api/species/17/",
+    "idSwapi": 17
+  }
+}

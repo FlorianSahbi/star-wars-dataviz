@@ -1,0 +1,19 @@
+{
+  "species": {
+    "name": "Togruta",
+    "classification": "mammal",
+    "designation": "sentient",
+    "average_height": "180",
+    "skin_colors": "red, white, orange, yellow, green, blue",
+    "hair_colors": "none",
+    "eye_colors": "red, orange, yellow, green, blue, black",
+    "average_lifespan": "94",
+    "homeworld": 58,
+    "language": "Togruti",
+    "people": [
+      78
+    ],
+    "url": "http://swapi.co/api/species/35/",
+    "idSwapi": 35
+  }
+}

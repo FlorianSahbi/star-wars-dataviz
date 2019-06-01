@@ -1,0 +1,17 @@
+{
+  "planet": {
+    "name": "Nal Hutta",
+    "rotation_period": "87",
+    "orbital_period": "413",
+    "diameter": "12150",
+    "climate": "temperate",
+    "gravity": "1 standard",
+    "terrain": "urban, oceans, swamps, bogs",
+    "population": "7000000000",
+    "residents": [
+      16
+    ],
+    "url": "http://swapi.co/api/planets/24/",
+    "idSwapi": 24
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "planet": {
+    "rotation_period": "0",
+    "orbital_period": "0",
+    "diameter": "0",
+    "residents": [
+      20,
+      23,
+      29,
+      32,
+      75,
+      84,
+      85,
+      86,
+      87,
+      88
+    ],
+    "url": "http://swapi.co/api/planets/28/",
+    "idSwapi": 28
+  }
+}

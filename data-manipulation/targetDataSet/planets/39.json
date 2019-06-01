@@ -1,0 +1,17 @@
+{
+  "planet": {
+    "name": "Vulpter",
+    "rotation_period": "22",
+    "orbital_period": "391",
+    "diameter": "14900",
+    "climate": "temperate, artic",
+    "gravity": "1",
+    "terrain": "urban, barren",
+    "population": "421000000",
+    "residents": [
+      48
+    ],
+    "url": "http://swapi.co/api/planets/39/",
+    "idSwapi": 39
+  }
+}

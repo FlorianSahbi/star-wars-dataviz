@@ -1,0 +1,16 @@
+{
+  "planet": {
+    "name": "Polis Massa",
+    "rotation_period": "24",
+    "orbital_period": "590",
+    "diameter": "0",
+    "climate": "artificial temperate ",
+    "gravity": "0.56 standard",
+    "terrain": "airless asteroid",
+    "surface_water": "0",
+    "population": "1000000",
+    "residents": [],
+    "url": "http://swapi.co/api/planets/15/",
+    "idSwapi": 15
+  }
+}

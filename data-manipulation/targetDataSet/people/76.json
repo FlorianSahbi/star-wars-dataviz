@@ -1,0 +1,17 @@
+{
+  "people": {
+    "name": "Wat Tambor",
+    "height": "193",
+    "mass": "48",
+    "hair_color": "none",
+    "skin_color": "green, grey",
+    "gender": "male",
+    "homeworld": 56,
+    "films": [
+      5
+    ],
+    "species": 33,
+    "url": "http://swapi.co/api/people/76/",
+    "idSwapi": 76
+  }
+}

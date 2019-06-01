@@ -1,0 +1,20 @@
+{
+  "species": {
+    "name": "Gungan",
+    "classification": "amphibian",
+    "designation": "sentient",
+    "average_height": "190",
+    "skin_colors": "brown, green",
+    "hair_colors": "none",
+    "eye_colors": "orange",
+    "homeworld": 8,
+    "language": "Gungan basic",
+    "people": [
+      36,
+      37,
+      38
+    ],
+    "url": "http://swapi.co/api/species/12/",
+    "idSwapi": 12
+  }
+}

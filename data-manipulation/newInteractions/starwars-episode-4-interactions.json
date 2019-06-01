@@ -1,0 +1,662 @@
+{
+  "nodes": [
+    {
+      "name": "R2-D2",
+      "value": 40,
+      "colour": "#bde0f6",
+      "api": "https://swapi.co/api/people/3/",
+      "idSwapi": 3,
+      "interactionId": 0
+    },
+    {
+      "name": "CHEWBACCA",
+      "value": 30,
+      "colour": "#A0522D",
+      "api": "https://swapi.co/api/people/13/",
+      "idSwapi": 13,
+      "interactionId": 1
+    },
+    {
+      "name": "C-3PO",
+      "value": 43,
+      "colour": "#FFD700",
+      "api": "https://swapi.co/api/people/2/",
+      "idSwapi": 2,
+      "interactionId": 2
+    },
+    {
+      "name": "LUKE",
+      "value": 89,
+      "colour": "#3881e5",
+      "api": "https://swapi.co/api/people/1/",
+      "idSwapi": 1,
+      "interactionId": 3
+    },
+    {
+      "name": "DARTH VADER",
+      "value": 26,
+      "colour": "#000000",
+      "api": "https://swapi.co/api/people/4/",
+      "idSwapi": 4,
+      "interactionId": 4
+    },
+    {
+      "name": "Camie",
+      "value": 4,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99914,
+      "interactionId": 5
+    },
+    {
+      "name": "BIGGS",
+      "value": 19,
+      "colour": "#808080",
+      "api": "https://swapi.co/api/people/9/",
+      "idSwapi": 9,
+      "interactionId": 6
+    },
+    {
+      "name": "LEIA",
+      "value": 26,
+      "colour": "#DCDCDC",
+      "api": "https://swapi.co/api/people/5/",
+      "idSwapi": 5,
+      "interactionId": 7
+    },
+    {
+      "name": "BERU",
+      "value": 6,
+      "colour": "#808080",
+      "api": "https://swapi.co/api/people/7/",
+      "idSwapi": 7,
+      "interactionId": 8
+    },
+    {
+      "name": "OWEN",
+      "value": 7,
+      "colour": "#808080",
+      "api": "https://swapi.co/api/people/6/",
+      "idSwapi": 6,
+      "interactionId": 9
+    },
+    {
+      "name": "OBI-WAN",
+      "value": 23,
+      "colour": "#48D1CC",
+      "api": "https://swapi.co/api/people/10/",
+      "idSwapi": 10,
+      "interactionId": 10
+    },
+    {
+      "name": "Motti",
+      "value": 4,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99915,
+      "interactionId": 11
+    },
+    {
+      "name": "TARKIN",
+      "value": 13,
+      "colour": "#808080",
+      "api": "https://swapi.co/api/people/12/",
+      "idSwapi": 12,
+      "interactionId": 12
+    },
+    {
+      "name": "HAN",
+      "value": 45,
+      "colour": "#ff9400",
+      "api": "https://swapi.co/api/people/14/",
+      "idSwapi": 14,
+      "interactionId": 13
+    },
+    {
+      "name": "GREEDO",
+      "value": 3,
+      "colour": "#808080",
+      "api": "https://swapi.co/api/people/15/",
+      "idSwapi": 15,
+      "interactionId": 14
+    },
+    {
+      "name": "JABBA",
+      "value": 3,
+      "colour": "#808080",
+      "api": "https://swapi.co/api/people/16/",
+      "idSwapi": 16,
+      "interactionId": 15
+    },
+    {
+      "name": "Dodonna",
+      "value": 4,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99916,
+      "interactionId": 16
+    },
+    {
+      "name": "Gold leader",
+      "value": 15,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99917,
+      "interactionId": 17
+    },
+    {
+      "name": "WEDGE",
+      "value": 16,
+      "colour": "#808080",
+      "api": "https://swapi.co/api/people/18/",
+      "idSwapi": 18,
+      "interactionId": 18
+    },
+    {
+      "name": "Red leader",
+      "value": 34,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99918,
+      "interactionId": 19
+    },
+    {
+      "name": "Red ten",
+      "value": 9,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99919,
+      "interactionId": 20
+    },
+    {
+      "name": "Gold five",
+      "value": 9,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99920,
+      "interactionId": 21
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 0,
+      "value": 3,
+      "newTarget": 3,
+      "episodeId": 1,
+      "newSource": 13
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "value": 17,
+      "newTarget": 3,
+      "episodeId": 1,
+      "newSource": 2
+    },
+    {
+      "source": 8,
+      "target": 0,
+      "value": 1,
+      "newTarget": 3,
+      "episodeId": 1,
+      "newSource": 7
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "value": 14,
+      "newTarget": 3,
+      "episodeId": 1,
+      "newSource": 1
+    },
+    {
+      "source": 9,
+      "target": 0,
+      "value": 1,
+      "newTarget": 3,
+      "episodeId": 1,
+      "newSource": 6
+    },
+    {
+      "source": 10,
+      "target": 0,
+      "value": 4,
+      "newTarget": 3,
+      "episodeId": 1,
+      "newSource": 10
+    },
+    {
+      "source": 7,
+      "target": 0,
+      "value": 5,
+      "newTarget": 3,
+      "episodeId": 1,
+      "newSource": 5
+    },
+    {
+      "source": 6,
+      "target": 0,
+      "value": 1,
+      "newTarget": 3,
+      "episodeId": 1,
+      "newSource": 9
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "value": 6,
+      "newTarget": 3,
+      "episodeId": 1,
+      "newSource": 14
+    },
+    {
+      "source": 1,
+      "target": 10,
+      "value": 4,
+      "episodeId": 1,
+      "newSource": 13,
+      "newTarget": 10
+    },
+    {
+      "source": 2,
+      "target": 1,
+      "value": 4,
+      "episodeId": 1,
+      "newTarget": 13,
+      "newSource": 2
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "value": 14,
+      "episodeId": 1,
+      "newSource": 13,
+      "newTarget": 1
+    },
+    {
+      "source": 1,
+      "target": 13,
+      "value": 19,
+      "episodeId": 1,
+      "newSource": 13,
+      "newTarget": 14
+    },
+    {
+      "source": 1,
+      "target": 7,
+      "value": 8,
+      "episodeId": 1,
+      "newSource": 13,
+      "newTarget": 5
+    },
+    {
+      "source": 5,
+      "target": 3,
+      "value": 2,
+      "episodeId": 1,
+      "newTarget": 1,
+      "newSource": 99914
+    },
+    {
+      "source": 6,
+      "target": 5,
+      "value": 2,
+      "episodeId": 1,
+      "newTarget": 99914,
+      "newSource": 9
+    },
+    {
+      "source": 6,
+      "target": 3,
+      "value": 4,
+      "episodeId": 1,
+      "newTarget": 1,
+      "newSource": 9
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 4,
+      "newTarget": 5
+    },
+    {
+      "source": 8,
+      "target": 3,
+      "value": 3,
+      "episodeId": 1,
+      "newTarget": 1,
+      "newSource": 7
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "value": 3,
+      "episodeId": 1,
+      "newSource": 7,
+      "newTarget": 6
+    },
+    {
+      "source": 8,
+      "target": 2,
+      "value": 2,
+      "episodeId": 1,
+      "newTarget": 2,
+      "newSource": 7
+    },
+    {
+      "source": 3,
+      "target": 9,
+      "value": 3,
+      "episodeId": 1,
+      "newSource": 1,
+      "newTarget": 6
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "value": 18,
+      "episodeId": 1,
+      "newSource": 2,
+      "newTarget": 1
+    },
+    {
+      "source": 2,
+      "target": 9,
+      "value": 2,
+      "episodeId": 1,
+      "newSource": 2,
+      "newTarget": 6
+    },
+    {
+      "source": 2,
+      "target": 7,
+      "value": 6,
+      "episodeId": 1,
+      "newSource": 2,
+      "newTarget": 5
+    },
+    {
+      "source": 7,
+      "target": 3,
+      "value": 17,
+      "episodeId": 1,
+      "newTarget": 1,
+      "newSource": 5
+    },
+    {
+      "source": 8,
+      "target": 7,
+      "value": 1,
+      "episodeId": 1,
+      "newTarget": 5,
+      "newSource": 7
+    },
+    {
+      "source": 3,
+      "target": 10,
+      "value": 19,
+      "episodeId": 1,
+      "newSource": 1,
+      "newTarget": 10
+    },
+    {
+      "source": 2,
+      "target": 10,
+      "value": 6,
+      "episodeId": 1,
+      "newSource": 2,
+      "newTarget": 10
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 5,
+      "newTarget": 10
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "value": 2,
+      "episodeId": 1,
+      "newSource": 99915,
+      "newTarget": 12
+    },
+    {
+      "source": 4,
+      "target": 11,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 4,
+      "newTarget": 99915
+    },
+    {
+      "source": 4,
+      "target": 12,
+      "value": 7,
+      "episodeId": 1,
+      "newSource": 4,
+      "newTarget": 12
+    },
+    {
+      "source": 13,
+      "target": 10,
+      "value": 9,
+      "episodeId": 1,
+      "newTarget": 10,
+      "newSource": 14
+    },
+    {
+      "source": 13,
+      "target": 3,
+      "value": 26,
+      "episodeId": 1,
+      "newTarget": 1,
+      "newSource": 14
+    },
+    {
+      "source": 14,
+      "target": 13,
+      "value": 1,
+      "episodeId": 1,
+      "newTarget": 14,
+      "newSource": 15
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 14,
+      "newTarget": 16
+    },
+    {
+      "source": 2,
+      "target": 13,
+      "value": 6,
+      "episodeId": 1,
+      "newSource": 2,
+      "newTarget": 14
+    },
+    {
+      "source": 7,
+      "target": 11,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 5,
+      "newTarget": 99915
+    },
+    {
+      "source": 7,
+      "target": 12,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 5,
+      "newTarget": 12
+    },
+    {
+      "source": 13,
+      "target": 7,
+      "value": 13,
+      "episodeId": 1,
+      "newTarget": 5,
+      "newSource": 14
+    },
+    {
+      "source": 4,
+      "target": 10,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 4,
+      "newTarget": 10
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 99916,
+      "newTarget": 99917
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 99916,
+      "newTarget": 18
+    },
+    {
+      "source": 16,
+      "target": 3,
+      "value": 1,
+      "episodeId": 1,
+      "newTarget": 1,
+      "newSource": 99916
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 99917,
+      "newTarget": 18
+    },
+    {
+      "source": 17,
+      "target": 3,
+      "value": 1,
+      "episodeId": 1,
+      "newTarget": 1,
+      "newSource": 99917
+    },
+    {
+      "source": 3,
+      "target": 18,
+      "value": 2,
+      "episodeId": 1,
+      "newSource": 1,
+      "newTarget": 18
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 9,
+      "newTarget": 5
+    },
+    {
+      "source": 7,
+      "target": 19,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 5,
+      "newTarget": 99918
+    },
+    {
+      "source": 3,
+      "target": 19,
+      "value": 3,
+      "episodeId": 1,
+      "newSource": 1,
+      "newTarget": 99918
+    },
+    {
+      "source": 6,
+      "target": 19,
+      "value": 3,
+      "episodeId": 1,
+      "newSource": 9,
+      "newTarget": 99918
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "value": 1,
+      "episodeId": 1,
+      "newTarget": 2,
+      "newSource": 9
+    },
+    {
+      "source": 2,
+      "target": 19,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 2,
+      "newTarget": 99918
+    },
+    {
+      "source": 19,
+      "target": 18,
+      "value": 3,
+      "episodeId": 1,
+      "newTarget": 18,
+      "newSource": 99918
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 99917,
+      "newTarget": 99918
+    },
+    {
+      "source": 6,
+      "target": 18,
+      "value": 2,
+      "episodeId": 1,
+      "newSource": 9,
+      "newTarget": 18
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 99918,
+      "newTarget": 99919
+    },
+    {
+      "source": 6,
+      "target": 17,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 9,
+      "newTarget": 99917
+    },
+    {
+      "source": 3,
+      "target": 20,
+      "value": 1,
+      "episodeId": 1,
+      "newSource": 1,
+      "newTarget": 99919
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+    "people": {
+        "name": "Pk-4",
+        "gender": null,
+        "homeworld": null,
+        "films": [
+            5,
+            4
+        ],
+        "species": null,
+        "url": null,
+        "desc": [],
+        "idSwapi": 99923,
+        "height": null,
+        "mass": null,
+        "skin_color": null,
+        "eye_color": null,
+        "birth_year": null
+    }
+}

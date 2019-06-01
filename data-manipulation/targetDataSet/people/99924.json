@@ -1,0 +1,19 @@
+{
+    "people": {
+        "name": "Tc-14",
+        "gender": null,
+        "homeworld": null,
+        "films": [
+            4
+        ],
+        "species": null,
+        "url": null,
+        "desc": [],
+        "idSwapi": 99924,
+        "height": null,
+        "mass": null,
+        "skin_color": null,
+        "eye_color": null,
+        "birth_year": null
+    }
+}

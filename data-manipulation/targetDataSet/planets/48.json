@@ -1,0 +1,10 @@
+{
+  "planet": {
+    "name": "Quermia",
+    "residents": [
+      57
+    ],
+    "url": "http://swapi.co/api/planets/48/",
+    "idSwapi": 48
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "species": {
+    "name": "Twi'lek",
+    "classification": "mammals",
+    "designation": "sentient",
+    "average_height": "200",
+    "skin_colors": "orange, yellow, blue, green, pink, purple, tan",
+    "hair_colors": "none",
+    "eye_colors": "blue, brown, orange, pink",
+    "homeworld": 37,
+    "language": "Twi'leki",
+    "people": [
+      45,
+      46
+    ],
+    "url": "http://swapi.co/api/species/15/",
+    "idSwapi": 15
+  }
+}

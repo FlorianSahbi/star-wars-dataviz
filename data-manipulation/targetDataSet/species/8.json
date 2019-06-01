@@ -1,0 +1,18 @@
+{
+  "species": {
+    "name": "Mon Calamari",
+    "classification": "amphibian",
+    "designation": "sentient",
+    "average_height": "160",
+    "skin_colors": "red, blue, brown, magenta",
+    "hair_colors": "none",
+    "eye_colors": "yellow",
+    "homeworld": 31,
+    "language": "Mon Calamarian",
+    "people": [
+      27
+    ],
+    "url": "http://swapi.co/api/species/8/",
+    "idSwapi": 8
+  }
+}

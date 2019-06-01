@@ -1,0 +1,10 @@
+{
+  "planet": {
+    "name": "Zolan",
+    "residents": [
+      70
+    ],
+    "url": "http://swapi.co/api/planets/54/",
+    "idSwapi": 54
+  }
+}

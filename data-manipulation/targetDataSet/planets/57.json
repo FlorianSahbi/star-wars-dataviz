@@ -1,0 +1,18 @@
+{
+  "planet": {
+    "name": "Muunilinst",
+    "rotation_period": "28",
+    "orbital_period": "412",
+    "diameter": "13800",
+    "climate": "temperate",
+    "gravity": "1",
+    "terrain": "plains, forests, hills, mountains",
+    "surface_water": "25",
+    "population": "5000000000",
+    "residents": [
+      77
+    ],
+    "url": "http://swapi.co/api/planets/57/",
+    "idSwapi": 57
+  }
+}

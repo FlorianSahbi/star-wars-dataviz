@@ -1,0 +1,20 @@
+{
+  "species": {
+    "name": "Droid",
+    "classification": "artificial",
+    "designation": "sentient",
+    "average_lifespan": "indefinite",
+    "people": [
+      2,
+      3,
+      8,
+      23,
+      87
+    ],
+    "url": "http://swapi.co/api/species/2/",
+    "desc": [
+      "A droid is a fictional robot possessing some degree of artificial intelligence in the Star Wars science fiction franchise. Coined by special effects artist John Stears, the term is a clipped form of \"android\",[1] a word originally reserved for robots designed to look and act like a human.[2] The word \"droid\" has been a registered trademark of Lucasfilm Ltd since 1977.[3][4][5][6]"
+    ],
+    "idSwapi": 2
+  }
+}

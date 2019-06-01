@@ -1,0 +1,18 @@
+{
+  "planet": {
+    "name": "Sullust",
+    "rotation_period": "20",
+    "orbital_period": "263",
+    "diameter": "12780",
+    "climate": "superheated",
+    "gravity": "1",
+    "terrain": "mountains, volcanoes, rocky deserts",
+    "surface_water": "5",
+    "population": "18500000000",
+    "residents": [
+      31
+    ],
+    "url": "http://swapi.co/api/planets/33/",
+    "idSwapi": 33
+  }
+}

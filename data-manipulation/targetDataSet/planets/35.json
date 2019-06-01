@@ -1,0 +1,17 @@
+{
+  "planet": {
+    "name": "Malastare",
+    "rotation_period": "26",
+    "orbital_period": "201",
+    "diameter": "18880",
+    "climate": "arid, temperate, tropical",
+    "gravity": "1.56",
+    "terrain": "swamps, deserts, jungles, mountains",
+    "population": "2000000000",
+    "residents": [
+      41
+    ],
+    "url": "http://swapi.co/api/planets/35/",
+    "idSwapi": 35
+  }
+}

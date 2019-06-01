@@ -1,0 +1,16 @@
+{
+  "species": {
+    "name": "Skakoan",
+    "classification": "mammal",
+    "designation": "sentient",
+    "skin_colors": "grey, green",
+    "hair_colors": "none",
+    "homeworld": 56,
+    "language": "Skakoan",
+    "people": [
+      76
+    ],
+    "url": "http://swapi.co/api/species/33/",
+    "idSwapi": 33
+  }
+}

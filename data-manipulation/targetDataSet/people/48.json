@@ -1,0 +1,18 @@
+{
+  "people": {
+    "name": "Dud Bolt",
+    "height": "94",
+    "mass": "45",
+    "hair_color": "none",
+    "skin_color": "blue, grey",
+    "eye_color": "yellow",
+    "gender": "male",
+    "homeworld": 39,
+    "films": [
+      4
+    ],
+    "species": 17,
+    "url": "http://swapi.co/api/people/48/",
+    "idSwapi": 48
+  }
+}

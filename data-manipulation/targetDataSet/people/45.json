@@ -1,0 +1,17 @@
+{
+  "people": {
+    "name": "Bib Fortuna",
+    "height": "180",
+    "hair_color": "none",
+    "skin_color": "pale",
+    "eye_color": "pink",
+    "gender": "male",
+    "homeworld": 37,
+    "films": [
+      3
+    ],
+    "species": 15,
+    "url": "http://swapi.co/api/people/45/",
+    "idSwapi": 45
+  }
+}

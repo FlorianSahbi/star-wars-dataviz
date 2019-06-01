@@ -1,0 +1,11 @@
+{
+  "planet": {
+    "name": "Troiken",
+    "terrain": "desert, tundra, rainforests, mountains",
+    "residents": [
+      49
+    ],
+    "url": "http://swapi.co/api/planets/40/",
+    "idSwapi": 40
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "species": {
+    "name": "Iktotchi",
+    "designation": "sentient",
+    "average_height": "180",
+    "skin_colors": "pink",
+    "hair_colors": "none",
+    "eye_colors": "orange",
+    "homeworld": 47,
+    "language": "Iktotchese",
+    "people": [
+      56
+    ],
+    "url": "http://swapi.co/api/species/24/",
+    "idSwapi": 24
+  }
+}

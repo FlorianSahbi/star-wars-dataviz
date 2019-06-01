@@ -1,0 +1,17 @@
+{
+  "species": {
+    "name": "Toong",
+    "designation": "sentient",
+    "average_height": "200",
+    "skin_colors": "grey, green, yellow",
+    "hair_colors": "none",
+    "eye_colors": "orange",
+    "homeworld": 41,
+    "language": "Tundan",
+    "people": [
+      50
+    ],
+    "url": "http://swapi.co/api/species/19/",
+    "idSwapi": 19
+  }
+}

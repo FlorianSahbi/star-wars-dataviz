@@ -1,0 +1,17 @@
+{
+  "planet": {
+    "name": "Eriadu",
+    "rotation_period": "24",
+    "orbital_period": "360",
+    "diameter": "13490",
+    "climate": "polluted",
+    "gravity": "1 standard",
+    "terrain": "cityscape",
+    "population": "22000000000",
+    "residents": [
+      12
+    ],
+    "url": "http://swapi.co/api/planets/21/",
+    "idSwapi": 21
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "planet": {
+    "name": "Chandrila",
+    "rotation_period": "20",
+    "orbital_period": "368",
+    "diameter": "13500",
+    "climate": "temperate",
+    "gravity": "1",
+    "terrain": "plains, forests",
+    "surface_water": "40",
+    "population": "1200000000",
+    "residents": [
+      28
+    ],
+    "url": "http://swapi.co/api/planets/32/",
+    "idSwapi": 32
+  }
+}

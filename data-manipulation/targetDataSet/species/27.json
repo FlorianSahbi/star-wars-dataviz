@@ -1,0 +1,18 @@
+{
+  "species": {
+    "name": "Chagrian",
+    "classification": "amphibian",
+    "designation": "sentient",
+    "average_height": "190",
+    "skin_colors": "blue",
+    "hair_colors": "none",
+    "eye_colors": "blue",
+    "homeworld": 50,
+    "language": "Chagria",
+    "people": [
+      59
+    ],
+    "url": "http://swapi.co/api/species/27/",
+    "idSwapi": 27
+  }
+}

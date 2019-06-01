@@ -1,0 +1,19 @@
+{
+  "species": {
+    "name": "Zabrak",
+    "classification": "mammal",
+    "designation": "sentient",
+    "average_height": "180",
+    "skin_colors": "pale, brown, red, orange, yellow",
+    "hair_colors": "black",
+    "eye_colors": "brown, orange",
+    "homeworld": 45,
+    "language": "Zabraki",
+    "people": [
+      44,
+      54
+    ],
+    "url": "http://swapi.co/api/species/22/",
+    "idSwapi": 22
+  }
+}

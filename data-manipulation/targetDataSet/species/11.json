@@ -1,0 +1,17 @@
+{
+  "species": {
+    "name": "Neimodian",
+    "designation": "sentient",
+    "average_height": "180",
+    "skin_colors": "grey, green",
+    "hair_colors": "none",
+    "eye_colors": "red, pink",
+    "homeworld": 18,
+    "language": "Neimoidia",
+    "people": [
+      33
+    ],
+    "url": "http://swapi.co/api/species/11/",
+    "idSwapi": 11
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "species": {
+    "name": "Aleena",
+    "classification": "reptile",
+    "designation": "sentient",
+    "average_height": "80",
+    "skin_colors": "blue, gray",
+    "hair_colors": "none",
+    "average_lifespan": "79",
+    "homeworld": 38,
+    "language": "Aleena",
+    "people": [
+      47
+    ],
+    "url": "http://swapi.co/api/species/16/",
+    "idSwapi": 16
+  }
+}

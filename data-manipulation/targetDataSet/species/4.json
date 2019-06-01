@@ -1,0 +1,17 @@
+{
+  "species": {
+    "name": "Rodian",
+    "classification": "sentient",
+    "designation": "reptilian",
+    "average_height": "170",
+    "skin_colors": "green, blue",
+    "eye_colors": "black",
+    "homeworld": 23,
+    "language": "Galactic Basic",
+    "people": [
+      15
+    ],
+    "url": "http://swapi.co/api/species/4/",
+    "idSwapi": 4
+  }
+}

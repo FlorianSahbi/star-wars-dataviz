@@ -1,0 +1,11 @@
+{
+  "planet": {
+    "name": "Serenno",
+    "terrain": "rainforests, rivers, mountains",
+    "residents": [
+      67
+    ],
+    "url": "http://swapi.co/api/planets/52/",
+    "idSwapi": 52
+  }
+}

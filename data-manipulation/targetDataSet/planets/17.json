@@ -1,0 +1,15 @@
+{
+  "planet": {
+    "name": "Felucia",
+    "rotation_period": "34",
+    "orbital_period": "231",
+    "diameter": "9100",
+    "climate": "hot, humid",
+    "gravity": "0.75 standard",
+    "terrain": "fungus forests",
+    "population": "8500000",
+    "residents": [],
+    "url": "http://swapi.co/api/planets/17/",
+    "idSwapi": 17
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "people": {
+    "name": "Nute Gunray",
+    "height": "191",
+    "mass": "90",
+    "hair_color": "none",
+    "skin_color": "mottled green",
+    "eye_color": "red",
+    "gender": "male",
+    "homeworld": 18,
+    "films": [
+      5,
+      4,
+      6
+    ],
+    "species": 11,
+    "url": "http://swapi.co/api/people/33/",
+    "idSwapi": 33
+  }
+}

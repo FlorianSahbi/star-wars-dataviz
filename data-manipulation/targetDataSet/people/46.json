@@ -1,0 +1,21 @@
+{
+  "people": {
+    "name": "Ayla Secura",
+    "height": "178",
+    "mass": "55",
+    "hair_color": "none",
+    "skin_color": "blue",
+    "eye_color": "hazel",
+    "birth_year": "48BBY",
+    "gender": "female",
+    "homeworld": 37,
+    "films": [
+      5,
+      4,
+      6
+    ],
+    "species": 15,
+    "url": "http://swapi.co/api/people/46/",
+    "idSwapi": 46
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "planet": {
+    "name": "Mon Cala",
+    "rotation_period": "21",
+    "orbital_period": "398",
+    "diameter": "11030",
+    "climate": "temperate",
+    "gravity": "1",
+    "terrain": "oceans, reefs, islands",
+    "surface_water": "100",
+    "population": "27000000000",
+    "residents": [
+      27
+    ],
+    "url": "http://swapi.co/api/planets/31/",
+    "idSwapi": 31
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "species": {
+    "name": "Quermian",
+    "classification": "mammal",
+    "designation": "sentient",
+    "average_height": "240",
+    "skin_colors": "white",
+    "hair_colors": "none",
+    "eye_colors": "yellow",
+    "average_lifespan": "86",
+    "homeworld": 48,
+    "language": "Quermian",
+    "people": [
+      57
+    ],
+    "url": "http://swapi.co/api/species/25/",
+    "idSwapi": 25
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "people": {
+    "name": "Yarael Poof",
+    "height": "264",
+    "hair_color": "none",
+    "skin_color": "white",
+    "eye_color": "yellow",
+    "gender": "male",
+    "homeworld": 48,
+    "films": [
+      4
+    ],
+    "species": 25,
+    "url": "http://swapi.co/api/people/57/",
+    "idSwapi": 57
+  }
+}

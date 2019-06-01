@@ -1,0 +1,17 @@
+{
+  "people": {
+    "name": "Ratts Tyerell",
+    "height": "79",
+    "mass": "15",
+    "hair_color": "none",
+    "skin_color": "grey, blue",
+    "gender": "male",
+    "homeworld": 38,
+    "films": [
+      4
+    ],
+    "species": 16,
+    "url": "http://swapi.co/api/people/47/",
+    "idSwapi": 47
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "planet": {
+    "name": "Mygeeto",
+    "rotation_period": "12",
+    "orbital_period": "167",
+    "diameter": "10088",
+    "climate": "frigid",
+    "gravity": "1 standard",
+    "terrain": "glaciers, mountains, ice canyons",
+    "population": "19000000",
+    "residents": [],
+    "url": "http://swapi.co/api/planets/16/",
+    "idSwapi": 16
+  }
+}

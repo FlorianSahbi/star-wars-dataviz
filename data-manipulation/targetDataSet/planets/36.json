@@ -1,0 +1,17 @@
+{
+  "planet": {
+    "name": "Dathomir",
+    "rotation_period": "24",
+    "orbital_period": "491",
+    "diameter": "10480",
+    "climate": "temperate",
+    "gravity": "0.9",
+    "terrain": "forests, deserts, savannas",
+    "population": "5200",
+    "residents": [
+      44
+    ],
+    "url": "http://swapi.co/api/planets/36/",
+    "idSwapi": 36
+  }
+}

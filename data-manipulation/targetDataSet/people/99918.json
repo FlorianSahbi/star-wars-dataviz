@@ -1,0 +1,19 @@
+{
+    "people": {
+        "name": "Red leader",
+        "gender": null,
+        "homeworld": null,
+        "films": [
+            1
+        ],
+        "species": null,
+        "url": null,
+        "desc": [],
+        "idSwapi": 99918,
+        "height": null,
+        "mass": null,
+        "skin_color": null,
+        "eye_color": null,
+        "birth_year": null
+    }
+}

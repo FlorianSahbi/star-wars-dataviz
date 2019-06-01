@@ -1,0 +1,16 @@
+{
+  "people": {
+    "name": "R5-D4",
+    "height": "97",
+    "mass": "32",
+    "skin_color": "white, red",
+    "eye_color": "red",
+    "homeworld": 1,
+    "films": [
+      1
+    ],
+    "species": 2,
+    "url": "http://swapi.co/api/people/8/",
+    "idSwapi": 8
+  }
+}

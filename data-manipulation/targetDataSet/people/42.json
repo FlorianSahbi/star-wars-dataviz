@@ -1,0 +1,18 @@
+{
+  "people": {
+    "name": "Quarsh Panaka",
+    "height": "183",
+    "hair_color": "black",
+    "skin_color": "dark",
+    "eye_color": "brown",
+    "birth_year": "62BBY",
+    "gender": "male",
+    "homeworld": 8,
+    "films": [
+      4
+    ],
+    "species": null,
+    "url": "http://swapi.co/api/people/42/",
+    "idSwapi": 42
+  }
+}

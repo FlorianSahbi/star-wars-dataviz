@@ -1,0 +1,15 @@
+{
+  "planet": {
+    "name": "Tund",
+    "rotation_period": "48",
+    "orbital_period": "1770",
+    "diameter": "12190",
+    "terrain": "barren, ash",
+    "population": "0",
+    "residents": [
+      50
+    ],
+    "url": "http://swapi.co/api/planets/41/",
+    "idSwapi": 41
+  }
+}

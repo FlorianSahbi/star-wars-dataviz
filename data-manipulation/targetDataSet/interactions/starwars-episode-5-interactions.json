@@ -1,0 +1,449 @@
+{
+  "nodes": [
+    {
+      "name": "R2-D2",
+      "value": 30,
+      "colour": "#bde0f6",
+      "api": "https://swapi.co/api/people/3/",
+      "idSwapi": 3,
+      "interactionId": 0
+    },
+    {
+      "name": "CHEWBACCA",
+      "value": 46,
+      "colour": "#A0522D",
+      "api": "https://swapi.co/api/people/13/",
+      "idSwapi": 13,
+      "interactionId": 1
+    },
+    {
+      "name": "LUKE",
+      "value": 45,
+      "colour": "#3881e5",
+      "api": "https://swapi.co/api/people/1/",
+      "idSwapi": 1,
+      "interactionId": 2
+    },
+    {
+      "name": "HAN",
+      "value": 51,
+      "colour": "#ff9400",
+      "api": "https://swapi.co/api/people/14/",
+      "idSwapi": 14,
+      "interactionId": 3
+    },
+    {
+      "name": "Rieekan",
+      "value": 8,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 9996,
+      "interactionId": 4
+    },
+    {
+      "name": "LEIA",
+      "value": 46,
+      "colour": "#DCDCDC",
+      "api": "https://swapi.co/api/people/5/",
+      "idSwapi": 5,
+      "interactionId": 5
+    },
+    {
+      "name": "C-3PO",
+      "value": 46,
+      "colour": "#FFD700",
+      "api": "https://swapi.co/api/people/2/",
+      "idSwapi": 2,
+      "interactionId": 6
+    },
+    {
+      "name": "Derlin",
+      "value": 4,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 9997,
+      "interactionId": 7
+    },
+    {
+      "name": "OBI-WAN",
+      "value": 4,
+      "colour": "#48D1CC",
+      "api": "https://swapi.co/api/people/10/",
+      "idSwapi": 10,
+      "interactionId": 8
+    },
+    {
+      "name": "Zev",
+      "value": 7,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 9998,
+      "interactionId": 9
+    },
+    {
+      "name": "Piett",
+      "value": 10,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 9999,
+      "interactionId": 10
+    },
+    {
+      "name": "Ozzel",
+      "value": 4,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99910,
+      "interactionId": 11
+    },
+    {
+      "name": "DARTH VADER",
+      "value": 21,
+      "colour": "#000000",
+      "api": "https://swapi.co/api/people/4/",
+      "idSwapi": 4,
+      "interactionId": 12
+    },
+    {
+      "name": "Dack",
+      "value": 5,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99911,
+      "interactionId": 13
+    },
+    {
+      "name": "WEDGE",
+      "value": 9,
+      "colour": "#808080",
+      "api": "https://swapi.co/api/people/18/",
+      "idSwapi": 18,
+      "interactionId": 14
+    },
+    {
+      "name": "Janson",
+      "value": 5,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99912,
+      "interactionId": 15
+    },
+    {
+      "name": "Needa",
+      "value": 4,
+      "colour": "#808080",
+      "api": null,
+      "idSwapi": 99913,
+      "interactionId": 16
+    },
+    {
+      "name": "EMPEROR",
+      "value": 3,
+      "colour": "#191970",
+      "api": "https://swapi.co/api/people/21/",
+      "idSwapi": 21,
+      "interactionId": 17
+    },
+    {
+      "name": "YODA",
+      "value": 7,
+      "colour": "#9ACD32",
+      "api": "https://swapi.co/api/people/20/",
+      "idSwapi": 20,
+      "interactionId": 18
+    },
+    {
+      "name": "BOBA FETT",
+      "value": 6,
+      "colour": "#808080",
+      "api": "https://swapi.co/api/people/22/",
+      "idSwapi": 22,
+      "interactionId": 19
+    },
+    {
+      "name": "LANDO",
+      "value": 23,
+      "colour": "#808080",
+      "api": "https://swapi.co/api/people/25/",
+      "idSwapi": 25,
+      "interactionId": 20
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 0,
+      "value": 5
+    },
+    {
+      "source": 6,
+      "target": 0,
+      "value": 10
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "value": 7
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "value": 4
+    },
+    {
+      "source": 5,
+      "target": 0,
+      "value": 5
+    },
+    {
+      "source": 20,
+      "target": 0,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "value": 19
+    },
+    {
+      "source": 6,
+      "target": 1,
+      "value": 21
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "value": 5
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "value": 19
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 20,
+      "value": 9
+    },
+    {
+      "source": 1,
+      "target": 12,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 2,
+      "value": 4
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "value": 3
+    },
+    {
+      "source": 5,
+      "target": 4,
+      "value": 4
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "value": 33
+    },
+    {
+      "source": 6,
+      "target": 3,
+      "value": 27
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 8,
+      "value": 2
+    },
+    {
+      "source": 3,
+      "target": 8,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 9,
+      "value": 1
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 6,
+      "target": 5,
+      "value": 23
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 6,
+      "target": 4,
+      "value": 1
+    },
+    {
+      "source": 11,
+      "target": 10,
+      "value": 2
+    },
+    {
+      "source": 12,
+      "target": 10,
+      "value": 7
+    },
+    {
+      "source": 12,
+      "target": 11,
+      "value": 2
+    },
+    {
+      "source": 7,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 2,
+      "value": 3
+    },
+    {
+      "source": 2,
+      "target": 14,
+      "value": 2
+    },
+    {
+      "source": 15,
+      "target": 14,
+      "value": 2
+    },
+    {
+      "source": 2,
+      "target": 9,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 16,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 10,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 17,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 18,
+      "value": 5
+    },
+    {
+      "source": 19,
+      "target": 10,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 12,
+      "value": 3
+    },
+    {
+      "source": 3,
+      "target": 20,
+      "value": 7
+    },
+    {
+      "source": 20,
+      "target": 5,
+      "value": 10
+    },
+    {
+      "source": 6,
+      "target": 20,
+      "value": 7
+    },
+    {
+      "source": 8,
+      "target": 18,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 20,
+      "value": 4
+    },
+    {
+      "source": 12,
+      "target": 3,
+      "value": 2
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "value": 2
+    },
+    {
+      "source": 19,
+      "target": 6,
+      "value": 1
+    },
+    {
+      "source": 6,
+      "target": 12,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 2,
+      "value": 2
+    },
+    {
+      "source": 20,
+      "target": 2,
+      "value": 2
+    }
+  ]
+}

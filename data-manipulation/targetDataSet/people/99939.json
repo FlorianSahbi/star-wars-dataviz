@@ -1,0 +1,19 @@
+{
+    "people": {
+        "name": "Sola",
+        "gender": null,
+        "homeworld": null,
+        "films": [
+            5
+        ],
+        "species": null,
+        "url": null,
+        "desc": [],
+        "idSwapi": 99939,
+        "height": null,
+        "mass": null,
+        "skin_color": null,
+        "eye_color": null,
+        "birth_year": null
+    }
+}

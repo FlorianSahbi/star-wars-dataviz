@@ -1,0 +1,18 @@
+{
+  "species": {
+    "name": "Sullustan",
+    "classification": "mammal",
+    "designation": "sentient",
+    "average_height": "180",
+    "skin_colors": "pale",
+    "hair_colors": "none",
+    "eye_colors": "black",
+    "homeworld": 33,
+    "language": "Sullutese",
+    "people": [
+      31
+    ],
+    "url": "http://swapi.co/api/species/10/",
+    "idSwapi": 10
+  }
+}

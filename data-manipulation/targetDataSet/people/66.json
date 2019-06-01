@@ -1,0 +1,17 @@
+{
+  "people": {
+    "name": "Dormé",
+    "height": "165",
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "gender": "female",
+    "homeworld": 8,
+    "films": [
+      5
+    ],
+    "species": 1,
+    "url": "http://swapi.co/api/people/66/",
+    "idSwapi": 66
+  }
+}

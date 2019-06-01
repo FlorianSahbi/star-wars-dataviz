@@ -1,0 +1,17 @@
+{
+  "species": {
+    "name": "Xexto",
+    "designation": "sentient",
+    "average_height": "125",
+    "skin_colors": "grey, yellow, purple",
+    "hair_colors": "none",
+    "eye_colors": "black",
+    "homeworld": 40,
+    "language": "Xextese",
+    "people": [
+      49
+    ],
+    "url": "http://swapi.co/api/species/18/",
+    "idSwapi": 18
+  }
+}

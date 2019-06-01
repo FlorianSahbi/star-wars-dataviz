@@ -1,0 +1,16 @@
+{
+  "planet": {
+    "name": "Mustafar",
+    "rotation_period": "36",
+    "orbital_period": "412",
+    "diameter": "4200",
+    "climate": "hot",
+    "gravity": "1 standard",
+    "terrain": "volcanoes, lava rivers, mountains, caves",
+    "surface_water": "0",
+    "population": "20000",
+    "residents": [],
+    "url": "http://swapi.co/api/planets/13/",
+    "idSwapi": 13
+  }
+}
