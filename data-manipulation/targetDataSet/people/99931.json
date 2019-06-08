@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Wald",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 1,
         "films": [
             4
         ],
-        "species": null,
+        "species": 4,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 99931,

@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Janson",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             2
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 99912,

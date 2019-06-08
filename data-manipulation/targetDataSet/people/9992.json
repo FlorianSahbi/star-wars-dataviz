@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Giddean danu",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             6
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 9992,

@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Fode/beed",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             4
         ],
-        "species": null,
+        "species": 25,
+        "affiliation": "neutral",
         "url": null,
         "desc": [],
         "idSwapi": 99932,

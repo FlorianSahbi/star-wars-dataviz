@@ -1,13 +1,14 @@
 {
     "people": {
         "name": "Piett",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             2,
             3
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 9999,

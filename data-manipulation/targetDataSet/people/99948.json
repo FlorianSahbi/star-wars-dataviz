@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Lieutenant mitaka",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             7
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99948,

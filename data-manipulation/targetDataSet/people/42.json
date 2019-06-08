@@ -11,7 +11,8 @@
     "films": [
       4
     ],
-    "species": null,
+    "species": 1,
+    "affiliation": "light",
     "url": "http://swapi.co/api/people/42/",
     "idSwapi": 42
   }

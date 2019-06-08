@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Needa",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 9,
         "films": [
             2
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99913,

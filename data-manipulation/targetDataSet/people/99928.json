@@ -1,13 +1,14 @@
 {
     "people": {
         "name": "Sio bibble",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 8,
         "films": [
             5,
             4
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 99928,

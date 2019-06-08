@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Ello asty",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             7
         ],
-        "species": null,
+        "species": 26,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 99956,

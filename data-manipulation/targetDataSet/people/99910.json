@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Ozzel",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             2
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99910,

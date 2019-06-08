@@ -1,18 +1,19 @@
 {
     "people": {
         "name": "Maz",
-        "gender": null,
+        "gender": "female",
         "homeworld": null,
         "films": [
             7
         ],
-        "species": null,
+        "species": 6,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 99951,
-        "height": null,
-        "mass": null,
-        "skin_color": null,
+        "height": "124",
+        "mass": "30",
+        "skin_color": "orange",
         "eye_color": null,
         "birth_year": null
     }

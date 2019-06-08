@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Tc-14",
-        "gender": null,
+        "gender": "female",
         "homeworld": null,
         "films": [
             4
         ],
-        "species": null,
+        "species": 2,
+        "affiliation": "neutral",
         "url": null,
         "desc": [],
         "idSwapi": 99924,

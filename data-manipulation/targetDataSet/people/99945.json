@@ -1,19 +1,20 @@
 {
     "people": {
         "name": "Kylo ren",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 28,
         "films": [
             7
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99945,
-        "height": null,
-        "mass": null,
-        "skin_color": null,
-        "eye_color": null,
+        "height": "189",
+        "mass": "80",
+        "skin_color": "light",
+        "eye_color": "hazel",
         "birth_year": null
     }
 }

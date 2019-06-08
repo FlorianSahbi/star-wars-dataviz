@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Bravo two",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 8,
         "films": [
             4
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 99935,

@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Senator ask aak",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             5
         ],
-        "species": null,
+        "species": 7,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99937,

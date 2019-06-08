@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Orn free taa",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 37,
         "films": [
             5
         ],
-        "species": null,
+        "species": 15,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99938,

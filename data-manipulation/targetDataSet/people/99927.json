@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Tey how",
-        "gender": null,
-        "homeworld": null,
+        "gender": "female",
+        "homeworld": 18,
         "films": [
             4
         ],
-        "species": null,
+        "species": 11,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99927,

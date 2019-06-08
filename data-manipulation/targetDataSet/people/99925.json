@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Dofine",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 18,
         "films": [
             4
         ],
-        "species": null,
+        "species": 11,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99925,

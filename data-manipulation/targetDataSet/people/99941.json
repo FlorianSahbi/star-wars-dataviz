@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Ruwee",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 8,
         "films": [
             5
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 99941,

@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Boushh",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             3
         ],
-        "species": null,
+        "species": 23,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99922,

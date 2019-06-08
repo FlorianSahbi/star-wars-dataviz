@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Rieekan",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 2,
         "films": [
             2
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 9996,

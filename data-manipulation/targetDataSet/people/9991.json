@@ -6,7 +6,8 @@
         "films": [
             6
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 9991,

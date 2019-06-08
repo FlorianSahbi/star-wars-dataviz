@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Sun rit",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 11,
         "films": [
             5
         ],
-        "species": null,
+        "species": 28,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99943,

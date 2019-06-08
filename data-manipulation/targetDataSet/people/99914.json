@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Camie",
-        "gender": null,
-        "homeworld": null,
+        "gender": "female",
+        "homeworld": 1,
         "films": [
             1
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "neutral",
         "url": null,
         "desc": [],
         "idSwapi": 99914,

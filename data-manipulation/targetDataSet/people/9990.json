@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Odd ball",
-        "gender": null,
-        "homeworld": null,
+        "gender": "male",
+        "homeworld": 10,
         "films": [
             6
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 9990,

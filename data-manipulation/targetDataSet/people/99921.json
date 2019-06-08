@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Jerjerrod",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             3
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "dark",
         "url": null,
         "desc": [],
         "idSwapi": 99921,

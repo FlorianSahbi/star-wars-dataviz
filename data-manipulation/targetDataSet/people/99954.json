@@ -1,12 +1,13 @@
 {
     "people": {
         "name": "Yolo ziff",
-        "gender": null,
+        "gender": "male",
         "homeworld": null,
         "films": [
             7
         ],
-        "species": null,
+        "species": 1,
+        "affiliation": "light",
         "url": null,
         "desc": [],
         "idSwapi": 99954,
