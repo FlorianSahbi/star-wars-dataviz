@@ -143,12 +143,16 @@ exports.getInteractionByEpisodeIdAction = (req, res) => {
         "links": []
     }
 
-    var nodes = `   SELECT * 
+    var nodes = `   SELECT *, c.name AS char_name, p.name AS planet_name, s.name AS species_name
                     FROM characters AS c
                     JOIN films_characters AS fc 
                     ON c.character_id = fc.character_id
                     JOIN films AS f
                     ON fc.film_id = f.film_id
+                    JOIN  planets AS p
+                    ON c.homeworld = p.planet_id
+                    JOIN species AS s
+                    ON c.species = s.species_id
                     WHERE f.episode_id = ${nodeId}`;
 
     var links = `   SELECT *
@@ -156,24 +160,35 @@ exports.getInteractionByEpisodeIdAction = (req, res) => {
                     WHERE l.episodeId = ${linkId}`;
 
     con.query(nodes, (err, result) => {
-        if (err) { throw err }
+        if (err) {
+            throw err
+        }
+        // console.log(result)
         result.forEach(element => {
             let node = {
                 id: element.character_id,
-                name: element.name,
-                img: `character${element.character_id}`
+                name: element.char_name,
+                img: `character${element.character_id}`,
+                affiliation: element.affiliation,
+                gender: element.gender,
+                species: element.species_name,
+                homeworld: element.planet_name,
+                mass: element.mass,
+                height: element.height
             }
             data.nodes.push(node);
         });
     });
 
     con.query(links, (err, result) => {
-        if (err) { throw err }
+        if (err) {
+            throw err
+        }
         result.forEach(element => {
             let link = {
                 source: element.newSourceId,
                 target: element.newTargetId,
-                value: element.value/100*5,
+                value: element.value / 100 * 5,
             }
             // value: element.value/100*5
 
@@ -183,4 +198,170 @@ exports.getInteractionByEpisodeIdAction = (req, res) => {
     setTimeout(() => {
         res.send(data);
     }, 4000);
+};
+
+exports.getRadarDataAction = (req, res) => {
+    var { characterName, episodeId } = req.params;
+    var queryInteractionsDroids = ` SELECT SUM(l.value) AS sum 
+                                    FROM characters AS sc 
+                                    JOIN links as l 
+                                    ON l.sourceId = sc.character_id 
+                                    JOIN characters as tc 
+                                    ON l.targetId = tc.character_id 
+                                    JOIN species as s 
+                                    ON tc.species = s.species_id 
+                                    WHERE sc.name LIKE '%${characterName}%'
+                                    AND s.name = 'Droid'
+                                    AND l.episodeId = ${episodeId}`;
+
+    var queryInteractionsHumans = ` SELECT SUM(l.value) AS sum 
+                                    FROM characters AS sc 
+                                    JOIN links as l 
+                                    ON l.sourceId = sc.character_id 
+                                    JOIN characters as tc 
+                                    ON l.targetId = tc.character_id 
+                                    JOIN species as s 
+                                    ON tc.species = s.species_id 
+                                    WHERE sc.name LIKE '%${characterName}%'
+                                    AND s.name = 'Humans'
+                                    AND l.episodeId = ${episodeId}`;
+
+    var queryInteractionsAliens = ` SELECT SUM(l.value) AS sum 
+                                    FROM characters AS sc 
+                                    JOIN links as l 
+                                    ON l.sourceId = sc.character_id 
+                                    JOIN characters as tc 
+                                    ON l.targetId = tc.character_id 
+                                    JOIN species as s 
+                                    ON tc.species = s.species_id 
+                                    WHERE sc.name LIKE '%${characterName}%'
+                                    AND s.name != 'Droid'
+                                    AND s.name != 'Human'
+                                    AND l.episodeId = ${episodeId}`;
+
+    var queryInteractionsLight = `  SELECT SUM(l.value) AS sum 
+                                    FROM characters AS sc 
+                                    JOIN links as l 
+                                    ON l.sourceId = sc.character_id 
+                                    JOIN characters as tc 
+                                    ON l.targetId = tc.character_id 
+                                    JOIN species as s 
+                                    ON tc.species = s.species_id 
+                                    WHERE sc.name LIKE '%${characterName}%'
+                                    AND tc.affiliation = 'light'
+                                    AND l.episodeId = ${episodeId}`;
+
+    var queryInteractionsDark = `   SELECT SUM(l.value) AS sum 
+                                    FROM characters AS sc 
+                                    JOIN links as l 
+                                    ON l.sourceId = sc.character_id 
+                                    JOIN characters as tc 
+                                    ON l.targetId = tc.character_id 
+                                    JOIN species as s 
+                                    ON tc.species = s.species_id 
+                                    WHERE sc.name LIKE '%${characterName}%'
+                                    AND tc.affiliation = 'dark'
+                                    AND l.episodeId = ${episodeId}`;
+
+    var queryInteractionsNeutral = ` SELECT SUM(l.value) AS sum 
+                                     FROM characters AS sc 
+                                     JOIN links as l 
+                                     ON l.sourceId = sc.character_id 
+                                     JOIN characters as tc 
+                                     ON l.targetId = tc.character_id 
+                                     JOIN species as s 
+                                     ON tc.species = s.species_id 
+                                     WHERE sc.name LIKE '%${characterName}%'
+                                     AND tc.affiliation = 'neutral'
+                                     AND l.episodeId = ${episodeId}`;
+
+    var queries = [
+        queryInteractionsDroids,
+        queryInteractionsHumans,
+        queryInteractionsAliens,
+        queryInteractionsLight,
+        queryInteractionsDark,
+        queryInteractionsNeutral
+    ]
+
+    var interactions = {
+        droids: null,
+        humans: null,
+        aliens: null,
+        light: null,
+        dark: null,
+        neutral: null
+    }
+
+
+    con.query(queryInteractionsDroids, (err, result) => {
+        if (err) {
+            throw err
+        }
+        console.log(result[0].sum);
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        } 
+        interactions.droids = result[0].sum;
+    });
+
+    con.query(queryInteractionsHumans, (err, result) => {
+        if (err) {
+            throw err
+        }
+        console.log(result[0].sum);
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        } 
+        interactions.humans = result[0].sum;
+    });
+
+    con.query(queryInteractionsAliens, (err, result) => {
+        if (err) {
+            throw err
+        }
+        console.log(result[0].sum);
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        } 
+        interactions.aliens = result[0].sum;
+    });
+
+    con.query(queryInteractionsLight, (err, result) => {
+        if (err) {
+            throw err
+        }
+        console.log(result[0].sum);
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        } 
+        interactions.light = result[0].sum;
+    });
+
+    con.query(queryInteractionsDark, (err, result) => {
+        if (err) {
+            throw err
+        }
+        console.log(result[0].sum);
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        } 
+        interactions.dark = result[0].sum;
+    });
+
+    con.query(queryInteractionsNeutral, (err, result) => {
+        if (err) {
+            throw err
+        }
+        console.log(result[0].sum);
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        } 
+        interactions.neutral = result[0].sum;
+    });
+
+    setTimeout(() => {
+        console.log(interactions)
+        res.send(interactions);
+    }, 2000);
 };

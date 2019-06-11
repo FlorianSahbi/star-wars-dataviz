@@ -8,6 +8,9 @@ const apiController = require('../controllers/apiControllers');
 router.route('/interactions')
     .get(apiController.getAllInteractionsAction);
 
+router.route('/radarData/:characterName/episode/:episodeId')
+    .get(apiController.getRadarDataAction)
+
 router.route('/interactions/:characterName')
     .get(apiController.getInteractionAction);
 
