@@ -1,17 +1,1 @@
-{
-  "people": {
-    "name": "Rey",
-    "hair_color": "brown",
-    "skin_color": "light",
-    "eye_color": "hazel",
-    "gender": "female",
-    "homeworld": 28,
-    "films": [
-      7
-    ],
-    "species": 1,
-    "affiliation": "light",
-    "url": "http://swapi.co/api/people/85/",
-    "idSwapi": 85
-  }
-}
+{"people":{"name":"Rey","hair_color":"brown","skin_color":"light","eye_color":"hazel","gender":"female","homeworld":28,"films":[],"species":1,"affiliation":"light","url":"http://swapi.co/api/people/85/","idSwapi":85}}

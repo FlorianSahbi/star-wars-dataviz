@@ -1,8 +1,7 @@
 import React from 'react';
 
 const chart = [
-    { Alien: 0.7, Droid: 1, DarkSide: 0.9, Neutral: 0.67, LightSide: 0.8, Human: 0.9 },
-    { Alien: 1, Droid: 1, DarkSide: 1, Neutral: 1, LightSide: 1, Human: 1 }
+    { droids: 0.24, humans: 0, aliens: 0.09, light: 0.52, dark: 0.02, neutral: 0.9 }
 ];
 
 const chartSize = 350;
@@ -85,6 +84,12 @@ const caption = () => col => (
 );
 
 const RadarChart = props => {
+    const data = props.data;
+    setTimeout(() => {
+        if (data !== null) {
+            chart.push(data);
+        }
+    }, 2000);
     const groups = [];
     const scales = [];
     for (let i = numberOfScales; i > 0; i--) {
