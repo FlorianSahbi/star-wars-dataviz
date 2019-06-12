@@ -20,8 +20,8 @@ class Graph extends Component {
       selectedFilter: null,
       filterOrientation: [],
       filterSpecies: [],
-      filterMovie: ["I"],
-      activeData: data1,
+      filterMovie: ["VI"],
+      activeData: data7,
       radarData: null,
     }
   }
@@ -57,17 +57,15 @@ class Graph extends Component {
   };
 
   _handleClick = (node) => {
-    console.log(this.state.activeData)
     this.setState({ activeNode: node });
-    console.log(node);
     axios.get(`http://localhost:3200/api/radarData/${node.name}/episode/1`)
       .then(res => {
         console.log(res.data)
-        this.setState({radarData: res.data});
+        this.setState({ radarData: res.data });
       })
 
     // Aim at node from outside it
-    const distance = 40;
+    const distance = 100;
     const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
     this.fg.cameraPosition(
       { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, // new position
@@ -196,16 +194,16 @@ class Graph extends Component {
       return (
         <div className="cardInfo">
           <div className={"cardWrapper " + (this.state.activeNode.affiliation)}>
-          <div>
-                <img src={props.img} alt="blabla"/>
-                <p>Name : {props.name}</p>
-                <p>Affiliation : {props.affiliation}</p>
-                <p>Gender : {props.gender}</p>
-                <p>Species : {props.species}</p>
-                <p>Homeworld : {props.homeworld}</p>
-                <p>Mass : {props.mass}</p>
-                <p>Height : {props.height}</p>
-                <RadarChart data={this.state.radarData}/>
+            <div>
+              <img src={props.img} alt="blabla" />
+              <p>Name : {props.name}</p>
+              <p>Affiliation : {props.affiliation}</p>
+              <p>Gender : {props.gender}</p>
+              <p>Species : {props.species}</p>
+              <p>Homeworld : {props.homeworld}</p>
+              <p>Mass : {props.mass}</p>
+              <p>Height : {props.height}</p>
+              <RadarChart data={this.state.radarData} />
             </div>
           </div>
         </div>
@@ -230,21 +228,74 @@ class Graph extends Component {
           onNodeClick={this._handleClick}
           linkColor="colour"
           linkOpacity={0.5}
-          linkWidth={0.5}
+          linkWidth={0.1}
           linkResolution={12}
           onLinkHover={this._handleHoverLink}
           linkDirectionalParticles="value"
-          linkDirectionalParticleSpeed={d => d.value * 0.001}
-          nodeThreeObject={d => {
-            // d link active node
-            console.log(d)
-            console.log(this.state.activeNode)
+          linkDirectionalParticleSpeed={d => d.value * 0.01}
+          linkThreeObject={d=> {}}
 
-            const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
-            const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: 1 });
-            const sprite = new THREE.Sprite(material);
-            sprite.scale.set(10, 10, 5);
-            return sprite;
+
+
+          nodeThreeObject={d => {
+            
+            // si une node est active on cherche les enfants
+            // sinon on affiche tout 
+            if (this.state.activeNode !== null) {
+              let nodeToGenerate = d.id;
+              let links = this.state.activeData.links;
+              let selectedNodeId = this.state.activeNode.id;
+
+
+              const nodeIsLinked = links.some(({ source, target }) =>
+                (source.id === nodeToGenerate && target.id === selectedNodeId) ||
+                (source.id === selectedNodeId && target.id === nodeToGenerate) ||
+                nodeToGenerate === selectedNodeId
+              )
+
+              console.log({ nodeToGenerate, links, selectedNodeId, nodeIsLinked })
+
+              const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
+              const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: nodeIsLinked ? 1 : 0.2 });
+              const sprite = new THREE.Sprite(material);
+              sprite.scale.set(10, 10, 5);
+              return sprite;
+
+
+              // if (nodeToGenerate === selectedNodeId) {
+              //   let childs = [];
+              //   links.forEach(link => {
+              //     if (nodeToGenerate === link.source.id || nodeToGenerate === link.target.id) {
+              //       childs.push(link);
+              //       childs.forEach(c => {
+              //         if (c.target.id === nodeToGenerate || c.source.id === nodeToGenerate) {
+              //           console.log('6')
+
+              //           const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
+              //           const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: 1 });
+              //           const sprite = new THREE.Sprite(material);
+              //           sprite.scale.set(10, 10, 5);
+              //           return sprite;
+              //         }
+              //       })
+              //     }
+              //   })
+
+              // } else {
+              //   // linksData.forEach(l => console.log(l))
+              //   const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
+              //   const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: 1 });
+              //   const sprite = new THREE.Sprite(material);
+              //   sprite.scale.set(10, 10, 5);
+              //   return sprite;
+              // }
+            } else {
+              const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
+              const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: 1 });
+              const sprite = new THREE.Sprite(material);
+              sprite.scale.set(10, 10, 5);
+              return sprite;
+            }
           }}
         />;
       </section>
