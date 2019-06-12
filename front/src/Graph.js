@@ -12,31 +12,6 @@ import data5 from './json/ep5';
 import data6 from './json/ep6';
 import data7 from './json/ep7';
 
-function generateTexture(imgPath) {
- 
-
-  var canvas = document.createElement('canvas');
-  canvas.width = 100;
-  canvas.height = 100;
-
-  var context = canvas.getContext('2d');
-  context.fillStyle = 'red'
-  // context.fillRect(0, 0, 100, 100)
-
-
-  var thumbImg = document.createElement('img');
-  thumbImg.src = imgPath;
-  // thumbImg.onload = () => {
-    context.beginPath();
-    context.arc(50, 50, 50, 0, 2*Math.PI);
-    context.fill();
-    context.closePath();
-  // }
-  return canvas
-
-  // document.body.appendChild(canvas)
-}
-
 class Graph extends Component {
   constructor(props) {
     super(props);
