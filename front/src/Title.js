@@ -1,7 +1,6 @@
 import React, { Component } from "../node_modules/react";
 import { Power2, TimelineLite } from "gsap";
 
-import logo from "./pic/character-1.jpg";
 import "./Title.css";
 
 class Title extends Component {
@@ -45,9 +44,7 @@ class Title extends Component {
             A long time ago, in a galaxy far,<br /> far away....
           </p>
         </section>
-        <section className="logo" ref={this.logo}>
-          <img src={logo} alt="Code Wars logo" />
-        </section>
+
         <section className="crawl">
           <div className="content" ref={this.content}>
             <h1 className="title">Lorem Ipsum</h1>

@@ -3,7 +3,6 @@
 # dependencies
 back/node_modules
 front/node_modules
-front/src/pic
 data-manipulation/node_modules
 
 /.pnp
