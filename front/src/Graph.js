@@ -264,12 +264,11 @@ class Graph extends Component {
             // d link active node
             console.log(d)
             console.log(this.state.activeNode)
-            // const imgTexture = new THREE.Texture(generateTexture(img))
-            // imgTexture.needsUpdate = true;
+
             const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
             const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: 1 });
             const sprite = new THREE.Sprite(material);
-            sprite.scale.set(12, 12, 5);
+            sprite.scale.set(10, 10, 5);
             return sprite;
           }}
         />;
