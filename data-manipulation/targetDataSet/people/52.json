@@ -1,1 +1,1 @@
-{"people":{"name":"Ki-Adi-Mundi","height":"198","mass":"82","hair_color":"white","skin_color":"pale","eye_color":"yellow","birth_year":"92BBY","gender":"male","homeworld":43,"films":[],"species":20,"affiliation":"light","url":"http://swapi.co/api/people/52/","idSwapi":52}}
+{"people":{"name":"Ki-Adi-Mundi","height":"198","mass":"82","hair_color":"white","skin_color":"pale","eye_color":"yellow","birth_year":"92BBY","gender":"male","homeworld":43,"films":[5,4],"species":20,"affiliation":"light","url":"http://swapi.co/api/people/52/","idSwapi":52}}

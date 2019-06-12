@@ -57,6 +57,7 @@ class Graph extends Component {
   };
 
   _handleClick = (node) => {
+    
     this.setState({ activeNode: node });
     axios.get(`http://localhost:3200/api/radarData/${node.name}/episode/1`)
       .then(res => {
@@ -116,57 +117,19 @@ class Graph extends Component {
   };
 
   renderFilters = () => {
-    if (this.state.selectedFilter === null) {
-      return (
-        <nav className="filters">
-          <div className="filterList">
-            <button onClick={() => this.onFilterSelected('species')}>Species</button>
-            <button onClick={() => this.onFilterSelected('orientation')}>Orientation</button>
-            <button onClick={() => this.onFilterSelected('movie')}>Movie</button>
-          </div>
-        </nav>
-      )
-    }
-
-    if (this.state.selectedFilter === 'species') {
-      return (
-        <nav className="filters">
-          <div className="filterList">
-            <button onClick={() => this.onFilterSpeciesSelected('human')}>Human</button>
-            <button onClick={() => this.onFilterSpeciesSelected('alien')}>Alien</button>
-            <button onClick={() => this.onFilterSpeciesSelected('droid')}>Droid</button>
-          </div>
-        </nav>
-      )
-    }
-
-    if (this.state.selectedFilter === 'orientation') {
-      return (
-        <nav className="filters">
-          <div className="filterList">
-            <button onClick={() => this.onFilterOrientationSelected('dark')}>Dark</button>
-            <button onClick={() => this.onFilterOrientationSelected('light')}>Light</button>
-            <button onClick={() => this.onFilterOrientationSelected('neutral')}>Neutral</button>
-          </div>
-        </nav>
-      )
-    }
-
-    if (this.state.selectedFilter === 'movie') {
-      return (
-        <nav className="filters">
-          <div className="filterList">
-            <button onClick={() => this.onFilterMovieSelected('I', data1)}>I</button>
-            <button onClick={() => this.onFilterMovieSelected('II', data2)}>II</button>
-            <button onClick={() => this.onFilterMovieSelected('III', data3)}>III</button>
-            <button onClick={() => this.onFilterMovieSelected('IV', data4)}>IV</button>
-            <button onClick={() => this.onFilterMovieSelected('V', data5)}>V</button>
-            <button onClick={() => this.onFilterMovieSelected('VI', data6)}>VI</button>
-            <button onClick={() => this.onFilterMovieSelected('VII', data7)}>VII</button>
-          </div>
-        </nav>
-      )
-    }
+    return (
+      <nav className="filters">
+        <div className="filterList">
+          <button onClick={() => this.onFilterMovieSelected('I', data1)}>I</button>
+          <button onClick={() => this.onFilterMovieSelected('II', data2)}>II</button>
+          <button onClick={() => this.onFilterMovieSelected('III', data3)}>III</button>
+          <button onClick={() => this.onFilterMovieSelected('IV', data4)}>IV</button>
+          <button onClick={() => this.onFilterMovieSelected('V', data5)}>V</button>
+          <button onClick={() => this.onFilterMovieSelected('VI', data6)}>VI</button>
+          <button onClick={() => this.onFilterMovieSelected('VII', data7)}>VII</button>
+        </div>
+      </nav>
+    )
   };
 
   showSelectedFilter = () => {
@@ -233,12 +196,8 @@ class Graph extends Component {
           onLinkHover={this._handleHoverLink}
           linkDirectionalParticles="value"
           linkDirectionalParticleSpeed={d => d.value * 0.01}
-          linkThreeObject={d=> {}}
-
-
-
           nodeThreeObject={d => {
-            
+
             // si une node est active on cherche les enfants
             // sinon on affiche tout 
             if (this.state.activeNode !== null) {
