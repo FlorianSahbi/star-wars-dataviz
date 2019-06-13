@@ -151,7 +151,7 @@ const data1 = {
         {
             id: 2,
             name: "C-3PO",
-            img: character2,
+            img: "character2",
             affiliation: "light",
             gender: "undefined",
             species: "Droid",
@@ -162,7 +162,7 @@ const data1 = {
         {
             id: 3,
             name: "R2-D2",
-            img: character3,
+            img: "character3",
             affiliation: "light",
             gender: "undefined",
             species: "Droid",
@@ -173,7 +173,7 @@ const data1 = {
         {
             id: 10,
             name: "Obi-Wan Kenobi",
-            img: character10,
+            img: "character10",
             affiliation: "light",
             gender: "male",
             species: "Human",
@@ -184,7 +184,7 @@ const data1 = {
         {
             id: 11,
             name: "Anakin Skywalker",
-            img: character11,
+            img: "character11",
             affiliation: "light",
             gender: "male",
             species: "Human",
@@ -195,7 +195,7 @@ const data1 = {
         {
             id: 16,
             name: "Jabba Desilijic Tiure",
-            img: character16,
+            img: "character16",
             affiliation: "dark",
             gender: "hermaphrodite",
             species: "Hutt",
@@ -206,7 +206,7 @@ const data1 = {
         {
             id: 20,
             name: "Yoda",
-            img: character20,
+            img: "character20",
             affiliation: "light",
             gender: "male",
             species: "Yoda's species",
@@ -217,7 +217,7 @@ const data1 = {
         {
             id: 21,
             name: "Palpatine",
-            img: character21,
+            img: "character21",
             affiliation: "dark",
             gender: "male",
             species: "Human",
@@ -228,7 +228,7 @@ const data1 = {
         {
             id: 32,
             name: "Qui-Gon Jinn",
-            img: character32,
+            img: "character32",
             affiliation: "light",
             gender: "male",
             species: "Human",
@@ -239,7 +239,7 @@ const data1 = {
         {
             id: 33,
             name: "Nute Gunray",
-            img: character33,
+            img: "character33",
             affiliation: "dark",
             gender: "male",
             species: "Neimodian",
@@ -250,7 +250,7 @@ const data1 = {
         {
             id: 34,
             name: "Finis Valorum",
-            img: character34,
+            img: "character34",
             affiliation: "light",
             gender: "male",
             species: "Human",
@@ -261,7 +261,7 @@ const data1 = {
         {
             id: 36,
             name: "Jar Jar Binks",
-            img: character36,
+            img: "character36",
             affiliation: "light",
             gender: "male",
             species: "Gungan",
@@ -272,7 +272,7 @@ const data1 = {
         {
             id: 37,
             name: "Roos Tarpals",
-            img: character37,
+            img: "character37",
             affiliation: "light",
             gender: "male",
             species: "Gungan",
@@ -283,7 +283,7 @@ const data1 = {
         {
             id: 38,
             name: "Rugor Nass",
-            img: character38,
+            img: "character38",
             affiliation: "light",
             gender: "male",
             species: "Gungan",
@@ -294,7 +294,7 @@ const data1 = {
         {
             id: 39,
             name: "Ric Olié",
-            img: character39,
+            img: "character39",
             affiliation: "light",
             gender: "male",
             species: "Human",
@@ -305,7 +305,7 @@ const data1 = {
         {
             id: 40,
             name: "Watto",
-            img: character40,
+            img: "character40",
             affiliation: "neutral",
             gender: "male",
             species: "Toydarian",
@@ -316,7 +316,7 @@ const data1 = {
         {
             id: 41,
             name: "Sebulba",
-            img: character41,
+            img: "character41",
             affiliation: "neutral",
             gender: "male",
             species: "Dug",
@@ -327,7 +327,7 @@ const data1 = {
         {
             id: 42,
             name: "Quarsh Panaka",
-            img: character42,
+            img: "character42",
             affiliation: "light",
             gender: "male",
             species: "Human",
@@ -338,7 +338,7 @@ const data1 = {
         {
             id: 43,
             name: "Shmi Skywalker",
-            img: character43,
+            img: "character43",
             affiliation: "light",
             gender: "female",
             species: "Human",
@@ -349,7 +349,7 @@ const data1 = {
         {
             id: 44,
             name: "Darth Maul",
-            img: character44,
+            img: "character44",
             affiliation: "dark",
             gender: "male",
             species: "Zabrak",
@@ -360,7 +360,7 @@ const data1 = {
         {
             id: 46,
             name: "Ayla Secura",
-            img: character46,
+            img: "character46",
             affiliation: "light",
             gender: "female",
             species: "Twi'lek",
@@ -371,7 +371,7 @@ const data1 = {
         {
             id: 48,
             name: "Dud Bolt",
-            img: character48,
+            img: "character48",
             affiliation: "neutral",
             gender: "male",
             species: "Vulptereen",
@@ -382,7 +382,7 @@ const data1 = {
         {
             id: 49,
             name: "Gasgano",
-            img: character49,
+            img: "character49",
             affiliation: "neutral",
             gender: "male",
             species: "Xexto",
@@ -393,7 +393,7 @@ const data1 = {
         {
             id: 50,
             name: "Ben Quadinaros",
-            img: character50,
+            img: "character50",
             affiliation: "neutral",
             gender: "male",
             species: "Toong",
@@ -404,7 +404,7 @@ const data1 = {
         {
             id: 51,
             name: "Mace Windu",
-            img: character51,
+            img: "character51",
             affiliation: "light",
             gender: "male",
             species: "Human",
@@ -415,7 +415,7 @@ const data1 = {
         {
             id: 52,
             name: "Ki-Adi-Mundi",
-            img: character52,
+            img: "character52",
             affiliation: "light",
             gender: "male",
             species: "Cerean",
@@ -426,7 +426,7 @@ const data1 = {
         {
             id: 53,
             name: "Kit Fisto",
-            img: character53,
+            img: "character53",
             affiliation: "light",
             gender: "male",
             species: "Nautolan",
@@ -437,7 +437,7 @@ const data1 = {
         {
             id: 54,
             name: "Eeth Koth",
-            img: character54,
+            img: "character54",
             affiliation: "light",
             gender: "male",
             species: "Zabrak",
@@ -448,7 +448,7 @@ const data1 = {
         {
             id: 55,
             name: "Adi Gallia",
-            img: character55,
+            img: "character55",
             affiliation: "light",
             gender: "female",
             species: "Tholothian",
@@ -459,7 +459,7 @@ const data1 = {
         {
             id: 56,
             name: "Saesee Tiin",
-            img: character56,
+            img: "character56",
             affiliation: "light",
             gender: "male",
             species: "Iktotchi",
@@ -470,7 +470,7 @@ const data1 = {
         {
             id: 57,
             name: "Yarael Poof",
-            img: character57,
+            img: "character57",
             affiliation: "light",
             gender: "male",
             species: "Quermian",
@@ -481,7 +481,7 @@ const data1 = {
         {
             id: 58,
             name: "Plo Koon",
-            img: character58,
+            img: "character58",
             affiliation: "light",
             gender: "male",
             species: "Kel Dor",
@@ -492,7 +492,7 @@ const data1 = {
         {
             id: 59,
             name: "Mas Amedda",
-            img: character59,
+            img: "character59",
             affiliation: "dark",
             gender: "male",
             species: "Chagrian",
@@ -503,7 +503,7 @@ const data1 = {
         {
             id: 47,
             name: "Ratts Tyerell",
-            img: character47,
+            img: "character47",
             affiliation: "neutral",
             gender: "male",
             species: "Aleena",
@@ -514,7 +514,392 @@ const data1 = {
         {
             id: 35,
             name: "Padmé Amidala",
-            img: character35,
+            img: "character35",
+            affiliation: "light",
+            gender: "female",
+            species: "Human",
+            homeworld: "Naboo",
+            mass: "45",
+            height: "165"
+        },
+        {
+            id: 99914,
+            name: "Camie",
+            img: "character99914",
+            affiliation: "neutral",
+            gender: "female",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 2,
+            name: "C-3PO",
+            img: "character2",
+            affiliation: "light",
+            gender: "undefined",
+            species: "Droid",
+            homeworld: "Tatooine",
+            mass: "75",
+            height: "167"
+        },
+        {
+            id: 3,
+            name: "R2-D2",
+            img: "character3",
+            affiliation: "light",
+            gender: "undefined",
+            species: "Droid",
+            homeworld: "Naboo",
+            mass: "32",
+            height: "96"
+        },
+        {
+            id: 10,
+            name: "Obi-Wan Kenobi",
+            img: "character10",
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Stewjon",
+            mass: "77",
+            height: "182"
+        },
+        {
+            id: 11,
+            name: "Anakin Skywalker",
+            img: "character11",
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "84",
+            height: "188"
+        },
+        {
+            id: 16,
+            name: "Jabba Desilijic Tiure",
+            img: "character16",
+            affiliation: "dark",
+            gender: "hermaphrodite",
+            species: "Hutt",
+            homeworld: "Nal Hutta",
+            mass: "1,358",
+            height: "175"
+        },
+        {
+            id: 20,
+            name: "Yoda",
+            img: "character20",
+            affiliation: "light",
+            gender: "male",
+            species: "Yoda's species",
+            homeworld: "undefined",
+            mass: "17",
+            height: "66"
+        },
+        {
+            id: 21,
+            name: "Palpatine",
+            img: "character21",
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Naboo",
+            mass: "75",
+            height: "170"
+        },
+        {
+            id: 32,
+            name: "Qui-Gon Jinn",
+            img: "character32",
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "undefined",
+            mass: "89",
+            height: "193"
+        },
+        {
+            id: 33,
+            name: "Nute Gunray",
+            img: "character33",
+            affiliation: "dark",
+            gender: "male",
+            species: "Neimodian",
+            homeworld: "Cato Neimoidia",
+            mass: "90",
+            height: "191"
+        },
+        {
+            id: 34,
+            name: "Finis Valorum",
+            img: "character34",
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Coruscant",
+            mass: "undefined",
+            height: "170"
+        },
+        {
+            id: 36,
+            name: "Jar Jar Binks",
+            img: "character36",
+            affiliation: "light",
+            gender: "male",
+            species: "Gungan",
+            homeworld: "Naboo",
+            mass: "66",
+            height: "196"
+        },
+        {
+            id: 37,
+            name: "Roos Tarpals",
+            img: "character37",
+            affiliation: "light",
+            gender: "male",
+            species: "Gungan",
+            homeworld: "Naboo",
+            mass: "82",
+            height: "224"
+        },
+        {
+            id: 38,
+            name: "Rugor Nass",
+            img: "character38",
+            affiliation: "light",
+            gender: "male",
+            species: "Gungan",
+            homeworld: "Naboo",
+            mass: "undefined",
+            height: "206"
+        },
+        {
+            id: 39,
+            name: "Ric Olié",
+            img: "character39",
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Naboo",
+            mass: "undefined",
+            height: "183"
+        },
+        {
+            id: 40,
+            name: "Watto",
+            img: "character40",
+            affiliation: "neutral",
+            gender: "male",
+            species: "Toydarian",
+            homeworld: "Toydaria",
+            mass: "undefined",
+            height: "137"
+        },
+        {
+            id: 41,
+            name: "Sebulba",
+            img: "character41",
+            affiliation: "neutral",
+            gender: "male",
+            species: "Dug",
+            homeworld: "Malastare",
+            mass: "40",
+            height: "112"
+        },
+        {
+            id: 42,
+            name: "Quarsh Panaka",
+            img: "character42",
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Naboo",
+            mass: "undefined",
+            height: "183"
+        },
+        {
+            id: 43,
+            name: "Shmi Skywalker",
+            img: "character43",
+            affiliation: "light",
+            gender: "female",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "undefined",
+            height: "163"
+        },
+        {
+            id: 44,
+            name: "Darth Maul",
+            img: "character44",
+            affiliation: "dark",
+            gender: "male",
+            species: "Zabrak",
+            homeworld: "Dathomir",
+            mass: "80",
+            height: "175"
+        },
+        {
+            id: 46,
+            name: "Ayla Secura",
+            img: "character46",
+            affiliation: "light",
+            gender: "female",
+            species: "Twi'lek",
+            homeworld: "Ryloth",
+            mass: "55",
+            height: "178"
+        },
+        {
+            id: 48,
+            name: "Dud Bolt",
+            img: "character48",
+            affiliation: "neutral",
+            gender: "male",
+            species: "Vulptereen",
+            homeworld: "Vulpter",
+            mass: "45",
+            height: "94"
+        },
+        {
+            id: 49,
+            name: "Gasgano",
+            img: "character49",
+            affiliation: "neutral",
+            gender: "male",
+            species: "Xexto",
+            homeworld: "Troiken",
+            mass: "undefined",
+            height: "122"
+        },
+        {
+            id: 50,
+            name: "Ben Quadinaros",
+            img: "character50",
+            affiliation: "neutral",
+            gender: "male",
+            species: "Toong",
+            homeworld: "Tund",
+            mass: "65",
+            height: "163"
+        },
+        {
+            id: 51,
+            name: "Mace Windu",
+            img: "character51",
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Haruun Kal",
+            mass: "84",
+            height: "188"
+        },
+        {
+            id: 52,
+            name: "Ki-Adi-Mundi",
+            img: "character52",
+            affiliation: "light",
+            gender: "male",
+            species: "Cerean",
+            homeworld: "Cerea",
+            mass: "82",
+            height: "198"
+        },
+        {
+            id: 53,
+            name: "Kit Fisto",
+            img: "character53",
+            affiliation: "light",
+            gender: "male",
+            species: "Nautolan",
+            homeworld: "Glee Anselm",
+            mass: "87",
+            height: "196"
+        },
+        {
+            id: 54,
+            name: "Eeth Koth",
+            img: "character54",
+            affiliation: "light",
+            gender: "male",
+            species: "Zabrak",
+            homeworld: "Iridonia",
+            mass: "undefined",
+            height: "171"
+        },
+        {
+            id: 55,
+            name: "Adi Gallia",
+            img: "character55",
+            affiliation: "light",
+            gender: "female",
+            species: "Tholothian",
+            homeworld: "Coruscant",
+            mass: "50",
+            height: "184"
+        },
+        {
+            id: 56,
+            name: "Saesee Tiin",
+            img: "character56",
+            affiliation: "light",
+            gender: "male",
+            species: "Iktotchi",
+            homeworld: "Iktotch",
+            mass: "undefined",
+            height: "188"
+        },
+        {
+            id: 57,
+            name: "Yarael Poof",
+            img: "character57",
+            affiliation: "light",
+            gender: "male",
+            species: "Quermian",
+            homeworld: "Quermia",
+            mass: "undefined",
+            height: "264"
+        },
+        {
+            id: 58,
+            name: "Plo Koon",
+            img: "character58",
+            affiliation: "light",
+            gender: "male",
+            species: "Kel Dor",
+            homeworld: "Dorin",
+            mass: "80",
+            height: "188"
+        },
+        {
+            id: 59,
+            name: "Mas Amedda",
+            img: "character59",
+            affiliation: "dark",
+            gender: "male",
+            species: "Chagrian",
+            homeworld: "Champala",
+            mass: "undefined",
+            height: "196"
+        },
+        {
+            id: 47,
+            name: "Ratts Tyerell",
+            img: "character47",
+            affiliation: "neutral",
+            gender: "male",
+            species: "Aleena",
+            homeworld: "Aleen Minor",
+            mass: "15",
+            height: "79"
+        },
+        {
+            id: 35,
+            name: "Padmé Amidala",
+            img: "character35",
             affiliation: "light",
             gender: "female",
             species: "Human",
@@ -525,7 +910,7 @@ const data1 = {
         {
             id: 99925,
             name: "Dofine",
-            img: character99925,
+            img: "character99925",
             affiliation: "dark",
             gender: "male",
             species: "Neimodian",
@@ -536,7 +921,7 @@ const data1 = {
         {
             id: 99926,
             name: "Rune",
-            img: character99926,
+            img: "character99926",
             affiliation: "dark",
             gender: "male",
             species: "Neimodian",
@@ -545,9 +930,20 @@ const data1 = {
             height: "null"
         },
         {
+            id: 99927,
+            name: "Tey how",
+            img: "character99927",
+            affiliation: "dark",
+            gender: "female",
+            species: "Neimodian",
+            homeworld: "Cato Neimoidia",
+            mass: "null",
+            height: "null"
+        },
+        {
             id: 99928,
             name: "Sio bibble",
-            img: character99928,
+            img: "character99928",
             affiliation: "light",
             gender: "male",
             species: "Human",
@@ -558,7 +954,7 @@ const data1 = {
         {
             id: 99929,
             name: "Jira",
-            img: character99929,
+            img: "character99929",
             affiliation: "light",
             gender: "female",
             species: "Human",
@@ -569,7 +965,7 @@ const data1 = {
         {
             id: 99931,
             name: "Wald",
-            img: character99931,
+            img: "character99931",
             affiliation: "light",
             gender: "male",
             species: "Rodian",
@@ -578,11 +974,11 @@ const data1 = {
             height: "null"
         },
         {
-            id: 99933,
-            name: "Rabe",
-            img: character99933,
+            id: 99935,
+            name: "Bravo two",
+            img: "character99935",
             affiliation: "light",
-            gender: "female",
+            gender: "male",
             species: "Human",
             homeworld: "Naboo",
             mass: "null",
@@ -591,7 +987,7 @@ const data1 = {
         {
             id: 99930,
             name: "Kitster",
-            img: character99930,
+            img: "character99930",
             affiliation: "light",
             gender: "male",
             species: "Human",
@@ -602,7 +998,7 @@ const data1 = {
         {
             id: 99934,
             name: "General ceel",
-            img: character99934,
+            img: "character99934",
             affiliation: "light",
             gender: "male",
             species: "Gungan",
@@ -611,20 +1007,9 @@ const data1 = {
             height: "null"
         },
         {
-            id: 99935,
-            name: "Bravo two",
-            img: character99935,
-            affiliation: "light",
-            gender: "male",
-            species: "Human",
-            homeworld: "Naboo",
-            mass: "null",
-            height: "null"
-        },
-        {
             id: 99936,
             name: "Bravo three",
-            img: character99936,
+            img: "character99936",
             affiliation: "light",
             gender: "female",
             species: "Human",
@@ -633,13 +1018,25 @@ const data1 = {
             height: "null"
         },
         {
-            id: 99927,
-            name: "Tey how",
-            img: character99927,
-            affiliation: "dark",
+            id: 99933,
+            name: "Rabe",
+            img: "character99933",
+            affiliation: "light",
             gender: "female",
-            species: "Neimodian",
-            homeworld: "Cato Neimoidia",
+            species: "Human",
+            homeworld: "Naboo",
+            mass: "null",
+            height: "null"
+        }
+        ,
+        {
+            id: 99923,
+            name: "Rabe",
+            img: "character99933",
+            affiliation: "light",
+            gender: "female",
+            species: "Human",
+            homeworld: "Naboo",
             mass: "null",
             height: "null"
         }
