@@ -29,6 +29,11 @@ body {
 }
 
 @font-face {
-  font-family: 'space-grotesk';
+  font-family: 'space-grotesk-bold';
   src: url(./fonts/space-grotesk/SpaceGrotesk-Bold.woff2) format('truetype');
+}
+
+@font-face {
+  font-family: 'space-grotesk-medium';
+  src: url(./fonts/space-grotesk/SpaceGrotesk-Medium.woff2) format('truetype');
 }
