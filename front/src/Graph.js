@@ -15,7 +15,6 @@ import data7 from './json/ep7';
 function generateTexture(imgPath) {
  
 
-
   var canvas = document.createElement('canvas');
   canvas.width = 100;
   canvas.height = 100;
@@ -38,10 +37,11 @@ function generateTexture(imgPath) {
   // document.body.appendChild(canvas)
 }
 
+
 class Graph extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    this.state = { 
       activeNode: null,
       selectedFilter: null,
       filterOrientation: [],
@@ -90,10 +90,7 @@ class Graph extends Component {
       .then(res => {
         console.log(res.data)
         this.setState({radarData: res.data});
-        
-        
       })
-      
 
     // Aim at node from outside it
     const distance = 40;
@@ -261,16 +258,12 @@ class Graph extends Component {
           linkOpacity={0.5}
           linkWidth={0.5}
           linkResolution={12}
-          
           onLinkHover={this._handleHoverLink}
           linkDirectionalParticles="value"
           linkDirectionalParticleSpeed={d => d.value * 0.001}
           nodeThreeObject={d => {
             // d link active node
             console.log(d)
-            console.log();
-            
-            
             console.log(this.state.activeNode)
             // const imgTexture = new THREE.Texture(generateTexture(img))
             // imgTexture.needsUpdate = true;
@@ -280,10 +273,6 @@ class Graph extends Component {
             sprite.scale.set(12, 12, 5);
             return sprite;
           }}
-          onLinkHover = {
-            this._handleHoverLink
-          }
-           
         />;
       </section>
     )
