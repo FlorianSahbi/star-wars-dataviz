@@ -19,10 +19,11 @@ function generateTexture(imgPath) {
   canvas.width = 100;
   canvas.height = 100;
 
+  var texture = new THREE.TextureLoader().load( './pic/character-1.png' );
+
   var context = canvas.getContext('2d');
   context.fillStyle = 'red'
   // context.fillRect(0, 0, 100, 100)
-
 
   var thumbImg = document.createElement('img');
   thumbImg.src = imgPath;
@@ -50,8 +51,6 @@ class Graph extends Component {
       radarData: null,
     }
   }
-
-
 
   toRoman = number => {
     // console.log(number);
@@ -206,32 +205,45 @@ class Graph extends Component {
     )
   };
 
-  headerCard = () => {
-    return (
-      <div>
-        <img src="" alt="" />
-        <h1>Unkarplutt</h1>
-        <h3>Unkarplutt</h3>
-      </div>
-    )
-  };
-
   renderCard = (props) => {
     if (props)
       return (
         <div className="cardInfo">
           <div className={"cardWrapper " + (this.state.activeNode.affiliation)}>
-          <div>
-                <img src={props.img} alt="blabla"/>
-                <p>Name : {props.name}</p>
-                <p>Affiliation : {props.affiliation}</p>
-                <p>Gender : {props.gender}</p>
-                <p>Species : {props.species}</p>
-                <p>Homeworld : {props.homeworld}</p>
-                <p>Mass : {props.mass}</p>
-                <p>Height : {props.height}</p>
-                <RadarChart data={this.state.radarData}/>
+            <div className="cardHeader">
+              <img className={"characterPicture characterPicture-" + (this.state.activeNode.affiliation)} src={props.img} alt="Character picture"/>
+              <div className="characterName">
+                <p className="nameDefault">{props.name}</p>
+                <p className={"aurebesh nameAurebesh-" + (this.state.activeNode.affiliation)}>{props.name}</p>
+              </div>
             </div>
+            <div className="characterData">
+              <div className="characterInfoWrapper">
+                <div className="characterInfoContainer">
+                  <p>Affiliation</p>
+                  <p>{props.affiliation}</p>
+                </div>
+                <div className="characterInfoContainer">
+                  <p>Species</p>
+                  <p>{props.species}</p>
+                </div>
+                <div className="characterInfoContainer">
+                  <p>Gender</p>
+                  <p>{props.gender}</p>
+                </div>
+                <div className="characterInfoContainer">
+                  <p>Homeworld</p>
+                  <p>{props.homeworld}</p>
+                </div>
+              </div>
+              <div>
+                <p>{props.height}</p>
+                <p>{props.mass}</p>
+              </div>
+            </div>
+            {/* <p>Mass : {props.mass}</p>
+            <p>Height : {props.height}</p> */}
+            <div className="radar"></div>
           </div>
         </div>
       )
