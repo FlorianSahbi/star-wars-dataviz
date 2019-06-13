@@ -22,7 +22,7 @@ class Graph extends Component {
       filterOrientation: [],
       filterSpecies: [],
       filterMovie: ["VI"],
-      activeData: data7,
+      activeData: data2,
       radarData: null,
     }
   }
@@ -205,7 +205,9 @@ class Graph extends Component {
                 <p>{props.mass}kg</p>
               </div>
             </div>
-            <div className="radar"></div>
+            <div className="radar">
+              <RadarChart />
+            </div>
           </div>
         </div>
       )
@@ -232,8 +234,8 @@ class Graph extends Component {
           linkWidth={0.1}
           linkResolution={12}
           onLinkHover={this._handleHoverLink}
-          linkDirectionalParticles="value"
-          linkDirectionalParticleSpeed={d => d.value * 0.01}
+          linkDirectionalParticles={2}
+          linkDirectionalParticleSpeed={d => d.value * 0.1}
           nodeThreeObject={d => {
 
             // si une node est active on cherche les enfants

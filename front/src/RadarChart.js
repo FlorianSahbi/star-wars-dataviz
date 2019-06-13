@@ -138,7 +138,3 @@ export default class RadarChart extends Component {
         )
     }
 }
-
-
-
-// export default RadarChart;

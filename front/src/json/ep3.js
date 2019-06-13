@@ -149,224 +149,477 @@ import character99958 from '../pic/character-99958.png';
 const data3 = {
     nodes: [
         {
-            img: character1,
-            id: 1,
-            name: "Luke Skywalker"
-        },
-        {
-            img: character2,
-            id: 2,
-            name: "C-3PO"
-        },
-        {
-            img: character3,
-            id: 3,
-            name: "R2-D2"
-        },
-        {
-            img: character4,
-            id: 4,
-            name: "Darth Vader"
-        },
-        {
-            img: character5,
-            id: 5,
-            name: "Leia Organa"
-        },
-        {
-            img: character6,
-            id: 6,
-            name: "Owen Lars"
-        },
-        {
-            img: character7,
-            id: 7,
-            name: "Beru Whitesun lars"
-        },
-        {
-            img: character10,
-            id: 10,
-            name: "Obi-Wan Kenobi"
-        },
-        {
-            img: character11,
-            id: 11,
-            name: "Anakin Skywalker"
-        },
-        {
-            img: character12,
-            id: 12,
-            name: "Wilhuff Tarkin"
-        },
-        {
-            img: character13,
-            id: 13,
-            name: "Chewbacca"
-        },
-        {
-            img: character20,
-            id: 20,
-            name: "Yoda"
-        },
-        {
-            img: character21,
-            id: 21,
-            name: "Palpatine"
-        },
-        {
-            img: character33,
-            id: 33,
-            name: "Nute Gunray"
-        },
-        {
-            img: character46,
-            id: 46,
-            name: "Ayla Secura"
-        },
-        {
-            img: character51,
-            id: 51,
-            name: "Mace Windu"
-        },
-        {
-            img: character52,
-            id: 52,
-            name: "Ki-Adi-Mundi"
-        },
-        {
-            img: character53,
-            id: 53,
-            name: "Kit Fisto"
-        },
-        {
-            img: character54,
-            id: 54,
-            name: "Eeth Koth"
-        },
-        {
-            img: character55,
-            id: 55,
-            name: "Adi Gallia"
-        },
-        {
-            img: character56,
-            id: 56,
-            name: "Saesee Tiin"
-        },
-        {
-            img: character58,
-            id: 58,
-            name: "Plo Koon"
-        },
-        {
-            img: character63,
-            id: 63,
-            name: "Poggle the Lesser"
-        },
-        {
-            img: character64,
-            id: 64,
-            name: "Luminara Unduli"
-        },
-        {
-            img: character67,
-            id: 67,
-            name: "Dooku"
-        },
-        {
-            img: character68,
-            id: 68,
-            name: "Bail Prestor Organa"
-        },
-        {
-            img: character75,
-            id: 75,
-            name: "R4-P17"
-        },
-        {
-            img: character78,
-            id: 78,
-            name: "Shaak Ti"
-        },
-        {
-            img: character79,
-            id: 79,
-            name: "Grievous"
-        },
-        {
-            img: character80,
-            id: 80,
-            name: "Tarfful"
-        },
-        {
-            img: character81,
-            id: 81,
-            name: "Raymus Antilles"
-        },
-        {
-            img: character82,
-            id: 82,
-            name: "Sly Moore"
-        },
-        {
-            img: character83,
-            id: 83,
-            name: "Tion Medon"
-        },
-        {
-            img: character35,
-            id: 35,
-            name: "Padmé Amidala"
-        },
-        {
-            img: character9990,
             id: 9990,
-            name: "Odd ball"
+            name: "Odd ball",
+            img: character9990,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "null",
+            height: "null"
         },
         {
-            img: character9991,
-            id: 9991,
-            name: "Fang zar"
-        },
-        {
-            img: character9992,
-            id: 9992,
-            name: "Giddean danu"
-        },
-        {
-            img: character9993,
             id: 9993,
-            name: "Clone commander gree"
+            name: "Clone commander gree",
+            img: character9993,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "null",
+            height: "null"
         },
         {
-            img: character9994,
             id: 9994,
-            name: "Clone commander cody"
+            name: "Clone commander cody",
+            img: character9994,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "null",
+            height: "null"
         },
         {
-            img: character9995,
             id: 9995,
-            name: "Captain antilles"
+            name: "Captain antilles",
+            img: character9995,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "null",
+            height: "null"
         },
         {
-            img: character28,
+            id: 1,
+            name: "Luke Skywalker",
+            img: character1,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "77",
+            height: "172"
+        },
+        {
+            id: 2,
+            name: "C-3PO",
+            img: character2,
+            affiliation: "light",
+            gender: "undefined",
+            species: "Droid",
+            homeworld: "Tatooine",
+            mass: "75",
+            height: "167"
+        },
+        {
+            id: 3,
+            name: "R2-D2",
+            img: character3,
+            affiliation: "light",
+            gender: "undefined",
+            species: "Droid",
+            homeworld: "Naboo",
+            mass: "32",
+            height: "96"
+        },
+        {
+            id: 4,
+            name: "Darth Vader",
+            img: character4,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "136",
+            height: "202"
+        },
+        {
+            id: 5,
+            name: "Leia Organa",
+            img: character5,
+            affiliation: "light",
+            gender: "female",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "49",
+            height: "150"
+        },
+        {
+            id: 6,
+            name: "Owen Lars",
+            img: character6,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "120",
+            height: "178"
+        },
+        {
+            id: 7,
+            name: "Beru Whitesun lars",
+            img: character7,
+            affiliation: "light",
+            gender: "female",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "75",
+            height: "165"
+        },
+        {
+            id: 10,
+            name: "Obi-Wan Kenobi",
+            img: character10,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Stewjon",
+            mass: "77",
+            height: "182"
+        },
+        {
+            id: 11,
+            name: "Anakin Skywalker",
+            img: character11,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "84",
+            height: "188"
+        },
+        {
+            id: 12,
+            name: "Wilhuff Tarkin",
+            img: character12,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Eriadu",
+            mass: "undefined",
+            height: "180"
+        },
+        {
+            id: 13,
+            name: "Chewbacca",
+            img: character13,
+            affiliation: "light",
+            gender: "male",
+            species: "Wookiee",
+            homeworld: "Kashyyyk",
+            mass: "112",
+            height: "228"
+        },
+        {
+            id: 20,
+            name: "Yoda",
+            img: character20,
+            affiliation: "light",
+            gender: "male",
+            species: "Yoda's species",
+            homeworld: "undefined",
+            mass: "17",
+            height: "66"
+        },
+        {
+            id: 21,
+            name: "Palpatine",
+            img: character21,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Naboo",
+            mass: "75",
+            height: "170"
+        },
+        {
+            id: 33,
+            name: "Nute Gunray",
+            img: character33,
+            affiliation: "dark",
+            gender: "male",
+            species: "Neimodian",
+            homeworld: "Cato Neimoidia",
+            mass: "90",
+            height: "191"
+        },
+        {
+            id: 46,
+            name: "Ayla Secura",
+            img: character46,
+            affiliation: "light",
+            gender: "female",
+            species: "Twi'lek",
+            homeworld: "Ryloth",
+            mass: "55",
+            height: "178"
+        },
+        {
+            id: 51,
+            name: "Mace Windu",
+            img: character51,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Haruun Kal",
+            mass: "84",
+            height: "188"
+        },
+        {
+            id: 52,
+            name: "Ki-Adi-Mundi",
+            img: character52,
+            affiliation: "light",
+            gender: "male",
+            species: "Cerean",
+            homeworld: "Cerea",
+            mass: "82",
+            height: "198"
+        },
+        {
+            id: 53,
+            name: "Kit Fisto",
+            img: character53,
+            affiliation: "light",
+            gender: "male",
+            species: "Nautolan",
+            homeworld: "Glee Anselm",
+            mass: "87",
+            height: "196"
+        },
+        {
+            id: 54,
+            name: "Eeth Koth",
+            img: character54,
+            affiliation: "light",
+            gender: "male",
+            species: "Zabrak",
+            homeworld: "Iridonia",
+            mass: "undefined",
+            height: "171"
+        },
+        {
+            id: 55,
+            name: "Adi Gallia",
+            img: character55,
+            affiliation: "light",
+            gender: "female",
+            species: "Tholothian",
+            homeworld: "Coruscant",
+            mass: "50",
+            height: "184"
+        },
+        {
+            id: 56,
+            name: "Saesee Tiin",
+            img: character56,
+            affiliation: "light",
+            gender: "male",
+            species: "Iktotchi",
+            homeworld: "Iktotch",
+            mass: "undefined",
+            height: "188"
+        },
+        {
+            id: 58,
+            name: "Plo Koon",
+            img: character58,
+            affiliation: "light",
+            gender: "male",
+            species: "Kel Dor",
+            homeworld: "Dorin",
+            mass: "80",
+            height: "188"
+        },
+        {
+            id: 63,
+            name: "Poggle the Lesser",
+            img: character63,
+            affiliation: "dark",
+            gender: "male",
+            species: "Geonosian",
+            homeworld: "Geonosis",
+            mass: "80",
+            height: "183"
+        },
+        {
+            id: 64,
+            name: "Luminara Unduli",
+            img: character64,
+            affiliation: "light",
+            gender: "female",
+            species: "Mirialan",
+            homeworld: "Mirial",
+            mass: "56.2",
+            height: "170"
+        },
+        {
+            id: 67,
+            name: "Dooku",
+            img: character67,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Serenno",
+            mass: "80",
+            height: "193"
+        },
+        {
+            id: 68,
+            name: "Bail Prestor Organa",
+            img: character68,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "undefined",
+            height: "191"
+        },
+        {
+            id: 78,
+            name: "Shaak Ti",
+            img: character78,
+            affiliation: "light",
+            gender: "female",
+            species: "Togruta",
+            homeworld: "Shili",
+            mass: "57",
+            height: "178"
+        },
+        {
+            id: 79,
+            name: "Grievous",
+            img: character79,
+            affiliation: "dark",
+            gender: "male",
+            species: "Kaleesh",
+            homeworld: "Kalee",
+            mass: "159",
+            height: "216"
+        },
+        {
+            id: 80,
+            name: "Tarfful",
+            img: character80,
+            affiliation: "light",
+            gender: "male",
+            species: "Wookiee",
+            homeworld: "Kashyyyk",
+            mass: "136",
+            height: "234"
+        },
+        {
+            id: 81,
+            name: "Raymus Antilles",
+            img: character81,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "79",
+            height: "188"
+        },
+        {
+            id: 83,
+            name: "Tion Medon",
+            img: character83,
+            affiliation: "dark",
+            gender: "male",
+            species: "Pau'an",
+            homeworld: "Utapau",
+            mass: "80",
+            height: "206"
+        },
+        {
+            id: 35,
+            name: "Padmé Amidala",
+            img: character35,
+            affiliation: "light",
+            gender: "female",
+            species: "Human",
+            homeworld: "Naboo",
+            mass: "45",
+            height: "165"
+        },
+        {
+            id: 9993,
+            name: "Clone commander gree",
+            img: character9993,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 9991,
+            name: "Clone commander gree",
+            img: character9993,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "null",
+            height: "null"
+        },
+        {
             id: 28,
-            name: "Captain antilles"
+            name: "Clone commander gree",
+            img: character9993,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "null",
+            height: "null"
         },
         {
-            img: character60,
+            id: 9992,
+            name: "Clone commander gree",
+            img: character9993,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "null",
+            height: "null"
+        },
+        {
             id: 60,
-            name: "Captain antilles"
+            name: "Clone commander gree",
+            img: character9993,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "null",
+            height: "null"
         },
         {
-            img: character36,
             id: 36,
-            name: "Captain antilles"
+            name: "Clone commander gree",
+            img: character9993,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "null",
+            height: "null"
         },
         {
-            img: character32,
             id: 32,
-            name: "Captain antilles"
+            name: "Clone commander gree",
+            img: character9993,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "null",
+            height: "null"
         }
     ],
     links: [

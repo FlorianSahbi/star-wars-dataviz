@@ -149,124 +149,268 @@ import character99958 from '../pic/character-99958.png';
 const data6 = {
     nodes: [
         {
-            img: character1,
             id: 1,
-            name: "Luke Skywalker"
+            name: "Luke Skywalker",
+            img: character1,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "77",
+            height: "172"
         },
         {
-            img: character2,
             id: 2,
-            name: "C-3PO"
+            name: "C-3PO",
+            img: character2,
+            affiliation: "light",
+            gender: "undefined",
+            species: "Droid",
+            homeworld: "Tatooine",
+            mass: "75",
+            height: "167"
         },
         {
-            img: character3,
             id: 3,
-            name: "R2-D2"
+            name: "R2-D2",
+            img: character3,
+            affiliation: "light",
+            gender: "undefined",
+            species: "Droid",
+            homeworld: "Naboo",
+            mass: "32",
+            height: "96"
         },
         {
-            img: character4,
             id: 4,
-            name: "Darth Vader"
+            name: "Darth Vader",
+            img: character4,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "136",
+            height: "202"
         },
         {
-            img: character5,
             id: 5,
-            name: "Leia Organa"
+            name: "Leia Organa",
+            img: character5,
+            affiliation: "light",
+            gender: "female",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "49",
+            height: "150"
         },
         {
-            img: character10,
             id: 10,
-            name: "Obi-Wan Kenobi"
+            name: "Obi-Wan Kenobi",
+            img: character10,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Stewjon",
+            mass: "77",
+            height: "182"
         },
         {
-            img: character13,
             id: 13,
-            name: "Chewbacca"
+            name: "Chewbacca",
+            img: character13,
+            affiliation: "light",
+            gender: "male",
+            species: "Wookiee",
+            homeworld: "Kashyyyk",
+            mass: "112",
+            height: "228"
         },
         {
-            img: character14,
             id: 14,
-            name: "Han Solo"
+            name: "Han Solo",
+            img: character14,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Corellia",
+            mass: "80",
+            height: "180"
         },
         {
-            img: character16,
             id: 16,
-            name: "Jabba Desilijic Tiure"
+            name: "Jabba Desilijic Tiure",
+            img: character16,
+            affiliation: "dark",
+            gender: "hermaphrodite",
+            species: "Hutt",
+            homeworld: "Nal Hutta",
+            mass: "1,358",
+            height: "175"
         },
         {
-            img: character18,
             id: 18,
-            name: "Wedge Antilles"
+            name: "Wedge Antilles",
+            img: character18,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Corellia",
+            mass: "77",
+            height: "170"
         },
         {
-            img: character20,
             id: 20,
-            name: "Yoda"
+            name: "Yoda",
+            img: character20,
+            affiliation: "light",
+            gender: "male",
+            species: "Yoda's species",
+            homeworld: "undefined",
+            mass: "17",
+            height: "66"
         },
         {
-            img: character21,
             id: 21,
-            name: "Palpatine"
+            name: "Palpatine",
+            img: character21,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Naboo",
+            mass: "75",
+            height: "170"
         },
         {
-            img: character22,
             id: 22,
-            name: "Boba Fett"
+            name: "Boba Fett",
+            img: character22,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "78.2",
+            height: "183"
         },
         {
-            img: character25,
             id: 25,
-            name: "Lando Calrissian"
+            name: "Lando Calrissian",
+            img: character25,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Socorro",
+            mass: "79",
+            height: "177"
         },
         {
-            img: character27,
             id: 27,
-            name: "Ackbar"
+            name: "Ackbar",
+            img: character27,
+            affiliation: "light",
+            gender: "male",
+            species: "Mon Calamari",
+            homeworld: "Mon Cala",
+            mass: "83",
+            height: "180"
         },
         {
-            img: character28,
             id: 28,
-            name: "Mon Mothma"
+            name: "Mon Mothma",
+            img: character28,
+            affiliation: "light",
+            gender: "female",
+            species: "Human",
+            homeworld: "Chandrila",
+            mass: "undefined",
+            height: "150"
         },
         {
-            img: character29,
             id: 29,
-            name: "Arvel Crynyd"
+            name: "Arvel Crynyd",
+            img: character29,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "undefined",
+            mass: "undefined",
+            height: "undefined"
         },
         {
-            img: character30,
             id: 30,
-            name: "Wicket Systri Warrick"
+            name: "Wicket Systri Warrick",
+            img: character30,
+            affiliation: "light",
+            gender: "male",
+            species: "Ewok",
+            homeworld: "Endor",
+            mass: "20",
+            height: "88"
         },
         {
-            img: character31,
             id: 31,
-            name: "Nien Nunb"
+            name: "Nien Nunb",
+            img: character31,
+            affiliation: "light",
+            gender: "male",
+            species: "Sullustan",
+            homeworld: "Sullust",
+            mass: "68",
+            height: "160"
         },
         {
-            img: character45,
             id: 45,
-            name: "Bib Fortuna"
+            name: "Bib Fortuna",
+            img: character45,
+            affiliation: "dark",
+            gender: "male",
+            species: "Twi'lek",
+            homeworld: "Ryloth",
+            mass: "undefined",
+            height: "180"
         },
         {
-            img: character99921,
             id: 99921,
-            name: "Jerjerrod"
+            name: "Bib Fortuna",
+            img: character45,
+            affiliation: "dark",
+            gender: "male",
+            species: "Twi'lek",
+            homeworld: "Ryloth",
+            mass: "undefined",
+            height: "180"
         },
         {
-            img: character99922,
             id: 99922,
-            name: "Boushh"
+            name: "Bib Fortuna",
+            img: character45,
+            affiliation: "dark",
+            gender: "male",
+            species: "Twi'lek",
+            homeworld: "Ryloth",
+            mass: "undefined",
+            height: "180"
         },
         {
-            img: character9999,
             id: 9999,
-            name: "Piett"
+            name: "Bib Fortuna",
+            img: character45,
+            affiliation: "dark",
+            gender: "male",
+            species: "Twi'lek",
+            homeworld: "Ryloth",
+            mass: "undefined",
+            height: "180"
         },
         {
-            img: character11,
             id: 11,
-            name: "Piett"
+            name: "Bib Fortuna",
+            img: character45,
+            affiliation: "dark",
+            gender: "male",
+            species: "Twi'lek",
+            homeworld: "Ryloth",
+            mass: "undefined",
+            height: "180"
         }
     ],
     links: [

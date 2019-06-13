@@ -149,124 +149,268 @@ import character99958 from '../pic/character-99958.png';
 const data5 = {
     nodes: [
         {
-            img: character1,
-            id: 1,
-            name: "Luke Skywalker"
-        },
-        {
-            img: character2,
-            id: 2,
-            name: "C-3PO"
-        },
-        {
-            img: character3,
-            id: 3,
-            name: "R2-D2"
-        },
-        {
-            img: character4,
-            id: 4,
-            name: "Darth Vader"
-        },
-        {
-            img: character5,
-            id: 5,
-            name: "Leia Organa"
-        },
-        {
-            img: character10,
-            id: 10,
-            name: "Obi-Wan Kenobi"
-        },
-        {
-            img: character13,
-            id: 13,
-            name: "Chewbacca"
-        },
-        {
-            img: character14,
-            id: 14,
-            name: "Han Solo"
-        },
-        {
-            img: character18,
-            id: 18,
-            name: "Wedge Antilles"
-        },
-        {
-            img: character20,
-            id: 20,
-            name: "Yoda"
-        },
-        {
-            img: character21,
-            id: 21,
-            name: "Palpatine"
-        },
-        {
-            img: character22,
-            id: 22,
-            name: "Boba Fett"
-        },
-        {
-            img: character23,
-            id: 23,
-            name: "IG-88"
-        },
-        {
-            img: character24,
-            id: 24,
-            name: "Bossk"
-        },
-        {
-            img: character25,
-            id: 25,
-            name: "Lando Calrissian"
-        },
-        {
-            img: character26,
-            id: 26,
-            name: "Lobot"
-        },
-        {
-            img: character99911,
-            id: 99911,
-            name: "Dack"
-        },
-        {
-            img: character99912,
-            id: 99912,
-            name: "Janson"
-        },
-        {
-            img: character99910,
-            id: 99910,
-            name: "Ozzel"
-        },
-        {
-            img: character99913,
             id: 99913,
-            name: "Needa"
+            name: "Needa",
+            img: character99913,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Coruscant",
+            mass: "null",
+            height: "null"
         },
         {
-            img: character9996,
             id: 9996,
-            name: "Rieekan"
+            name: "Rieekan",
+            img: character9996,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "null",
+            height: "null"
         },
         {
-            img: character9997,
+            id: 1,
+            name: "Luke Skywalker",
+            img: character1,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "77",
+            height: "172"
+        },
+        {
+            id: 2,
+            name: "C-3PO",
+            img: character2,
+            affiliation: "light",
+            gender: "undefined",
+            species: "Droid",
+            homeworld: "Tatooine",
+            mass: "75",
+            height: "167"
+        },
+        {
+            id: 3,
+            name: "R2-D2",
+            img: character3,
+            affiliation: "light",
+            gender: "undefined",
+            species: "Droid",
+            homeworld: "Naboo",
+            mass: "32",
+            height: "96"
+        },
+        {
+            id: 4,
+            name: "Darth Vader",
+            img: character4,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Tatooine",
+            mass: "136",
+            height: "202"
+        },
+        {
+            id: 5,
+            name: "Leia Organa",
+            img: character5,
+            affiliation: "light",
+            gender: "female",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "49",
+            height: "150"
+        },
+        {
+            id: 10,
+            name: "Obi-Wan Kenobi",
+            img: character10,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Stewjon",
+            mass: "77",
+            height: "182"
+        },
+        {
+            id: 13,
+            name: "Chewbacca",
+            img: character13,
+            affiliation: "light",
+            gender: "male",
+            species: "Wookiee",
+            homeworld: "Kashyyyk",
+            mass: "112",
+            height: "228"
+        },
+        {
+            id: 14,
+            name: "Han Solo",
+            img: character14,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Corellia",
+            mass: "80",
+            height: "180"
+        },
+        {
+            id: 18,
+            name: "Wedge Antilles",
+            img: character18,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Corellia",
+            mass: "77",
+            height: "170"
+        },
+        {
+            id: 20,
+            name: "Yoda",
+            img: character20,
+            affiliation: "light",
+            gender: "male",
+            species: "Yoda's species",
+            homeworld: "undefined",
+            mass: "17",
+            height: "66"
+        },
+        {
+            id: 21,
+            name: "Palpatine",
+            img: character21,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Naboo",
+            mass: "75",
+            height: "170"
+        },
+        {
+            id: 22,
+            name: "Boba Fett",
+            img: character22,
+            affiliation: "dark",
+            gender: "male",
+            species: "Human",
+            homeworld: "Kamino",
+            mass: "78.2",
+            height: "183"
+        },
+        {
+            id: 23,
+            name: "IG-88",
+            img: character23,
+            affiliation: "dark",
+            gender: "none",
+            species: "Droid",
+            homeworld: "undefined",
+            mass: "140",
+            height: "200"
+        },
+        {
+            id: 24,
+            name: "Bossk",
+            img: character24,
+            affiliation: "dark",
+            gender: "male",
+            species: "Trandoshan",
+            homeworld: "Trandosha",
+            mass: "113",
+            height: "190"
+        },
+        {
+            id: 25,
+            name: "Lando Calrissian",
+            img: character25,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Socorro",
+            mass: "79",
+            height: "177"
+        },
+        {
+            id: 26,
+            name: "Lobot",
+            img: character26,
+            affiliation: "neutral",
+            gender: "male",
+            species: "Human",
+            homeworld: "Bespin",
+            mass: "79",
+            height: "175"
+        },
+        {
             id: 9997,
-            name: "Derlin"
+            name: "Rieekan",
+            img: character9996,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "null",
+            height: "null"
         },
         {
-            img: character9999,
-            id: 9999,
-            name: "Piett"
-        },
-        {
-            img: character9998,
             id: 9998,
-            name: "Zev"
+            name: "Rieekan",
+            img: character9996,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99910,
+            name: "Rieekan",
+            img: character9996,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 9999,
+            name: "Rieekan",
+            img: character9996,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99911,
+            name: "Rieekan",
+            img: character9996,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99912,
+            name: "Rieekan",
+            img: character9996,
+            affiliation: "light",
+            gender: "male",
+            species: "Human",
+            homeworld: "Alderaan",
+            mass: "null",
+            height: "null"
         }
     ],
     links: [
