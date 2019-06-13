@@ -2,34 +2,21 @@
 import React, {Component} from 'react';
 import { Radar} from 'react-chartjs-2';
 
-
+let dataBaby = [2.3, 1.5, 0.8, 2.7, 1.8, 2.8]
 const chart1 = {
         labels: ["ALIEN", "DROID", "DARK-SIDE", "NEUTRAL", "LIGHT SIDE", "HUMAIN"],
         datasets:[
                     {
                         label:"",
                         backgroundColor: "#F4DE4C",
-                        data:[2.3,1.5, 0.8,2.7,1.8,2.8]
+                        data: dataBaby
                     }
                         
                  ],
         
 
 };
-const chart2 = {
-        labels: ["ALIEN", "DROID", "DARK-SIDE", "NEUTRAL", "LIGHT SIDE", "HUMAIN"],
-        datasets:[
-                    {
-                    label: "",
-                    backgroundColor: " rgba(206, 16, 44, 0.8)",
-                    data:[2,1.1, 1.8,2.2,1,2.3]
-                    }
-                        
-                ]
-       
-        
-   
-};
+
 const Button = (props) => (
   <button id="update-chart" onClick={props.handleOnClick}>Update</button>
 );
@@ -49,13 +36,18 @@ export default class RadarChart extends Component {
      
     }
     handleUpdate() {
-
-    const chartData = this.updated ? chart1 : chart2;
-    this.setState({chartData}, () => {
-      this.updated = this.updated ? false : true;
-     
-    });
+        let newDataBaby = dataBaby.map(x => Math.random()*3);
+        let chartData = this.state.chartData
+         chartData.datasets[0].data = newDataBaby
+          
+        this.setState({chartData:chartData},()=>{
+        this.updated = this.updated ? false : true;
+        } )
+       
+    
   }
+
+
     setGradiantColor = (canvas, color) => {
          const ctx = canvas.getContext('2d');
          
@@ -88,7 +80,7 @@ export default class RadarChart extends Component {
             <div className="carre">
                 <div className="radar">
                 <Button handleOnClick={this.handleUpdate}/>
-            
+                git 
                 <Radar
                     options= {{
                         responsive:true,

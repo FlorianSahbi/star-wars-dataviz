@@ -5,9 +5,9 @@ import './Intro.css';
 
 function Intro() {
   let byline = "A CONNECTED GALAXY"
-let bylineArry = byline.split('');
-let span;
-let letter;
+  let bylineArry = byline.split('');
+  let span;
+  let letter;
 
   const bylineDomEl = useRef();
   console.log(bylineDomEl);
