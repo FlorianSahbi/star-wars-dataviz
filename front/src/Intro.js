@@ -1,10 +1,10 @@
 import React, {useRef, useEffect} from 'react';
 
-import './App.css';
+import './Intro.css';
 
 
-function App() {
-  let byline= "Le Réveil de la Force"
+function Intro() {
+  let byline = "A CONNECTED GALAXY"
 let bylineArry = byline.split('');
 let span;
 let letter;
@@ -40,5 +40,5 @@ return (
   );
 }
 
-export default App;
+export default Intro;
 

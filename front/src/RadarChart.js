@@ -1,124 +1,144 @@
-import React from 'react';
 
-const chart = [
-    { droids: 0.24, humans: 0, aliens: 0.09, light: 0.52, dark: 0.02, neutral: 0.9 }
-];
+import React, {Component} from 'react';
+import { Radar} from 'react-chartjs-2';
 
-const chartSize = 350;
-const numberOfScales = 4;
 
-const scale = value => (
-    <circle
-        key={`scale-${value}`}
-        cx={0}
-        cy={0}
-        r={((value / numberOfScales) * chartSize) / 2}
-        fill="#FAFAFA"
-        stroke="#999"
-        strokeWidth="0.2"
-    />
+const chart1 = {
+        labels: ["ALIEN", "DROID", "DARK-SIDE", "NEUTRAL", "LIGHT SIDE", "HUMAIN"],
+        datasets:[
+                    {
+                        label:"",
+                        backgroundColor: "#F4DE4C",
+                        data:[2.3,1.5, 0.8,2.7,1.8,2.8]
+                    }
+                        
+                 ],
+        
+
+};
+const chart2 = {
+        labels: ["ALIEN", "DROID", "DARK-SIDE", "NEUTRAL", "LIGHT SIDE", "HUMAIN"],
+        datasets:[
+                    {
+                    label: "",
+                    backgroundColor: " rgba(206, 16, 44, 0.8)",
+                    data:[2,1.1, 1.8,2.2,1,2.3]
+                    }
+                        
+                ]
+       
+        
+   
+};
+const Button = (props) => (
+  <button id="update-chart" onClick={props.handleOnClick}>Update</button>
 );
 
-const polarToX = (angle, distance) => Math.cos(angle - Math.PI / 2) * distance;
-const polarToY = (angle, distance) => Math.sin(angle - Math.PI / 2) * distance;
+export default class RadarChart extends Component {
+    constructor(props){
+        super(props);
+        
+        this.handleUpdate = this.handleUpdate.bind(this);
 
-const  pathDefinition = points => {
-    let d = 'M' + points[0][0].toFixed(4) + ',' + points[0][1].toFixed(4);
-    for (let i = 1; i < points.length; i++) {
-        d += 'L' + points[i][0].toFixed(4) + ',' + points[i][1].toFixed(4);
-    }
-    return d + 'z';
-};
+        this.updated = false;
 
-const shape = columns => (chartData, i) => {
-    const data = chartData;
-    return (
-        <path
-            key={`shape-${i}`}
-            d={pathDefinition(
-                columns.map(col => {
-                    const value = data[col.key];
-                    return [
-                        polarToX(col.angle, (value * chartSize) / 2),
-                        polarToY(col.angle, (value * chartSize) / 2)
-                    ];
-                })
-            )}
-            stroke={`#edc951`}
-            fill={`#edc951`}
-            fillOpacity=".5"
-        />
-    );
-};
-
-const points = points => {
-    return points
-        .map(point => point[0].toFixed(4) + ',' + point[1].toFixed(4))
-        .join(' ');
-};
-
-const axis = () => (col, i) => (
-    <polyline
-        key={`poly-axis-${i}`}
-        points={points([
-            [0, 0],
-            [polarToX(col.angle, chartSize / 2), polarToY(col.angle, chartSize / 2)]
-        ])}
-        stroke="#555"
-        strokeWidth=".2"
-    />
-);
-
-const caption = () => col => (
-    <text
-        key={`caption-of-${col.key}`}
-        x={polarToX(col.angle, (chartSize / 2) * 0.95).toFixed(4)}
-        y={polarToY(col.angle, (chartSize / 2) * 0.95).toFixed(4)}
-        dy={10 / 2}
-        fill="#444"
-        fontWeight="400"
-        textShadow="1px 1px 0 #fff"
-    >
-        {col.key}
-    </text>
-);
-
-const RadarChart = props => {
-    const data = props.data;
-    setTimeout(() => {
-        if (data !== null) {
-            chart.push(data);
+        this.state ={
+            chartData: chart1
+            
         }
-    }, 2000);
-    const groups = [];
-    const scales = [];
-    for (let i = numberOfScales; i > 0; i--) {
-        scales.push(scale(i));
+     
     }
-    groups.push(<g key={`scales`}>{scales}</g>);
-    const middleOfChart = (chartSize / 2).toFixed(4);
-    const captions = Object.keys(chart[0]);
-    const columns = captions.map((key, i, all) => {
-        return {
-            key,
-            angle: (Math.PI * 2 * i) / all.length
-        };
+    handleUpdate() {
+
+    const chartData = this.updated ? chart1 : chart2;
+    this.setState({chartData}, () => {
+      this.updated = this.updated ? false : true;
+     
     });
-    groups.push(<g key={`group-axes`}>{columns.map(axis())}</g>);
-    groups.push(<g key={`groups}`}>{chart.map(shape(columns))}</g>);
-    groups.push(<g key={`group-captions`}>{columns.map(caption())}</g>);
+  }
+    setGradiantColor = (canvas, color) => {
+         const ctx = canvas.getContext('2d');
+         
+         
+         const gradiant = ctx.createLinearGradient(20, 5, 10, 450);
+         gradiant.addColorStop(0, color);
+         gradiant.addColorStop(0.95, "#F4DE4C");
+ 
+         return gradiant;
+          
+           
+    }
+    getChartData = canvas => {
 
-    return (
-        <svg
-            version="1"
-            xmlns="http://www.w3.org/2000/svg"
-            width={chartSize}
-            height={chartSize}
-            viewBox={`0 0 ${chartSize} ${chartSize}`}
-        >
-            <g transform={`translate(${middleOfChart},${middleOfChart})`}>{groups}</g>
-        </svg>
-    );
-};
+       const chartData = this.state.chartData;
+           if (chartData.datasets) {
+               let colors = ["rgba(244, 222, 76, 0.2) ", "rgba(206, 16, 44, 0.8)"]
+                chartData.datasets.forEach((set, i) => {
+                set.backgroundColor = this.setGradiantColor(canvas,colors[i]);
+                set.borderWidth = 0;
 
-export default RadarChart;
+               });
+           }
+         return chartData;
+    }
+
+    render(){
+       
+        return( 
+            <div className="carre">
+                <div className="radar">
+                <Button handleOnClick={this.handleUpdate}/>
+            
+                <Radar
+                    options= {{
+                        responsive:true,
+                         legend: {
+                             fullWidth: false,
+                             labels: {
+                                 fontColor: 'black',
+                                 boxWidth: 0
+                             }
+                         },
+                        scale: {
+                        
+                             gridLines: {
+                                     color: ['#4ADC89'],
+                                     
+                                     
+                                 },
+                                 angleLines: {
+                                     color: '#4ADC89'
+                                 },
+                        
+                                 pointLabels: {
+                                     fontColor: '#F4DE4C'
+                                 },
+                                ticks: {
+                                    min: 0,
+                                    max: 3,
+                                    stepSize: 3,
+                                   
+                                    display: false
+                                }
+                            },
+                            tooltips: {
+                                enabled: false
+                            }
+                            
+                         
+                    }
+                    
+                    
+                }
+                    data={this.getChartData}
+                /> 
+            </div> 
+            </div>
+            
+        )
+    }
+}
+
+
+
+// export default RadarChart;
