@@ -1,35 +1,208 @@
+/* PLACEHOLDER */
+.radar{
+  width: 450px;
+  height: 450px;
+  background-color: orange;
+  opacity: 0.2;
+}
+/* ---------- */
+
+.neutral {
+  background: linear-gradient(180deg, rgba(244, 222, 76, 0.4) 0%, rgba(244, 222, 76, 0.05) 100%);
+  border-left: var(--neutral-yellow) 1px solid;
+  color: var(--neutral-yellow);
+  text-shadow: 0px 0px 2px var(--neutral-yellow);
+}
+
+.dark {
+  background: linear-gradient(180deg, rgba(255,46,24, 0.4) 0%, rgba(255,46,24, 0.05) 100%);
+  border-left: var(--dark-red) 1px solid;
+  color: var(--dark-red);
+  text-shadow: 0px 0px 2px var(--dark-red);
+}
+
+.light {
+  background: linear-gradient(180deg, rgba(169,251,213, 0.4) 0%, rgba(169,251,213, 0.05) 100%);
+  border-left: var(--light-turquoise) 1px solid;
+  color: var(--light-turquoise);
+  text-shadow: 0px 0px 2px var(--light-turquoise);
+}
 
 .cardInfo {
-  width: 500px;
+  width: 532px;
   height: 100%;
   position: absolute;
   z-index: 100;
   top: 0;
   right: 0;
+  font-size: 16px;
+  /* background: url('./assets/hologram-texture.png'); */
 }
+
+/* .translate {
+  transform: translateX(-532px);
+} */
 
 .cardWrapper {
   height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 40px;
 }
 
-.neutral {
-  background: url('https://www.transparenttextures.com/patterns/lined-paper.png'), linear-gradient(180deg, rgba(244, 222, 76, 0.2) 0%, rgba(244, 222, 76, 0.08) 100%);
-  border-left: rgb(244, 222, 76) 5px solid;
+.cardHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.dark {
-  background: url('https://www.transparenttextures.com/patterns/lined-paper.png'), linear-gradient(180deg, rgba(255,46,24, 0.2) 0%, rgba(255,46,24, 0.08) 100%);
-  border-left: rgb(255,46,24) 5px solid;
+.close {
+  font-size: 40px;
+  cursor: pointer;
 }
 
-.light {
-  background: url('https://www.transparenttextures.com/patterns/lined-paper.png'), linear-gradient(180deg, rgba(35,107,253, 0.2) 0%, rgba(35,107,253, 0.08) 100%);
-  border-left: rgb(35,107,253) 5px solid;
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.characterPicture {
+  width: 100px;
+  height: 100px;
+  margin-right: 28px;
+}
+
+.characterPicture-neutral {
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(244, 222, 76, 0.5));
+  filter: drop-shadow(0px 0px 6px rgba(244, 222, 76, 0.5));
+}
+
+.characterPicture-dark {
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(206,16,44,0.5));
+  filter: drop-shadow(0px 0px 6px rgba(206,16,44,0.5));
+}
+
+.characterPicture-light {
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(169, 251, 213, 0.5));
+  filter: drop-shadow(0px 0px 6px rgba(169, 251, 213, 0.5));
+}
+
+.nameDefault {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.nameAurebesh-neutral {
+  font-size: 18px;
+  color: var(--neutral-green);
+  text-shadow: 0px 0px 2px var(--neutral-green);
+}
+
+.nameAurebesh-dark {
+  font-size: 18px;
+  color: var(--dark-crimson);
+  text-shadow: 0px 0px 2px var(--dark-crimson);
+}
+
+.nameAurebesh-light {
+  font-size: 18px;
+  color: var(--light-blue);
+  text-shadow: 0px 0px 2px var(--light-blue);
+}
+
+.characterData {
+  display: flex;
+  flex-direction: row;
+}
+
+.characterInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 8px;
+  margin-right: 80px;
+}
+
+.characterInfoWrapper-neutral {
+  background: linear-gradient(180deg, rgba(244, 222, 76, 0.1) 0%, rgba(244, 222, 76, 0.05) 100%);
+  border: 1px solid var(--neutral-yellow);
+}
+
+.characterInfoWrapper-dark {
+  background: linear-gradient(180deg, rgba(255,46,24, 0.1) 0%, rgba(255,46,24, 0.05) 100%);
+  border: 1px solid var(--dark-red);
+}
+
+.characterInfoWrapper-light {
+  background: linear-gradient(180deg, rgba(169,251,213, 0.1) 0%, rgba(169,251,213, 0.05) 100%);
+  border: 1px solid var(--light-turquoise);
+}
+
+.characterInfoContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divider-neutral {
+  flex-grow: 1;
+  border-bottom: 1px solid var(--neutral-green);
+  margin: 5px;
+}
+
+.divider-dark {
+  flex-grow: 1;
+  border-bottom: 1px solid var(--dark-crimson);
+  margin: 5px;
+}
+
+.divider-light {
+  flex-grow: 1;
+  border-bottom: 1px solid var(--light-blue);
+  margin: 5px;
+}
+
+.characterInfoTitleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.characterInfoTitle {
+  /* font-size: 16px; */
+  text-transform: uppercase;
+}
+
+.characterInfoTitle_aurebesh-neutral {
+  font-size: 12px;
+  color: var(--neutral-green);
+  text-shadow: 0px 0px 2px var(--neutral-green);
+}
+
+.characterInfoTitle_aurebesh-dark {
+  font-size: 12px;
+  color: var(--dark-crimson);
+  text-shadow: 0px 0px 2px var(--dark-crimson);
+}
+
+.characterInfoTitle_aurebesh-light {
+  font-size: 12px;
+  color: var(--light-blue);
+  text-shadow: 0px 0px 2px var(--light-blue);
+}
+
+.characterInfoText {
+  text-transform: capitalize;
+}
+
+.silhouetteContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .filters {

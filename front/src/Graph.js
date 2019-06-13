@@ -11,6 +11,7 @@ import data4 from './json/ep4';
 import data5 from './json/ep5';
 import data6 from './json/ep6';
 import data7 from './json/ep7';
+import humanSilhouette from './assets/silhouette-human.svg';
 
 class Graph extends Component {
   constructor(props) {
@@ -25,8 +26,6 @@ class Graph extends Component {
       radarData: null,
     }
   }
-
-
 
   toRoman = number => {
     // console.log(number);
@@ -142,32 +141,71 @@ class Graph extends Component {
     )
   };
 
-  headerCard = () => {
-    return (
-      <div>
-        <img src="" alt="" />
-        <h1>Unkarplutt</h1>
-        <h3>Unkarplutt</h3>
-      </div>
-    )
-  };
+  closeCard = () => {
+    this.setState({activeNode:null})
+  }
 
   renderCard = (props) => {
     if (props)
       return (
-        <div className="cardInfo">
+        <div className={"cardInfo " + (this.state.activeNode === null ? "translate" : '' )}>
           <div className={"cardWrapper " + (this.state.activeNode.affiliation)}>
-            <div>
-              <img src={props.img} alt="blabla" />
-              <p>Name : {props.name}</p>
-              <p>Affiliation : {props.affiliation}</p>
-              <p>Gender : {props.gender}</p>
-              <p>Species : {props.species}</p>
-              <p>Homeworld : {props.homeworld}</p>
-              <p>Mass : {props.mass}</p>
-              <p>Height : {props.height}</p>
-              <RadarChart data={this.state.radarData} />
+            <div className="cardHeaderContainer">
+              <div className="cardHeader">
+                <img className={"characterPicture characterPicture-" + (this.state.activeNode.affiliation)} src={props.img} alt="Character picture"/>
+                <div className="characterName">
+                  <p className="nameDefault">{props.name}</p>
+                  <p className={"aurebesh nameAurebesh-" + (this.state.activeNode.affiliation)}>{props.name}</p>
+                </div>
+              </div>
+              <div className="closeContainer">
+                <span className="close" onClick={() => this.closeCard()}>×</span>
+              </div>
             </div>
+            <div className="characterData">
+              <div className={"characterInfoWrapper characterInfoWrapper-" + (this.state.activeNode.affiliation)}>
+                <div className="characterInfoContainer">
+                  <div className="characterInfoTitleContainer">
+                    <p className="characterInfoTitle">Affiliation</p>
+                    <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode.affiliation)}>Affiliation</p>
+                  </div>
+                  <span class={"divider-" + (this.state.activeNode.affiliation)}></span>
+                  <p className="characterInfoText">{props.affiliation}</p>
+                </div>
+                <div className="characterInfoContainer">
+                  <div className="characterInfoTitleContainer">
+                    <p className="characterInfoTitle">Species</p>
+                    <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode.affiliation)}>Species</p>
+                  </div>
+                  <span class={"divider-" + (this.state.activeNode.affiliation)}></span>
+                  <p className="characterInfoText">{props.species}</p>
+                </div>
+                <div className="characterInfoContainer">
+                  <div className="characterInfoTitleContainer">
+                    <p className="characterInfoTitle">Gender</p>
+                    <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode.affiliation)}>Gender</p>
+                  </div>
+                  <span class={"divider-" + (this.state.activeNode.affiliation)}></span>
+                  <p className="characterInfoText">{props.gender}</p>
+                </div>
+                <div className="characterInfoContainer">
+                  <div className="characterInfoTitleContainer">
+                    <p className="characterInfoTitle">Homeworld</p>
+                    <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode.affiliation)}>Homeworld</p>
+                  </div>
+                  <span class={"divider-" + (this.state.activeNode.affiliation)}></span>
+                  <p className="characterInfoText">{props.homeworld}</p>
+                </div>
+              </div>
+              <div className="characterPhysicalContainer">
+                <div className="silhouetteContainer">
+                  <img src={humanSilhouette} alt=""/>
+                  <p>{props.height}cm</p>
+                </div>
+                <p>{props.mass}kg</p>
+              </div>
+            </div>
+            <div className="radar"></div>
           </div>
         </div>
       )

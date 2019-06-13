@@ -1039,6 +1039,61 @@ const data1 = {
             homeworld: "Naboo",
             mass: "null",
             height: "null"
+        },
+        {
+            id: 99924,
+            name: "Tey how",
+            img: character99927,
+            affiliation: "dark",
+            gender: "female",
+            species: "Neimodian",
+            homeworld: "Cato Neimoidia",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99923,
+            name: "Tey how",
+            img: character99927,
+            affiliation: "dark",
+            gender: "female",
+            species: "Neimodian",
+            homeworld: "Cato Neimoidia",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 68,
+            name: "Tey how",
+            img: character99927,
+            affiliation: "dark",
+            gender: "female",
+            species: "Neimodian",
+            homeworld: "Cato Neimoidia",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 15,
+            name: "Tey how",
+            img: character99927,
+            affiliation: "dark",
+            gender: "female",
+            species: "Neimodian",
+            homeworld: "Cato Neimoidia",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99932,
+            name: "Tey how",
+            img: character99927,
+            affiliation: "dark",
+            gender: "female",
+            species: "Neimodian",
+            homeworld: "Cato Neimoidia",
+            mass: "null",
+            height: "null"
         }
     ],
     links: [
