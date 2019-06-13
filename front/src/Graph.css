@@ -204,3 +204,28 @@
   flex-direction: row;
   align-items: center;
 }
+
+.filters {
+  width: 500px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+.filterList {
+  height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.filterList button {
+  flex: 1 1;
+    cursor: pointer;
+}

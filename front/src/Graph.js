@@ -13,30 +13,6 @@ import data6 from './json/ep6';
 import data7 from './json/ep7';
 import humanSilhouette from './assets/silhouette-human.svg';
 
-function generateTexture(imgPath) {
- 
-
-  var canvas = document.createElement('canvas');
-  canvas.width = 100;
-  canvas.height = 100;
-
-  var context = canvas.getContext('2d');
-  context.fillStyle = 'red'
-  // context.fillRect(0, 0, 100, 100)
-
-  var thumbImg = document.createElement('img');
-  thumbImg.src = imgPath;
-  // thumbImg.onload = () => {
-    context.beginPath();
-    context.arc(50, 50, 50, 0, 2*Math.PI);
-    context.fill();
-    context.closePath();
-  // }
-  return canvas
-
-  // document.body.appendChild(canvas)
-}
-
 class Graph extends Component {
   constructor(props) {
     super(props);
@@ -45,8 +21,8 @@ class Graph extends Component {
       selectedFilter: null,
       filterOrientation: [],
       filterSpecies: [],
-      filterMovie: ["I"],
-      activeData: data1,
+      filterMovie: ["VI"],
+      activeData: data7,
       radarData: null,
     }
   }
@@ -80,17 +56,16 @@ class Graph extends Component {
   };
 
   _handleClick = (node) => {
-    console.log(this.state.activeData)
+    
     this.setState({ activeNode: node });
-    console.log(node);
     axios.get(`http://localhost:3200/api/radarData/${node.name}/episode/1`)
       .then(res => {
         console.log(res.data)
-        this.setState({radarData: res.data});
+        this.setState({ radarData: res.data });
       })
 
     // Aim at node from outside it
-    const distance = 40;
+    const distance = 100;
     const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
     this.fg.cameraPosition(
       { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, // new position
@@ -141,57 +116,19 @@ class Graph extends Component {
   };
 
   renderFilters = () => {
-    if (this.state.selectedFilter === null) {
-      return (
-        <nav className="filters">
-          <div className="filterList">
-            <button onClick={() => this.onFilterSelected('species')}>Species</button>
-            <button onClick={() => this.onFilterSelected('orientation')}>Orientation</button>
-            <button onClick={() => this.onFilterSelected('movie')}>Movie</button>
-          </div>
-        </nav>
-      )
-    }
-
-    if (this.state.selectedFilter === 'species') {
-      return (
-        <nav className="filters">
-          <div className="filterList">
-            <button onClick={() => this.onFilterSpeciesSelected('human')}>Human</button>
-            <button onClick={() => this.onFilterSpeciesSelected('alien')}>Alien</button>
-            <button onClick={() => this.onFilterSpeciesSelected('droid')}>Droid</button>
-          </div>
-        </nav>
-      )
-    }
-
-    if (this.state.selectedFilter === 'orientation') {
-      return (
-        <nav className="filters">
-          <div className="filterList">
-            <button onClick={() => this.onFilterOrientationSelected('dark')}>Dark</button>
-            <button onClick={() => this.onFilterOrientationSelected('light')}>Light</button>
-            <button onClick={() => this.onFilterOrientationSelected('neutral')}>Neutral</button>
-          </div>
-        </nav>
-      )
-    }
-
-    if (this.state.selectedFilter === 'movie') {
-      return (
-        <nav className="filters">
-          <div className="filterList">
-            <button onClick={() => this.onFilterMovieSelected('I', data1)}>I</button>
-            <button onClick={() => this.onFilterMovieSelected('II', data2)}>II</button>
-            <button onClick={() => this.onFilterMovieSelected('III', data3)}>III</button>
-            <button onClick={() => this.onFilterMovieSelected('IV', data4)}>IV</button>
-            <button onClick={() => this.onFilterMovieSelected('V', data5)}>V</button>
-            <button onClick={() => this.onFilterMovieSelected('VI', data6)}>VI</button>
-            <button onClick={() => this.onFilterMovieSelected('VII', data7)}>VII</button>
-          </div>
-        </nav>
-      )
-    }
+    return (
+      <nav className="filters">
+        <div className="filterList">
+          <button onClick={() => this.onFilterMovieSelected('I', data1)}>I</button>
+          <button onClick={() => this.onFilterMovieSelected('II', data2)}>II</button>
+          <button onClick={() => this.onFilterMovieSelected('III', data3)}>III</button>
+          <button onClick={() => this.onFilterMovieSelected('IV', data4)}>IV</button>
+          <button onClick={() => this.onFilterMovieSelected('V', data5)}>V</button>
+          <button onClick={() => this.onFilterMovieSelected('VI', data6)}>VI</button>
+          <button onClick={() => this.onFilterMovieSelected('VII', data7)}>VII</button>
+        </div>
+      </nav>
+    )
   };
 
   showSelectedFilter = () => {
@@ -292,21 +229,70 @@ class Graph extends Component {
           onNodeClick={this._handleClick}
           linkColor="colour"
           linkOpacity={0.5}
-          linkWidth={0.5}
+          linkWidth={0.1}
           linkResolution={12}
           onLinkHover={this._handleHoverLink}
           linkDirectionalParticles="value"
-          linkDirectionalParticleSpeed={d => d.value * 0.001}
+          linkDirectionalParticleSpeed={d => d.value * 0.01}
           nodeThreeObject={d => {
-            // d link active node
-            console.log(d)
-            console.log(this.state.activeNode)
 
-            const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
-            const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: 1 });
-            const sprite = new THREE.Sprite(material);
-            sprite.scale.set(10, 10, 5);
-            return sprite;
+            // si une node est active on cherche les enfants
+            // sinon on affiche tout 
+            if (this.state.activeNode !== null) {
+              let nodeToGenerate = d.id;
+              let links = this.state.activeData.links;
+              let selectedNodeId = this.state.activeNode.id;
+
+
+              const nodeIsLinked = links.some(({ source, target }) =>
+                (source.id === nodeToGenerate && target.id === selectedNodeId) ||
+                (source.id === selectedNodeId && target.id === nodeToGenerate) ||
+                nodeToGenerate === selectedNodeId
+              )
+
+              console.log({ nodeToGenerate, links, selectedNodeId, nodeIsLinked })
+
+              const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
+              const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: nodeIsLinked ? 1 : 0.2 });
+              const sprite = new THREE.Sprite(material);
+              sprite.scale.set(10, 10, 5);
+              return sprite;
+
+
+              // if (nodeToGenerate === selectedNodeId) {
+              //   let childs = [];
+              //   links.forEach(link => {
+              //     if (nodeToGenerate === link.source.id || nodeToGenerate === link.target.id) {
+              //       childs.push(link);
+              //       childs.forEach(c => {
+              //         if (c.target.id === nodeToGenerate || c.source.id === nodeToGenerate) {
+              //           console.log('6')
+
+              //           const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
+              //           const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: 1 });
+              //           const sprite = new THREE.Sprite(material);
+              //           sprite.scale.set(10, 10, 5);
+              //           return sprite;
+              //         }
+              //       })
+              //     }
+              //   })
+
+              // } else {
+              //   // linksData.forEach(l => console.log(l))
+              //   const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
+              //   const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: 1 });
+              //   const sprite = new THREE.Sprite(material);
+              //   sprite.scale.set(10, 10, 5);
+              //   return sprite;
+              // }
+            } else {
+              const imgTexture = new THREE.TextureLoader().load(`${d.img}`);
+              const material = new THREE.SpriteMaterial({ map: imgTexture, opacity: 1 });
+              const sprite = new THREE.Sprite(material);
+              sprite.scale.set(10, 10, 5);
+              return sprite;
+            }
           }}
         />;
       </section>

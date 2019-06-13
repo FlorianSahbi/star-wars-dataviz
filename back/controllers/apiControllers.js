@@ -214,6 +214,17 @@ exports.getRadarDataAction = (req, res) => {
                                     AND s.name = 'Droid'
                                     AND l.episodeId = ${episodeId}`;
 
+    var queryDroidsTotal = ` SELECT SUM(l.value) AS sum 
+                             FROM characters AS sc 
+                             JOIN links as l 
+                             ON l.sourceId = sc.character_id 
+                             JOIN characters as tc 
+                             ON l.targetId = tc.character_id 
+                             JOIN species as s 
+                             ON tc.species = s.species_id 
+                             WHERE s.name = 'Droid'
+                             AND l.episodeId = ${episodeId}`;
+
     var queryInteractionsHumans = ` SELECT SUM(l.value) AS sum 
                                     FROM characters AS sc 
                                     JOIN links as l 
@@ -225,6 +236,17 @@ exports.getRadarDataAction = (req, res) => {
                                     WHERE sc.name LIKE '%${characterName}%'
                                     AND s.name = 'Humans'
                                     AND l.episodeId = ${episodeId}`;
+
+    var queryHumansTotal = ` SELECT SUM(l.value) AS sum 
+                             FROM characters AS sc 
+                             JOIN links as l 
+                             ON l.sourceId = sc.character_id 
+                             JOIN characters as tc 
+                             ON l.targetId = tc.character_id 
+                             JOIN species as s 
+                             ON tc.species = s.species_id 
+                             WHERE s.name = 'Humans'
+                             AND l.episodeId = ${episodeId}`;
 
     var queryInteractionsAliens = ` SELECT SUM(l.value) AS sum 
                                     FROM characters AS sc 
@@ -239,17 +261,40 @@ exports.getRadarDataAction = (req, res) => {
                                     AND s.name != 'Human'
                                     AND l.episodeId = ${episodeId}`;
 
-    var queryInteractionsLight = `  SELECT SUM(l.value) AS sum 
-                                    FROM characters AS sc 
-                                    JOIN links as l 
-                                    ON l.sourceId = sc.character_id 
-                                    JOIN characters as tc 
-                                    ON l.targetId = tc.character_id 
-                                    JOIN species as s 
-                                    ON tc.species = s.species_id 
-                                    WHERE sc.name LIKE '%${characterName}%'
-                                    AND tc.affiliation = 'light'
-                                    AND l.episodeId = ${episodeId}`;
+    var queryAliensTotal = ` SELECT SUM(l.value) AS sum 
+                             FROM characters AS sc 
+                             JOIN links as l 
+                             ON l.sourceId = sc.character_id 
+                             JOIN characters as tc 
+                             ON l.targetId = tc.character_id 
+                             JOIN species as s 
+                             ON tc.species = s.species_id 
+                             WHERE s.name != 'Human'
+                             AND s.name != 'Droid'
+                             AND l.episodeId = ${episodeId}`;
+
+    var queryInteractionsLight = `  SELECT SUM(l.value) AS sum
+    FROM characters AS sc 
+    JOIN links as l 
+    ON l.sourceId = sc.character_id 
+    JOIN characters as tc 
+    ON l.targetId = tc.character_id 
+    JOIN species as s 
+    ON tc.species = s.species_id 
+    WHERE sc.name LIKE '%${characterName}%'
+    AND tc.affiliation = 'light'
+    AND l.episodeId = ${episodeId}`;
+
+    var queryLightTotal = ` SELECT SUM(l.value) AS sum 
+                             FROM characters AS sc 
+                             JOIN links as l 
+                             ON l.sourceId = sc.character_id 
+                             JOIN characters as tc 
+                             ON l.targetId = tc.character_id 
+                             JOIN species as s 
+                             ON tc.species = s.species_id 
+                             WHERE tc.affiliation = 'light'
+                             AND l.episodeId = ${episodeId}`;
 
     var queryInteractionsDark = `   SELECT SUM(l.value) AS sum 
                                     FROM characters AS sc 
@@ -263,6 +308,17 @@ exports.getRadarDataAction = (req, res) => {
                                     AND tc.affiliation = 'dark'
                                     AND l.episodeId = ${episodeId}`;
 
+    var queryDarkTotal = `  SELECT SUM(l.value) AS sum 
+                            FROM characters AS sc 
+                            JOIN links as l 
+                            ON l.sourceId = sc.character_id 
+                            JOIN characters as tc 
+                            ON l.targetId = tc.character_id 
+                            JOIN species as s 
+                            ON tc.species = s.species_id 
+                            WHERE tc.affiliation = 'dark'
+                            AND l.episodeId = ${episodeId}`;
+
     var queryInteractionsNeutral = ` SELECT SUM(l.value) AS sum 
                                      FROM characters AS sc 
                                      JOIN links as l 
@@ -275,22 +331,55 @@ exports.getRadarDataAction = (req, res) => {
                                      AND tc.affiliation = 'neutral'
                                      AND l.episodeId = ${episodeId}`;
 
-    var queries = [
-        queryInteractionsDroids,
-        queryInteractionsHumans,
-        queryInteractionsAliens,
-        queryInteractionsLight,
-        queryInteractionsDark,
-        queryInteractionsNeutral
-    ]
+    var queryNeutralTotal = `   SELECT SUM(l.value) AS sum 
+                                FROM characters AS sc 
+                                JOIN links as l 
+                                ON l.sourceId = sc.character_id 
+                                JOIN characters as tc 
+                                ON l.targetId = tc.character_id 
+                                JOIN species as s 
+                                ON tc.species = s.species_id 
+                                WHERE tc.affiliation = 'neutral'
+                                AND l.episodeId = ${episodeId}`;
 
     var interactions = {
-        droids: null,
-        humans: null,
-        aliens: null,
-        light: null,
-        dark: null,
-        neutral: null
+        droids: 0,
+        humans: 0,
+        aliens: 0,
+        light: 0,
+        dark: 0,
+        neutral: 0
+    }
+
+    var value = {
+        droids: {
+            part: 0,
+            total: 0,
+        },
+        humans: {
+            part: 0,
+            total: 0,
+        },
+        aliens: {
+            part: 0,
+            total: 0,
+        },
+        light: {
+            part: 0,
+            total: 0,
+        },
+        dark: {
+            part: 0,
+            total: 0,
+        },
+        neutral: {
+            part: 0,
+            total: 0,
+        }
+    }
+
+    var getPercent = (part, total) => {
+        return 100 * part / total;
     }
 
 
@@ -298,70 +387,132 @@ exports.getRadarDataAction = (req, res) => {
         if (err) {
             throw err
         }
-        console.log(result[0].sum);
         if (result[0].sum === null) {
             result[0].sum = 0;
-        } 
-        interactions.droids = result[0].sum;
+        }
+        value.droids.part = result[0].sum;
+    });
+
+    con.query(queryDroidsTotal, (err, result) => {
+        if (err) {
+            throw err
+        }
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        }
+        value.droids.total = result[0].sum;
     });
 
     con.query(queryInteractionsHumans, (err, result) => {
         if (err) {
             throw err
         }
-        console.log(result[0].sum);
         if (result[0].sum === null) {
             result[0].sum = 0;
-        } 
-        interactions.humans = result[0].sum;
+        }
+
+        value.humans.part = result[0].sum;
+    });
+
+    con.query(queryHumansTotal, (err, result) => {
+        if (err) {
+            throw err
+        }
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        }
+        value.humans.total = result[0].sum;
     });
 
     con.query(queryInteractionsAliens, (err, result) => {
         if (err) {
             throw err
         }
-        console.log(result[0].sum);
         if (result[0].sum === null) {
             result[0].sum = 0;
-        } 
-        interactions.aliens = result[0].sum;
+        }
+        value.aliens.part = result[0].sum;
+    });
+
+    con.query(queryAliensTotal, (err, result) => {
+        if (err) {
+            throw err
+        }
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        }
+        value.aliens.total = result[0].sum;
     });
 
     con.query(queryInteractionsLight, (err, result) => {
         if (err) {
             throw err
         }
-        console.log(result[0].sum);
         if (result[0].sum === null) {
             result[0].sum = 0;
-        } 
-        interactions.light = result[0].sum;
+        }
+        value.light.part = result[0].sum;
+    });
+
+    con.query(queryLightTotal, (err, result) => {
+        if (err) {
+            throw err
+        }
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        }
+        value.light.total = result[0].sum;
     });
 
     con.query(queryInteractionsDark, (err, result) => {
         if (err) {
             throw err
         }
-        console.log(result[0].sum);
         if (result[0].sum === null) {
             result[0].sum = 0;
-        } 
-        interactions.dark = result[0].sum;
+        }
+        value.dark.part = result[0].sum;
+    });
+
+    con.query(queryDarkTotal, (err, result) => {
+        if (err) {
+            throw err
+        }
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        }
+        value.dark.total = result[0].sum;
     });
 
     con.query(queryInteractionsNeutral, (err, result) => {
         if (err) {
             throw err
         }
-        console.log(result[0].sum);
         if (result[0].sum === null) {
             result[0].sum = 0;
-        } 
-        interactions.neutral = result[0].sum;
+        }
+        value.neutral.part = result[0].sum;
+    });
+
+    con.query(queryNeutralTotal, (err, result) => {
+        if (err) {
+            throw err
+        }
+        if (result[0].sum === null) {
+            result[0].sum = 0;
+        }
+        value.neutral.total = result[0].sum;
     });
 
     setTimeout(() => {
-        console.log(interactions)
+        // console.log(interactions)
+        console.log(value)
+        interactions.droids = Math.round(getPercent(value.droids.part, value.droids.total));
+        interactions.humans = Math.round(getPercent(value.humans.part, value.humans.total));
+        interactions.aliens = Math.round(getPercent(value.aliens.part, value.aliens.total));
+        interactions.dark = Math.round(getPercent(value.dark.part, value.dark.total));
+        interactions.light = Math.round(getPercent(value.light.part, value.light.total));
+        interactions.neutral = Math.round(getPercent(value.neutral.part, value.neutral.total));
         res.send(interactions);
-    }, 2000);
+    }, 5000);
 };

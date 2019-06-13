@@ -14,9 +14,9 @@ con.connect(function (err) {
     console.log("Connected!");
 });
 
-fs.readdir(`./targetDataSet/films`, (err, files) => {
+fs.readdir(`../targetDataSet/films`, (err, files) => {
     files.forEach(file => {
-        fs.readFile(`./targetDataSet/films/${file}`, (err, data) => {
+        fs.readFile(`../targetDataSet/films/${file}`, (err, data) => {
             data = JSON.parse(data);
 
             data.film.characters.forEach(character => {
