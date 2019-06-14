@@ -149,301 +149,220 @@ import character99958 from '../pic/character-99958.png';
 const data7 = {
     nodes: [
         {
-            id: 99944,
-            name: "Lor san tekka",
-            img: character99944,
-            affiliation: "light",
-            gender: "male",
-            species: "Human",
-            homeworld: "undefined",
-            mass: "null",
-            height: "null"
-        },
-        {
-            id: 99945,
-            name: "Kylo ren",
-            img: character99945,
-            affiliation: "dark",
-            gender: "male",
-            species: "Human",
-            homeworld: "undefined",
-            mass: "80",
-            height: "189"
-        },
-        {
-            id: 99946,
-            name: "Unkar plutt",
-            img: character99946,
-            affiliation: "neutral",
-            gender: "male",
-            species: "Besalisk",
-            homeworld: "undefined",
-            mass: "null",
-            height: "null"
-        },
-        {
-            id: 99947,
-            name: "General hux",
-            img: character99947,
-            affiliation: "dark",
-            gender: "male",
-            species: "Human",
-            homeworld: "undefined",
-            mass: "null",
-            height: "null"
-        },
-        {
-            id: 99950,
-            name: "Snoke",
-            img: character99950,
-            affiliation: "dark",
-            gender: "male",
-            species: "Muun",
-            homeworld: "undefined",
-            mass: "90",
-            height: "210"
-        },
-        {
             id: 1,
-            name: "Luke Skywalker",
             img: character1,
             affiliation: "light",
             gender: "male",
-            species: "Human",
-            homeworld: "Tatooine",
             mass: "77",
             height: "172"
         },
         {
-            id: 2,
-            name: "C-3PO",
-            img: character2,
-            affiliation: "light",
-            gender: "undefined",
-            species: "Droid",
-            homeworld: "Tatooine",
-            mass: "75",
-            height: "167"
-        },
-        {
-            id: 3,
-            name: "R2-D2",
-            img: character3,
-            affiliation: "light",
-            gender: "undefined",
-            species: "Droid",
-            homeworld: "Naboo",
-            mass: "32",
-            height: "96"
-        },
-        {
-            id: 5,
-            name: "Leia Organa",
-            img: character5,
-            affiliation: "light",
-            gender: "female",
-            species: "Human",
-            homeworld: "Alderaan",
-            mass: "49",
-            height: "150"
-        },
-        {
             id: 13,
-            name: "Chewbacca",
             img: character13,
             affiliation: "light",
             gender: "male",
-            species: "Wookiee",
-            homeworld: "Kashyyyk",
             mass: "112",
             height: "228"
         },
         {
+            id: 2,
+            img: character2,
+            affiliation: "light",
+            gender: "undefined",
+            mass: "75",
+            height: "167"
+        },
+        {
             id: 14,
-            name: "Han Solo",
             img: character14,
             affiliation: "light",
             gender: "male",
-            species: "Human",
-            homeworld: "Corellia",
             mass: "80",
             height: "180"
         },
         {
+            id: 3,
+            img: character3,
+            affiliation: "light",
+            gender: "undefined",
+            mass: "32",
+            height: "96"
+        },
+        {
             id: 27,
-            name: "Ackbar",
             img: character27,
             affiliation: "light",
             gender: "male",
-            species: "Mon Calamari",
-            homeworld: "Mon Cala",
             mass: "83",
             height: "180"
         },
         {
-            id: 84,
-            name: "Finn",
-            img: character84,
+            id: 5,
+            img: character5,
             affiliation: "light",
-            gender: "male",
-            species: "Human",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
+            gender: "female",
+            mass: "49",
+            height: "150"
         },
         {
             id: 85,
-            name: "Rey",
             img: character85,
             affiliation: "light",
             gender: "female",
-            species: "Human",
-            homeworld: "undefined",
             mass: "undefined",
             height: "undefined"
         },
         {
             id: 86,
-            name: "Poe Dameron",
             img: character86,
             affiliation: "light",
             gender: "male",
-            species: "Human",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
-        },
-        {
-            id: 87,
-            name: "BB8",
-            img: character87,
-            affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
-        },
-        {
-            id: 99949,
-            name: "BB8",
-            img: character87,
-            affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
-        },
-        {
-            id: 99951,
-            name: "BB8",
-            img: character87,
-            affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
             mass: "undefined",
             height: "undefined"
         },
         {
             id: 88,
-            name: "BB8",
+            img: character88,
+            affiliation: "dark",
+            gender: "female",
+            mass: "undefined",
+            height: "undefined"
+        },
+        {
+            id: 84,
+            img: character84,
+            affiliation: "light",
+            gender: "male",
+            mass: "undefined",
+            height: "undefined"
+        },
+        {
+            id: 87,
             img: character87,
             affiliation: "light",
             gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
             mass: "undefined",
             height: "undefined"
+        },
+        {
+            id: 99946,
+            img: character99946,
+            affiliation: "neutral",
+            gender: "male",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99944,
+            img: character99944,
+            affiliation: "light",
+            gender: "male",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99945,
+            img: character99945,
+            affiliation: "dark",
+            gender: "male",
+            mass: "80",
+            height: "189"
+        },
+        {
+            id: 99947,
+            img: character99947,
+            affiliation: "dark",
+            gender: "male",
+            mass: "null",
+            height: "null"
         },
         {
             id: 99948,
-            name: "BB8",
-            img: character87,
-            affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
+            img: character99948,
+            affiliation: "dark",
+            gender: "male",
+            mass: "null",
+            height: "null"
         },
         {
-            id: 99952,
-            name: "BB8",
-            img: character87,
+            id: 99949,
+            img: character99949,
+            affiliation: "dark",
+            gender: "male",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99950,
+            img: character99950,
+            affiliation: "dark",
+            gender: "male",
+            mass: "90",
+            height: "210"
+        },
+        {
+            id: 99951,
+            img: character99951,
             affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
+            gender: "female",
+            mass: "30",
+            height: "124"
         },
         {
             id: 99953,
-            name: "BB8",
-            img: character87,
-            affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
+            img: character99953,
+            affiliation: "dark",
+            gender: "male",
+            mass: "null",
+            height: "null"
         },
         {
             id: 99955,
-            name: "BB8",
-            img: character87,
-            affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
-        },
-        {
-            id: 99956,
-            name: "BB8",
-            img: character87,
-            affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
-        },
-        {
-            id: 99957,
-            name: "BB8",
-            img: character87,
-            affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
-        },
-        {
-            id: 99958,
-            name: "BB8",
-            img: character87,
-            affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
+            img: character99955,
+            affiliation: "dark",
+            gender: "male",
+            mass: "null",
+            height: "null"
         },
         {
             id: 99954,
-            name: "BB8",
-            img: character87,
+            img: character99954,
             affiliation: "light",
-            gender: "none",
-            species: "Droid",
-            homeworld: "undefined",
-            mass: "undefined",
-            height: "undefined"
+            gender: "male",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99956,
+            img: character99956,
+            affiliation: "light",
+            gender: "male",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99952,
+            img: character99952,
+            affiliation: "light",
+            gender: "male",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99958,
+            img: character99958,
+            affiliation: "light",
+            gender: "male",
+            mass: "null",
+            height: "null"
+        },
+        {
+            id: 99957,
+            img: character99957,
+            affiliation: "light",
+            gender: "female",
+            mass: "null",
+            height: "null"
         }
     ],
     links: [
