@@ -148,11 +148,11 @@ class Graph extends Component {
   renderCard = (props) => {
     if (props)
       return (
-        <div className={"cardInfo " + (this.state.activeNode === null ? "translate" : '' )}>
+        <div className={"crt cardInfo " + (this.state.activeNode === null ? "translate" : '' )}>
           <div className={"cardWrapper " + (this.state.activeNode.affiliation)}>
             <div className="cardHeaderContainer">
               <div className="cardHeader">
-                <img className={"characterPicture characterPicture-" + (this.state.activeNode.affiliation)} src={props.img} alt="Character picture"/>
+                <img className={"characterPicture characterPicture-" + (this.state.activeNode.affiliation)} src={props.img} alt=""/>
                 <div className="characterName">
                   <p className="nameDefault">{props.name}</p>
                   <p className={"aurebesh nameAurebesh-" + (this.state.activeNode.affiliation)}>{props.name}</p>
@@ -217,11 +217,12 @@ class Graph extends Component {
 
   render = () => {
     return (
-      <section>
+      <section className="crt">
         {this.renderFilters()}
         {this.showSelectedFilter()}
         {this.renderCard(this.state.activeNode)}
         <ForceGraph3D
+          backgroundColor="#0E0E0E"
           ref={el => { this.fg = el; }}
           graphData={this.state.activeData}
           nodeLabel="name"
@@ -244,7 +245,6 @@ class Graph extends Component {
               let nodeToGenerate = d.id;
               let links = this.state.activeData.links;
               let selectedNodeId = this.state.activeNode.id;
-
 
               const nodeIsLinked = links.some(({ source, target }) =>
                 (source.id === nodeToGenerate && target.id === selectedNodeId) ||
