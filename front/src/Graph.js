@@ -5,6 +5,7 @@ import RadarChart from './RadarChart'
 import axios from 'axios';
 import * as THREE from 'three';
 import humanSilhouette from './assets/silhouette-human.svg';
+import ep1 from './json/ep1';
 import character1 from './pic/character-1.png';
 import character2 from './pic/character-2.png';
 import character3 from './pic/character-3.png';
@@ -159,20 +160,25 @@ class Graph extends Component {
     this.state = {
       activeNode: null,
       radarData: null,
-      activeData: {
-        nodes: [],
-        links: []
-      },
+      // activeData: {
+      //   nodes: [],
+      //   links: []
+      // },
+      activeData: ep1,
     }
   };
 
-  componentDidMount() {
-    axios.get(`http://localhost:3200/api/interaction/I`)
-      .then(res => {
-        console.log(res.data)
-        this.setState({ activeData: res.data });
-      })
-  };
+  // componentDidMount() {
+  //   axios.get(`http://localhost:3200/api/interaction/I`)
+  //     .then(res => {
+  //       res.data.nodes.forEach(node => {
+  //         console.log(node.img.match(/[A-Za-z0-9]+/g)[0])
+  //         node.img = node.img.match(/[A-Za-z0-9]+/g)[0];
+  //         console.log(node)
+  //       });        
+  //       this.setState({ activeData: res.data });
+  //     })
+  // };
 
   _handleClick = (node) => {
     this.setState({ activeNode: node });
@@ -222,71 +228,70 @@ class Graph extends Component {
   }
 
   renderCard = (props) => {
-    if (props)
-      return (
-        <div className={"cardInfo " + (this.state.activeNode === null ? "translate" : '')}>
-          <div className={"cardWrapper " + (this.state.activeNode.affiliation)}>
-            <div className="cardHeaderContainer">
-              <div className="cardHeader">
-                <img className={"characterPicture characterPicture-" + (this.state.activeNode.affiliation)} src={props.img} alt="Character" />
-                <div className="characterName">
-                  <p className="nameDefault">{props.name}</p>
-                  <p className={"aurebesh nameAurebesh-" + (this.state.activeNode.affiliation)}>{props.name}</p>
-                </div>
-              </div>
-              <div className="closeContainer">
-                <span className="close" onClick={() => this.closeCard()}>×</span>
+    return (
+      <div className={"cardInfo " + (this.state.activeNode === null ? "translateOut" : 'translateIn')}>
+        <div className={"cardWrapper " + (this.state.activeNode && this.state.activeNode.affiliation)}>
+          <div className="cardHeaderContainer">
+            <div className="cardHeader">
+              <img className={"characterPicture characterPicture-" + (this.state.activeNode && this.state.activeNode.affiliation)} src={props && props.img} alt="Character" />
+              <div className="characterName">
+                <p className="nameDefault">{props && props.name}</p>
+                <p className={"aurebesh nameAurebesh-" + (this.state.activeNode && this.state.activeNode.affiliation)}>{props && props.name}</p>
               </div>
             </div>
-            <div className="characterData">
-              <div className={"characterInfoWrapper characterInfoWrapper-" + (this.state.activeNode.affiliation)}>
-                <div className="characterInfoContainer">
-                  <div className="characterInfoTitleContainer">
-                    <p className="characterInfoTitle">Affiliation</p>
-                    <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode.affiliation)}>Affiliation</p>
-                  </div>
-                  <span class={"divider-" + (this.state.activeNode.affiliation)}></span>
-                  <p className="characterInfoText">{props.affiliation}</p>
-                </div>
-                <div className="characterInfoContainer">
-                  <div className="characterInfoTitleContainer">
-                    <p className="characterInfoTitle">Species</p>
-                    <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode.affiliation)}>Species</p>
-                  </div>
-                  <span class={"divider-" + (this.state.activeNode.affiliation)}></span>
-                  <p className="characterInfoText">{props.species}</p>
-                </div>
-                <div className="characterInfoContainer">
-                  <div className="characterInfoTitleContainer">
-                    <p className="characterInfoTitle">Gender</p>
-                    <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode.affiliation)}>Gender</p>
-                  </div>
-                  <span class={"divider-" + (this.state.activeNode.affiliation)}></span>
-                  <p className="characterInfoText">{props.gender}</p>
-                </div>
-                <div className="characterInfoContainer">
-                  <div className="characterInfoTitleContainer">
-                    <p className="characterInfoTitle">Homeworld</p>
-                    <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode.affiliation)}>Homeworld</p>
-                  </div>
-                  <span class={"divider-" + (this.state.activeNode.affiliation)}></span>
-                  <p className="characterInfoText">{props.homeworld}</p>
-                </div>
-              </div>
-              <div className="characterPhysicalContainer">
-                <div className="silhouetteContainer">
-                  <img src={humanSilhouette} alt="" />
-                  <p>{props.height} cm</p>
-                </div>
-                <p>{props.mass} kg</p>
-              </div>
-            </div>
-            <div className="radar">
-              <RadarChart />
+            <div className="closeContainer">
+              <span className="close" onClick={() => this.closeCard()}>×</span>
             </div>
           </div>
+          <div className="characterData">
+            <div className={"characterInfoWrapper characterInfoWrapper-" + (this.state.activeNode && this.state.activeNode.affiliation)}>
+              <div className="characterInfoContainer">
+                <div className="characterInfoTitleContainer">
+                  <p className="characterInfoTitle">Affiliation</p>
+                  <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode && this.state.activeNode.affiliation)}>Affiliation</p>
+                </div>
+                <span class={"divider-" + (this.state.activeNode && this.state.activeNode.affiliation)}></span>
+                <p className="characterInfoText">{props && props.affiliation}</p>
+              </div>
+              <div className="characterInfoContainer">
+                <div className="characterInfoTitleContainer">
+                  <p className="characterInfoTitle">Species</p>
+                  <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode && this.state.activeNode.affiliation)}>Species</p>
+                </div>
+                <span class={"divider-" + (this.state.activeNode && this.state.activeNode.affiliation)}></span>
+                <p className="characterInfoText">{props && props.species}</p>
+              </div>
+              <div className="characterInfoContainer">
+                <div className="characterInfoTitleContainer">
+                  <p className="characterInfoTitle">Gender</p>
+                  <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode && this.state.activeNode.affiliation)}>Gender</p>
+                </div>
+                <span class={"divider-" + (this.state.activeNode && this.state.activeNode.affiliation)}></span>
+                <p className="characterInfoText">{props && props.gender}</p>
+              </div>
+              <div className="characterInfoContainer">
+                <div className="characterInfoTitleContainer">
+                  <p className="characterInfoTitle">Homeworld</p>
+                  <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode && this.state.activeNode.affiliation)}>Homeworld</p>
+                </div>
+                <span class={"divider-" + (this.state.activeNode && this.state.activeNode.affiliation)}></span>
+                <p className="characterInfoText">{props && props.homeworld}</p>
+              </div>
+            </div>
+            <div className="characterPhysicalContainer">
+              <div className="silhouetteContainer">
+                <img src={humanSilhouette} alt="" />
+                <p>{props && props.height} cm</p>
+              </div>
+              <p>{props && props.mass} kg</p>
+            </div>
+          </div>
+          <div className="radar">
+            <RadarChart />
+          </div>
         </div>
-      )
+      </div>
+    )
   };
 
   render = () => {
