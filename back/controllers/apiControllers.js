@@ -1,15 +1,6 @@
 "use strict";
 
 var mysql = require('mysql');
-const fs = require('fs');
-
-
-// var con = mysql.createConnection({
-//     host: "remotemysql.com",
-//     user: "EzDMCTuE86",
-//     password: "s97esNZn0u",
-//     database: "EzDMCTuE86"
-// });
 
 var con = mysql.createConnection({
     host: "localhost",
@@ -103,57 +94,36 @@ exports.getInteractionAction = (req, res) => {
 };
 
 exports.getInteractionByEpisodeIdAction = (req, res) => {
-    console.log('call interation')
     let episodeId = req.params.episodeId;
     let nodeId = null;
-    let linkId = null
+    let linkId = null;
     switch (episodeId) {
-        case 'I':
-            nodeId = 1;
-            linkId = 4;
-            break;
-        case 'II':
-            nodeId = 2;
-            linkId = 5;
-            break;
-        case 'III':
-            nodeId = 3;
-            linkId = 6;
-            break;
-        case 'IV':
-            nodeId = 4;
-            linkId = 1;
-            break;
-        case 'V':
-            nodeId = 5;
-            linkId = 2;
-            break;
-        case 'VI':
-            nodeId = 6;
-            linkId = 3;
-            break;
-        case 'VII':
-            nodeId = 7;
-            linkId = 7;
-            break;
-
+        case 'I':   nodeId = 4; linkId = 4; break;
+        case 'II':  nodeId = 5; linkId = 5; break;
+        case 'III': nodeId = 6; linkId = 6; break;
+        case 'IV':  nodeId = 1; linkId = 1; break;
+        case 'V':   nodeId = 2; linkId = 2; break;
+        case 'VI':  nodeId = 3; linkId = 3; break;
+        case 'VII': nodeId = 7; linkId = 7; break;
     }
     let data = {
         "nodes": [],
         "links": []
     }
 
-    var nodes = `   SELECT *, c.name AS char_name, p.name AS planet_name, s.name AS species_name
+    var nodes = `   SELECT c.name AS char_name,
+                    c.character_id AS char_id,
+                    c.affiliation AS char_affiliation,
+                    c.mass AS char_mass,
+                    c.height AS char_height,
+                    c.gender AS char_gender,
+                    s.name AS species_name
                     FROM characters AS c
-                    JOIN films_characters AS fc 
+                    JOIN films_characters AS fc
                     ON c.character_id = fc.character_id
-                    JOIN films AS f
-                    ON fc.film_id = f.film_id
-                    JOIN  planets AS p
-                    ON c.homeworld = p.planet_id
                     JOIN species AS s
                     ON c.species = s.species_id
-                    WHERE f.episode_id = ${nodeId}`;
+                    WHERE fc.film_id = ${nodeId}`;
 
     var links = `   SELECT *
                     FROM links AS l
@@ -163,18 +133,27 @@ exports.getInteractionByEpisodeIdAction = (req, res) => {
         if (err) {
             throw err
         }
-        // console.log(result)
+
         result.forEach(element => {
+
+            if (element.char_mass === null || element.char_mass === undefined || element.char_mass === "null" || element.char_mass === "undefined") {
+                element.char_mass = "Unknown";
+            }
+
+            if (element.char_height === null || element.char_height === undefined || element.char_height === "null" || element.char_height === "undefined") {
+                element.char_height = "Unknown";
+            }
+
             let node = {
-                id: element.character_id,
                 name: element.char_name,
-                img: `character${element.character_id}`,
-                affiliation: element.affiliation,
-                gender: element.gender,
+                id: element.char_id,
+                affiliation: element.char_affiliation,
+                mass: element.char_mass,
+                height: element.char_height,
+                gender: element.char_gender,
                 species: element.species_name,
+                img: `character${element.char_id}`,
                 homeworld: element.planet_name,
-                mass: element.mass,
-                height: element.height
             }
             data.nodes.push(node);
         });
@@ -197,7 +176,7 @@ exports.getInteractionByEpisodeIdAction = (req, res) => {
     });
     setTimeout(() => {
         res.send(data);
-    }, 4000);
+    }, 500);
 };
 
 exports.getRadarDataAction = (req, res) => {
@@ -505,8 +484,6 @@ exports.getRadarDataAction = (req, res) => {
     });
 
     setTimeout(() => {
-        // console.log(interactions)
-        console.log(value)
         interactions.droids = Math.round(getPercent(value.droids.part, value.droids.total));
         interactions.humans = Math.round(getPercent(value.humans.part, value.humans.total));
         interactions.aliens = Math.round(getPercent(value.aliens.part, value.aliens.total));
