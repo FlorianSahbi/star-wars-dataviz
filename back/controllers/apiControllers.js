@@ -98,12 +98,12 @@ exports.getInteractionByEpisodeIdAction = (req, res) => {
     let nodeId = null;
     let linkId = null;
     switch (episodeId) {
-        case 'I':   nodeId = 4; linkId = 4; break;
-        case 'II':  nodeId = 5; linkId = 5; break;
+        case 'I': nodeId = 4; linkId = 4; break;
+        case 'II': nodeId = 5; linkId = 5; break;
         case 'III': nodeId = 6; linkId = 6; break;
-        case 'IV':  nodeId = 1; linkId = 1; break;
-        case 'V':   nodeId = 2; linkId = 2; break;
-        case 'VI':  nodeId = 3; linkId = 3; break;
+        case 'IV': nodeId = 1; linkId = 1; break;
+        case 'V': nodeId = 2; linkId = 2; break;
+        case 'VI': nodeId = 3; linkId = 3; break;
         case 'VII': nodeId = 7; linkId = 7; break;
     }
     let data = {
@@ -180,62 +180,63 @@ exports.getInteractionByEpisodeIdAction = (req, res) => {
 };
 
 exports.getRadarDataAction = (req, res) => {
-    var { characterName, episodeId } = req.params;
+    var { characterId, episodeId } = req.params;
+    console.log(characterId, episodeId);
     var queryInteractionsDroids = ` SELECT SUM(l.value) AS sum 
                                     FROM characters AS sc 
                                     JOIN links as l 
-                                    ON l.sourceId = sc.character_id 
+                                    ON l.newSourceId = sc.character_id 
                                     JOIN characters as tc 
-                                    ON l.targetId = tc.character_id 
+                                    ON l.newTargetId = tc.character_id 
                                     JOIN species as s 
                                     ON tc.species = s.species_id 
-                                    WHERE sc.name LIKE '%${characterName}%'
+                                    WHERE sc.character_id = ${characterId}
                                     AND s.name = 'Droid'
                                     AND l.episodeId = ${episodeId}`;
 
     var queryDroidsTotal = ` SELECT SUM(l.value) AS sum 
                              FROM characters AS sc 
                              JOIN links as l 
-                             ON l.sourceId = sc.character_id 
+                             ON l.newSourceId = sc.character_id 
                              JOIN characters as tc 
-                             ON l.targetId = tc.character_id 
+                             ON l.newTargetId = tc.character_id 
                              JOIN species as s 
                              ON tc.species = s.species_id 
                              WHERE s.name = 'Droid'
                              AND l.episodeId = ${episodeId}`;
 
-    var queryInteractionsHumans = ` SELECT SUM(l.value) AS sum 
+    var queryInteractionsHumans = ` SELECT SUM(l.value) AS sum
                                     FROM characters AS sc 
                                     JOIN links as l 
-                                    ON l.sourceId = sc.character_id 
+                                    ON sc.character_id = l.newSourceId
                                     JOIN characters as tc 
-                                    ON l.targetId = tc.character_id 
+                                    ON tc.character_id = l.newTargetId
                                     JOIN species as s 
                                     ON tc.species = s.species_id 
-                                    WHERE sc.name LIKE '%${characterName}%'
-                                    AND s.name = 'Humans'
+                                    WHERE sc.character_id = ${characterId}
+                                    AND s.name = 'human'
                                     AND l.episodeId = ${episodeId}`;
 
     var queryHumansTotal = ` SELECT SUM(l.value) AS sum 
                              FROM characters AS sc 
                              JOIN links as l 
-                             ON l.sourceId = sc.character_id 
+                             ON l.newSourceId = sc.character_id 
                              JOIN characters as tc 
-                             ON l.targetId = tc.character_id 
+                             ON l.newTargetId = tc.character_id 
                              JOIN species as s 
                              ON tc.species = s.species_id 
-                             WHERE s.name = 'Humans'
+                             WHERE s.name = 'human'
                              AND l.episodeId = ${episodeId}`;
 
     var queryInteractionsAliens = ` SELECT SUM(l.value) AS sum 
                                     FROM characters AS sc 
                                     JOIN links as l 
-                                    ON l.sourceId = sc.character_id 
+                                    ON l.newSourceId = sc.character_id 
                                     JOIN characters as tc 
-                                    ON l.targetId = tc.character_id 
+                                    ON l.newTargetId = tc.character_id 
                                     JOIN species as s 
                                     ON tc.species = s.species_id 
-                                    WHERE sc.name LIKE '%${characterName}%'
+                                    WHERE sc.character_id = ${characterId}
                                     AND s.name != 'Droid'
                                     AND s.name != 'Human'
                                     AND l.episodeId = ${episodeId}`;
@@ -243,9 +244,9 @@ exports.getRadarDataAction = (req, res) => {
     var queryAliensTotal = ` SELECT SUM(l.value) AS sum 
                              FROM characters AS sc 
                              JOIN links as l 
-                             ON l.sourceId = sc.character_id 
+                             ON l.newSourceId = sc.character_id 
                              JOIN characters as tc 
-                             ON l.targetId = tc.character_id 
+                             ON l.newTargetId = tc.character_id 
                              JOIN species as s 
                              ON tc.species = s.species_id 
                              WHERE s.name != 'Human'
@@ -253,23 +254,23 @@ exports.getRadarDataAction = (req, res) => {
                              AND l.episodeId = ${episodeId}`;
 
     var queryInteractionsLight = `  SELECT SUM(l.value) AS sum
-    FROM characters AS sc 
-    JOIN links as l 
-    ON l.sourceId = sc.character_id 
-    JOIN characters as tc 
-    ON l.targetId = tc.character_id 
-    JOIN species as s 
-    ON tc.species = s.species_id 
-    WHERE sc.name LIKE '%${characterName}%'
-    AND tc.affiliation = 'light'
-    AND l.episodeId = ${episodeId}`;
+                                    FROM characters AS sc 
+                                    JOIN links as l 
+                                    ON l.newSourceId = sc.character_id 
+                                    JOIN characters as tc 
+                                    ON l.newTargetId = tc.character_id 
+                                    JOIN species as s 
+                                    ON tc.species = s.species_id 
+                                    WHERE sc.character_id = ${characterId}
+                                    AND tc.affiliation = 'light'
+                                    AND l.episodeId = ${episodeId}`;
 
     var queryLightTotal = ` SELECT SUM(l.value) AS sum 
                              FROM characters AS sc 
                              JOIN links as l 
-                             ON l.sourceId = sc.character_id 
+                             ON l.newSourceId = sc.character_id 
                              JOIN characters as tc 
-                             ON l.targetId = tc.character_id 
+                             ON l.newTargetId = tc.character_id 
                              JOIN species as s 
                              ON tc.species = s.species_id 
                              WHERE tc.affiliation = 'light'
@@ -278,21 +279,21 @@ exports.getRadarDataAction = (req, res) => {
     var queryInteractionsDark = `   SELECT SUM(l.value) AS sum 
                                     FROM characters AS sc 
                                     JOIN links as l 
-                                    ON l.sourceId = sc.character_id 
+                                    ON l.newSourceId = sc.character_id 
                                     JOIN characters as tc 
-                                    ON l.targetId = tc.character_id 
+                                    ON l.newTargetId = tc.character_id 
                                     JOIN species as s 
                                     ON tc.species = s.species_id 
-                                    WHERE sc.name LIKE '%${characterName}%'
+                                    WHERE sc.character_id = ${characterId}
                                     AND tc.affiliation = 'dark'
                                     AND l.episodeId = ${episodeId}`;
 
     var queryDarkTotal = `  SELECT SUM(l.value) AS sum 
                             FROM characters AS sc 
                             JOIN links as l 
-                            ON l.sourceId = sc.character_id 
+                            ON l.newSourceId = sc.character_id 
                             JOIN characters as tc 
-                            ON l.targetId = tc.character_id 
+                            ON l.newTargetId = tc.character_id 
                             JOIN species as s 
                             ON tc.species = s.species_id 
                             WHERE tc.affiliation = 'dark'
@@ -301,12 +302,12 @@ exports.getRadarDataAction = (req, res) => {
     var queryInteractionsNeutral = ` SELECT SUM(l.value) AS sum 
                                      FROM characters AS sc 
                                      JOIN links as l 
-                                     ON l.sourceId = sc.character_id 
+                                     ON l.newSourceId = sc.character_id 
                                      JOIN characters as tc 
-                                     ON l.targetId = tc.character_id 
+                                     ON l.newTargetId = tc.character_id 
                                      JOIN species as s 
                                      ON tc.species = s.species_id 
-                                     WHERE sc.name LIKE '%${characterName}%'
+                                     WHERE sc.character_id = ${characterId}
                                      AND tc.affiliation = 'neutral'
                                      AND l.episodeId = ${episodeId}`;
 
@@ -315,20 +316,13 @@ exports.getRadarDataAction = (req, res) => {
                                 JOIN links as l 
                                 ON l.sourceId = sc.character_id 
                                 JOIN characters as tc 
-                                ON l.targetId = tc.character_id 
+                                ON l.newTargetId = tc.character_id 
                                 JOIN species as s 
                                 ON tc.species = s.species_id 
                                 WHERE tc.affiliation = 'neutral'
                                 AND l.episodeId = ${episodeId}`;
 
-    var interactions = {
-        droids: 0,
-        humans: 0,
-        aliens: 0,
-        light: 0,
-        dark: 0,
-        neutral: 0
-    }
+    var interactions = [0, 0, 0, 0, 0, 0]
 
     var value = {
         droids: {
@@ -386,9 +380,14 @@ exports.getRadarDataAction = (req, res) => {
         if (err) {
             throw err
         }
-        if (result[0].sum === null) {
-            result[0].sum = 0;
-        }
+        // if (result[0].sum === null || result[0].sum === undefined) {
+        //     result[0].sum = 0;
+        // }
+        console.log('ok')
+        console.log(result)
+        console.log(queryInteractionsHumans)
+        console.log('call human')
+        console.log(result[0].sum)
 
         value.humans.part = result[0].sum;
     });
@@ -484,12 +483,14 @@ exports.getRadarDataAction = (req, res) => {
     });
 
     setTimeout(() => {
-        interactions.droids = Math.round(getPercent(value.droids.part, value.droids.total));
-        interactions.humans = Math.round(getPercent(value.humans.part, value.humans.total));
-        interactions.aliens = Math.round(getPercent(value.aliens.part, value.aliens.total));
-        interactions.dark = Math.round(getPercent(value.dark.part, value.dark.total));
-        interactions.light = Math.round(getPercent(value.light.part, value.light.total));
-        interactions.neutral = Math.round(getPercent(value.neutral.part, value.neutral.total));
+        console.log(value);
+        interactions[1] = Math.round(getPercent(value.droids.part, value.droids.total)*3);
+        interactions[5] = Math.round(getPercent(value.humans.part, value.humans.total)*3);
+        interactions[0] = Math.round(getPercent(value.aliens.part, value.aliens.total)*3);
+        interactions[2] = Math.round(getPercent(value.dark.part, value.dark.total)*3);
+        interactions[4] = Math.round(getPercent(value.light.part, value.light.total)*3);
+        interactions[3] = Math.round(getPercent(value.neutral.part, value.neutral.total)*3);
+        console.log(interactions);
         res.send(interactions);
-    }, 5000);
+    }, 500);
 };
