@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import { Radar} from 'react-chartjs-2';
 
 
-let dataBaby = [2.3, 1.5, 0.8, 2.7, 1.8, 2.8]
+let dataBaby = [2.3, 1.5, 100, 50, 1.8, 2.8]
  const chart1 = {
         labels: ["ALIEN", "DROID", "DARK-SIDE", "NEUTRAL", "LIGHT SIDE", "HUMAIN"],
         datasets:[
@@ -37,7 +37,7 @@ export default class RadarChart extends Component {
      
     }
     handleUpdate() {
-        let newDataBaby = dataBaby.map(x => Math.random()*3);
+        let newDataBaby = dataBaby.map(x => Math.random()*100);
         let chartData = this.state.chartData
         
        
@@ -96,33 +96,25 @@ export default class RadarChart extends Component {
                         scale: {
                         
                              gridLines: {
-                                     color: ['#4ADC89'],
-                                     
-                                     
+                                     color: ['#4ADC89'],   
                                  },
                                  angleLines: {
                                      color: '#4ADC89'
                                  },
-                        
                                  pointLabels: {
                                      fontColor: '#F4DE4C'
                                  },
                                 ticks: {
                                     min: 0,
-                                    max: 3,
-                                    stepSize: 3,
-                                   
+                                    max: 100,
+                                    stepSize: 100,
                                     display: false
                                 }
                             },
                             tooltips: {
                                 enabled: false
                             }
-                            
-                         
                     }
-                    
-                    
                 }
                     data={this.getChartData}
                 /> 

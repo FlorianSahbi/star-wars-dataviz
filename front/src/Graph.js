@@ -6,6 +6,12 @@ import axios from 'axios';
 import * as THREE from 'three';
 import humanSilhouette from './assets/silhouette-human.svg';
 import ep1 from './json/ep1';
+import ep2 from './json/ep2';
+import ep3 from './json/ep3';
+import ep4 from './json/ep4';
+import ep5 from './json/ep5';
+import ep6 from './json/ep6';
+import ep7 from './json/ep7';
 import character1 from './pic/character-1.png';
 import character2 from './pic/character-2.png';
 import character3 from './pic/character-3.png';
@@ -165,6 +171,7 @@ class Graph extends Component {
       //   links: []
       // },
       activeData: ep1,
+      activeEpisode: 1
     }
   };
 
@@ -182,7 +189,8 @@ class Graph extends Component {
 
   _handleClick = (node) => {
     this.setState({ activeNode: node });
-    axios.get(`http://localhost:3200/api/radarData/${node.name}/episode/1`)
+    console.log(`http://localhost:3200/api/radarData/${node.id}/episode/${this.state.activeEpisode}`);
+    axios.get(`http://localhost:3200/api/radarData/${node.Id}/episode/${this.state.activeEpisode}`)
       .then(res => {
         console.log(res.data)
         this.setState({ radarData: res.data });
@@ -199,25 +207,26 @@ class Graph extends Component {
     this.render();
   };
 
-  onFilterMovieSelected = (val) => {
-    axios.get(`http://localhost:3200/api/interaction/${val}`)
-      .then(res => {
-        console.log(res.data)
-        this.setState({ activeData: res.data });
-      })
+  onFilterMovieSelected = (val, data, episodeId) => {
+    // axios.get(`http://localhost:3200/api/interaction/${val}`)
+    //   .then(res => {
+    //     console.log(res.data)
+    //     this.setState({ activeData: res.data });
+    //   })
+    this.setState({ activeData: data, activeEpisode: episodeId });
   };
 
   renderFilters = () => {
     return (
       <nav className="filters">
         <div className="filterList">
-          <button onClick={() => this.onFilterMovieSelected('I')}>I</button>
-          <button onClick={() => this.onFilterMovieSelected('II')}>II</button>
-          <button onClick={() => this.onFilterMovieSelected('III')}>III</button>
-          <button onClick={() => this.onFilterMovieSelected('IV')}>IV</button>
-          <button onClick={() => this.onFilterMovieSelected('V')}>V</button>
-          <button onClick={() => this.onFilterMovieSelected('VI')}>VI</button>
-          <button onClick={() => this.onFilterMovieSelected('VII')}>VII</button>
+          <button onClick={() => this.onFilterMovieSelected('I', ep1, 4)}>I</button>
+          <button onClick={() => this.onFilterMovieSelected('II', ep2, 5)}>II</button>
+          <button onClick={() => this.onFilterMovieSelected('III', ep3, 6)}>III</button>
+          <button onClick={() => this.onFilterMovieSelected('IV', ep4, 1)}>IV</button>
+          <button onClick={() => this.onFilterMovieSelected('V', ep5, 2)}>V</button>
+          <button onClick={() => this.onFilterMovieSelected('VI', ep6, 3)}>VI</button>
+          <button onClick={() => this.onFilterMovieSelected('VII', ep7, 7)}>VII</button>
         </div>
       </nav>
     )
