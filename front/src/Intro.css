@@ -3,13 +3,13 @@ div[id="root"] {
   align-items: center;
   justify-content: center;
   background: black;
-  color: rgb(229, 177, 58);
+  color: rgb(255, 193, 7);
   height: 100vh;
   line-height: 1.25;
   overflow: hidden;
 }
 
-.container {
+.introContainer {
   height: 100vh;
   position: relative;
   width: 100%;
@@ -50,7 +50,7 @@ div[id="root"] {
   -ms-user-select: none;
 }
 
-.container:before {
+.introContainer:before {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
   bottom: 0;
   content: " ";
@@ -87,6 +87,6 @@ div[id="root"] {
 
 .content p {
   line-height: 1.33;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   text-align: justify;
 }
