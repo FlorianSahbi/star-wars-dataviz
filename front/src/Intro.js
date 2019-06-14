@@ -20,7 +20,6 @@ class App extends Component {
 
   componentDidMount() {
     const tl = new TimelineLite({paused: false});
-    
     tl
       .to(this.intro.current, 4.5, { opacity: 1, delay: 1 })
       .to(this.intro.current, 1.5, { 
