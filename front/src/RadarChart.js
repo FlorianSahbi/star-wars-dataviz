@@ -79,7 +79,7 @@ export default class RadarChart extends Component {
     render(){
        
         return( 
-            <div className="carre">
+            <div className="radarContainer">
                 <div className="radar">
                 <Button handleOnClick={this.handleUpdate}/>
             

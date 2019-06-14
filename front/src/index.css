@@ -2,9 +2,9 @@
   --neutral-yellow: rgba(244, 222, 76, 1);
   --neutral-green: rgba(74, 220, 137, 1);
   --light-turquoise: rgba(169, 251, 213, 1);
-  --light-blue: rgba(35, 107, 253, 1);
-  --dark-crimson: rgba(127, 0, 19, 1);
-  --dark-red: rgba(206, 16, 44, 1);
+  --light-blue: rgba(71, 131, 250, 1);
+  --dark-crimson: rgba(120, 120, 120, 1);
+  --dark-red: rgba(233, 0, 34, 1);
 }
 
 body {
@@ -14,6 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
+  overflow-x: hidden;
 }
 
 .aurebesh {
