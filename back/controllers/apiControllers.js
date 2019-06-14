@@ -117,6 +117,7 @@ exports.getInteractionByEpisodeIdAction = (req, res) => {
                     c.mass AS char_mass,
                     c.height AS char_height,
                     c.gender AS char_gender,
+                    c.img AS char_img,
                     s.name AS species_name
                     FROM characters AS c
                     JOIN films_characters AS fc
@@ -152,6 +153,7 @@ exports.getInteractionByEpisodeIdAction = (req, res) => {
                 height: element.char_height,
                 gender: element.char_gender,
                 species: element.species_name,
+                // img: element.char_img,
                 img: `character${element.char_id}`,
                 homeworld: element.planet_name,
             }
@@ -169,8 +171,6 @@ exports.getInteractionByEpisodeIdAction = (req, res) => {
                 target: element.newTargetId,
                 value: element.value / 100 * 5,
             }
-            // value: element.value/100*5
-
             data.links.push(link);
         });
     });
