@@ -149,268 +149,224 @@ import character99958 from '../pic/character-99958.png';
 const data4 = {
     nodes: [
         {
-            id: 99914,
-            name: "Camie",
-            img: character99914,
-            affiliation: "neutral",
-            gender: "female",
-            species: "Human",
-            homeworld: "Tatooine",
-            mass: "null",
-            height: "null"
-        },
-        {
-            id: 1,
             name: "Luke Skywalker",
-            img: character1,
+            id: 1,
             affiliation: "light",
-            gender: "male",
-            species: "Human",
-            homeworld: "Tatooine",
             mass: "77",
-            height: "172"
-        },
-        {
-            id: 2,
-            name: "C-3PO",
-            img: character2,
-            affiliation: "light",
-            gender: "undefined",
-            species: "Droid",
-            homeworld: "Tatooine",
-            mass: "75",
-            height: "167"
-        },
-        {
-            id: 3,
-            name: "R2-D2",
-            img: character3,
-            affiliation: "light",
-            gender: "undefined",
-            species: "Droid",
-            homeworld: "Naboo",
-            mass: "32",
-            height: "96"
-        },
-        {
-            id: 4,
-            name: "Darth Vader",
-            img: character4,
-            affiliation: "dark",
+            height: "172",
             gender: "male",
             species: "Human",
-            homeworld: "Tatooine",
-            mass: "136",
-            height: "202"
+            img: character1
         },
         {
-            id: 5,
-            name: "Leia Organa",
-            img: character5,
-            affiliation: "light",
-            gender: "female",
-            species: "Human",
-            homeworld: "Alderaan",
-            mass: "49",
-            height: "150"
-        },
-        {
-            id: 6,
-            name: "Owen Lars",
-            img: character6,
-            affiliation: "light",
-            gender: "male",
-            species: "Human",
-            homeworld: "Tatooine",
-            mass: "120",
-            height: "178"
-        },
-        {
-            id: 7,
-            name: "Beru Whitesun lars",
-            img: character7,
-            affiliation: "light",
-            gender: "female",
-            species: "Human",
-            homeworld: "Tatooine",
-            mass: "75",
-            height: "165"
-        },
-        {
-            id: 8,
-            name: "R5-D4",
-            img: character8,
-            affiliation: "neutral",
-            gender: "undefined",
-            species: "Droid",
-            homeworld: "Tatooine",
-            mass: "32",
-            height: "97"
-        },
-        {
-            id: 9,
-            name: "Biggs Darklighter",
-            img: character9,
-            affiliation: "light",
-            gender: "male",
-            species: "Human",
-            homeworld: "Tatooine",
-            mass: "84",
-            height: "183"
-        },
-        {
-            id: 10,
             name: "Obi-Wan Kenobi",
-            img: character10,
+            id: 10,
             affiliation: "light",
-            gender: "male",
-            species: "Human",
-            homeworld: "Stewjon",
             mass: "77",
-            height: "182"
-        },
-        {
-            id: 12,
-            name: "Wilhuff Tarkin",
-            img: character12,
-            affiliation: "dark",
+            height: "182",
             gender: "male",
             species: "Human",
-            homeworld: "Eriadu",
-            mass: "undefined",
-            height: "180"
+            img: character10
         },
         {
-            id: 13,
+            name: "Wilhuff Tarkin",
+            id: 12,
+            affiliation: "dark",
+            mass: "Unknown",
+            height: "180",
+            gender: "male",
+            species: "Human",
+            img: character12
+        },
+        {
             name: "Chewbacca",
-            img: character13,
+            id: 13,
             affiliation: "light",
+            mass: "112",
+            height: "228",
             gender: "male",
             species: "Wookiee",
-            homeworld: "Kashyyyk",
-            mass: "112",
-            height: "228"
+            img: character13
         },
         {
-            id: 14,
-            name: "Han Solo",
-            img: character14,
+            name: "C-3PO",
+            id: 2,
             affiliation: "light",
-            gender: "male",
-            species: "Human",
-            homeworld: "Corellia",
-            mass: "80",
-            height: "180"
+            mass: "75",
+            height: "167",
+            gender: "undefined",
+            species: "Droid",
+            img: character2
         },
         {
-            id: 15,
-            name: "Greedo",
-            img: character15,
-            affiliation: "dark",
-            gender: "male",
-            species: "Rodian",
-            homeworld: "Rodia",
-            mass: "74",
-            height: "173"
-        },
-        {
-            id: 16,
             name: "Jabba Desilijic Tiure",
-            img: character16,
+            id: 16,
             affiliation: "dark",
+            mass: "1,358",
+            height: "175",
             gender: "hermaphrodite",
             species: "Hutt",
-            homeworld: "Nal Hutta",
-            mass: "1,358",
-            height: "175"
+            img: character16
         },
         {
-            id: 18,
+            name: "Greedo",
+            id: 15,
+            affiliation: "dark",
+            mass: "74",
+            height: "173",
+            gender: "male",
+            species: "Rodian",
+            img: character15
+        },
+        {
+            name: "Han Solo",
+            id: 14,
+            affiliation: "light",
+            mass: "80",
+            height: "180",
+            gender: "male",
+            species: "Human",
+            img: character14
+        },
+        {
             name: "Wedge Antilles",
-            img: character18,
+            id: 18,
             affiliation: "light",
-            gender: "male",
-            species: "Human",
-            homeworld: "Corellia",
             mass: "77",
-            height: "170"
-        },
-        {
-            id: 19,
-            name: "Jek Tono Porkins",
-            img: character19,
-            affiliation: "light",
+            height: "170",
             gender: "male",
             species: "Human",
-            homeworld: "Bestine IV",
-            mass: "110",
-            height: "180"
+            img: character18
         },
         {
-            id: 81,
-            name: "Raymus Antilles",
-            img: character81,
+            name: "R2-D2",
+            id: 3,
             affiliation: "light",
+            mass: "32",
+            height: "96",
+            gender: "undefined",
+            species: "Droid",
+            img: character3
+        },
+        {
+            name: "Darth Vader",
+            id: 4,
+            affiliation: "dark",
+            mass: "136",
+            height: "202",
             gender: "male",
             species: "Human",
-            homeworld: "Alderaan",
-            mass: "79",
-            height: "188"
+            img: character4
         },
         {
-            id: 99915,
-            name: "Raymus Antilles",
-            img: character81,
+            name: "Leia Organa",
+            id: 5,
             affiliation: "light",
+            mass: "49",
+            height: "150",
+            gender: "female",
+            species: "Human",
+            img: character5
+        },
+        {
+            name: "Owen Lars",
+            id: 6,
+            affiliation: "light",
+            mass: "120",
+            height: "178",
             gender: "male",
             species: "Human",
-            homeworld: "Alderaan",
-            mass: "79",
-            height: "188"
+            img: character6
         },
         {
+            name: "Beru Whitesun lars",
+            id: 7,
+            affiliation: "light",
+            mass: "75",
+            height: "165",
+            gender: "female",
+            species: "Human",
+            img: character7
+        },
+        {
+            name: "Biggs Darklighter",
+            id: 9,
+            affiliation: "light",
+            mass: "84",
+            height: "183",
+            gender: "male",
+            species: "Human",
+            img: character9
+        },
+        {
+            name: "Camie",
+            id: 99914,
+            affiliation: "neutral",
+            mass: "Unknown",
+            height: "Unknown",
+            gender: "female",
+            species: "Human",
+            img: character99914
+        },
+        {
+            name: "Dodonna",
             id: 99916,
-            name: "Raymus Antilles",
-            img: character81,
             affiliation: "light",
+            mass: "Unknown",
+            height: "Unknown",
             gender: "male",
             species: "Human",
-            homeworld: "Alderaan",
-            mass: "79",
-            height: "188"
+            img: character99916
         },
         {
+            name: "Motti",
+            id: 99915,
+            affiliation: "dark",
+            mass: "Unknown",
+            height: "Unknown",
+            gender: "male",
+            species: "Human",
+            img: character99915
+        },
+        {
+            name: "Gold leader",
             id: 99917,
-            name: "Raymus Antilles",
-            img: character81,
             affiliation: "light",
+            mass: "Unknown",
+            height: "Unknown",
             gender: "male",
             species: "Human",
-            homeworld: "Alderaan",
-            mass: "79",
-            height: "188"
+            img: character99917
         },
         {
-            id: 99918,
-            name: "Raymus Antilles",
-            img: character81,
-            affiliation: "light",
-            gender: "male",
-            species: "Human",
-            homeworld: "Alderaan",
-            mass: "79",
-            height: "188"
-        },
-        {
+            name: "Red ten",
             id: 99919,
-            name: "Raymus Antilles",
-            img: character81,
             affiliation: "light",
+            mass: "Unknown",
+            height: "Unknown",
             gender: "male",
             species: "Human",
-            homeworld: "Alderaan",
-            mass: "79",
-            height: "188"
+            img: character99919
+        },
+        {
+            name: "Red leader",
+            id: 99918,
+            affiliation: "light",
+            mass: "Unknown",
+            height: "Unknown",
+            gender: "male",
+            species: "Human",
+            img: character99918
+        },
+        {
+            name: "Gold five",
+            id: 99920,
+            affiliation: "light",
+            mass: "Unknown",
+            height: "Unknown",
+            gender: "male",
+            species: "Human",
+            img: character99920
         }
     ],
     links: [
