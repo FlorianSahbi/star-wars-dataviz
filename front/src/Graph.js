@@ -284,14 +284,6 @@ class Graph extends Component {
                 <span class={"divider-" + (this.state.activeNode && this.state.activeNode.affiliation)}></span>
                 <p className="characterInfoText">{props && props.gender}</p>
               </div>
-              <div className="characterInfoContainer">
-                <div className="characterInfoTitleContainer">
-                  <p className="characterInfoTitle">Homeworld</p>
-                  <p className={"aurebesh characterInfoTitle_aurebesh-" + (this.state.activeNode && this.state.activeNode.affiliation)}>Homeworld</p>
-                </div>
-                <span class={"divider-" + (this.state.activeNode && this.state.activeNode.affiliation)}></span>
-                <p className="characterInfoText">{props && props.homeworld}</p>
-              </div>
             </div>
             <div className="characterPhysicalContainer">
               <div className="silhouetteContainer">
