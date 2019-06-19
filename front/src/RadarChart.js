@@ -1,9 +1,7 @@
-
 import React, { Component } from 'react';
 import { Radar } from 'react-chartjs-2';
 
-
-let dataBaby = [2.3, 1.5, 100, 50, 1.8, 2.8]
+let dataBaby = [0, 0, 0, 0, 0, 0]
 const chart1 = {
     labels: ["ALIEN", "DROID", "DARK-SIDE", "NEUTRAL", "LIGHT SIDE", "HUMAIN"],
     datasets: [
@@ -12,14 +10,11 @@ const chart1 = {
             backgroundColor: "#F4DE4C",
             data: dataBaby
         }
-
     ],
-
-
 };
 
 const Button = (props) => (
-    <button id="update-chart" onClick={props.handleOnClick}>Update</button>
+    <a className="episodeBtnUpdate" id="update-chart" onClick={props.handleOnClick}>Update</a>
 );
 
 export default class RadarChart extends Component {
@@ -66,7 +61,7 @@ export default class RadarChart extends Component {
         return (
             <div className="radarContainer">
                 <div className="radar">
-                    <Button handleOnClick={this.handleUpdate} />
+                    
                     <Radar
                         options={{
                             responsive: true,
@@ -89,7 +84,7 @@ export default class RadarChart extends Component {
                                 },
                                 ticks: {
                                     min: 0,
-                                    max: 100,
+                                    max: 50,
                                     stepSize: 100,
                                     display: false
                                 }
@@ -101,6 +96,7 @@ export default class RadarChart extends Component {
                         }
                         data={this.getChartData}
                     />
+                <Button handleOnClick={this.handleUpdate} />
                 </div>
             </div>
 

@@ -16,8 +16,8 @@ con.connect(function (err) {
 
 fs.readdir(`../targetDataSet/people`, (err, files) => {
     files.forEach(file => {
-        let fileId = Number(file.match(/[0-9]+/g)[0]);
-        if (fileId > 999) {
+        // let fileId = Number(file.match(/[0-9]+/g)[0]);
+        // if (fileId > 999) {
             fs.readFile(`../targetDataSet/people/${file}`, (err, data) => {
                 data = JSON.parse(data);
                 data.people.films.forEach(film => {
@@ -30,7 +30,7 @@ fs.readdir(`../targetDataSet/people`, (err, files) => {
                     })
                 });
             })
-        }
+        // }
     })
 })
 

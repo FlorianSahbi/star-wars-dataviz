@@ -1,1 +1,17 @@
-{"people":{"name":"Sly Moore","height":"178","mass":"48","hair_color":"none","skin_color":"pale","eye_color":"white","gender":"female","homeworld":60,"films":[],"species":null,"affiliation":"dark","url":"http://swapi.co/api/people/82/","idSwapi":82}}
+{
+  "people": {
+    "name": "Sly Moore",
+    "height": "178",
+    "mass": "48",
+    "hair_color": "none",
+    "skin_color": "pale",
+    "eye_color": "white",
+    "gender": "female",
+    "homeworld": 60,
+    "films": [],
+    "species": null,
+    "affiliation": "dark",
+    "url": "http://swapi.co/api/people/82/",
+    "idSwapi": 82
+  }
+}

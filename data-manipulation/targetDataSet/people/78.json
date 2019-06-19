@@ -1,1 +1,17 @@
-{"people":{"name":"Shaak Ti","height":"178","mass":"57","hair_color":"none","skin_color":"red, blue, white","eye_color":"black","gender":"female","homeworld":58,"films":[],"species":35,"affiliation":"light","url":"http://swapi.co/api/people/78/","idSwapi":78}}
+{
+  "people": {
+    "name": "Shaak Ti",
+    "height": "178",
+    "mass": "57",
+    "hair_color": "none",
+    "skin_color": "red, blue, white",
+    "eye_color": "black",
+    "gender": "female",
+    "homeworld": 58,
+    "films": [],
+    "species": 35,
+    "affiliation": "light",
+    "url": "http://swapi.co/api/people/78/",
+    "idSwapi": 78
+  }
+}

@@ -484,12 +484,12 @@ exports.getRadarDataAction = (req, res) => {
 
     setTimeout(() => {
         console.log(value);
-        interactions[1] = Math.round(getPercent(value.droids.part, value.droids.total)*3);
-        interactions[5] = Math.round(getPercent(value.humans.part, value.humans.total)*3);
-        interactions[0] = Math.round(getPercent(value.aliens.part, value.aliens.total)*3);
-        interactions[2] = Math.round(getPercent(value.dark.part, value.dark.total)*3);
-        interactions[4] = Math.round(getPercent(value.light.part, value.light.total)*3);
-        interactions[3] = Math.round(getPercent(value.neutral.part, value.neutral.total)*3);
+        interactions[1] = Math.round(getPercent(value.droids.part, value.droids.total)*1);
+        interactions[5] = Math.round(getPercent(value.humans.part, value.humans.total)*1);
+        interactions[0] = Math.round(getPercent(value.aliens.part, value.aliens.total)*1);
+        interactions[2] = Math.round(getPercent(value.dark.part, value.dark.total)*1);
+        interactions[4] = Math.round(getPercent(value.light.part, value.light.total)*1);
+        interactions[3] = Math.round(getPercent(value.neutral.part, value.neutral.total)*1);
         console.log(interactions);
         res.send(interactions);
     }, 500);

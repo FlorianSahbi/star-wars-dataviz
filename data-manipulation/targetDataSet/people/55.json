@@ -1,1 +1,17 @@
-{"people":{"name":"Adi Gallia","height":"184","mass":"50","hair_color":"none","skin_color":"dark","eye_color":"blue","gender":"female","homeworld":9,"films":[],"species":23,"affiliation":"light","url":"http://swapi.co/api/people/55/","idSwapi":55}}
+{
+  "people": {
+    "name": "Adi Gallia",
+    "height": "184",
+    "mass": "50",
+    "hair_color": "none",
+    "skin_color": "dark",
+    "eye_color": "blue",
+    "gender": "female",
+    "homeworld": 9,
+    "films": [],
+    "species": 23,
+    "affiliation": "light",
+    "url": "http://swapi.co/api/people/55/",
+    "idSwapi": 55
+  }
+}

@@ -1,1 +1,16 @@
-{"people":{"name":"Jocasta Nu","height":"167","hair_color":"white","skin_color":"fair","eye_color":"blue","gender":"female","homeworld":9,"films":[],"species":1,"affiliation":"light","url":"http://swapi.co/api/people/74/","idSwapi":74}}
+{
+  "people": {
+    "name": "Jocasta Nu",
+    "height": "167",
+    "hair_color": "white",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "gender": "female",
+    "homeworld": 9,
+    "films": [],
+    "species": 1,
+    "affiliation": "light",
+    "url": "http://swapi.co/api/people/74/",
+    "idSwapi": 74
+  }
+}

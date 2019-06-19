@@ -1,1 +1,28 @@
-{"people":{"name":"R2-D2","height":"96","mass":"32","skin_color":"white, blue","eye_color":"red","birth_year":"33BBY","homeworld":8,"films":[6,3,2,1,5,7,4],"species":2,"affiliation":"light","url":"http://swapi.co/api/people/3/","desc":["R2-D2 is a fictional robot character in the Star Wars franchise created by George Lucas, who appears in the original trilogy, the prequel trilogy, the sequel trilogy, and Rogue One. A small astromech droid, R2-D2 is a major character and appears in all Star Wars films to date. Throughout the course of the films, he joins or supports Padmé Amidala, Anakin Skywalker, Leia Organa, Luke Skywalker, and Obi-Wan Kenobi in various points in the saga.","English actor Kenny Baker played R2-D2 in all three original Star Wars films, and received billing credit for the character in the prequel trilogy, where Baker's role was reduced, as R2-D2 was portrayed mainly by radio controlled props and CGI models. In the sequel trilogy, Baker was credited as consultant for The Force Awakens, however Jimmy Vee also co-performed the character in some scenes. Vee later took over the role beginning in The Last Jedi.[1] R2-D2's sounds and vocal effects were created by Ben Burtt. R2-D2 was designed in artwork by Ralph McQuarrie, co-developed by John Stears and built by Tony Dyson."],"idSwapi":3}}
+{
+  "people": {
+    "name": "R2-D2",
+    "height": "96",
+    "mass": "32",
+    "skin_color": "white, blue",
+    "eye_color": "red",
+    "birth_year": "33BBY",
+    "homeworld": 8,
+    "films": [
+      7,
+      3,
+      2,
+      1,
+      6,
+      5,
+      4
+    ],
+    "species": 2,
+    "affiliation": "light",
+    "url": "http://swapi.co/api/people/3/",
+    "desc": [
+      "R2-D2 is a fictional robot character in the Star Wars franchise created by George Lucas, who appears in the original trilogy, the prequel trilogy, the sequel trilogy, and Rogue One. A small astromech droid, R2-D2 is a major character and appears in all Star Wars films to date. Throughout the course of the films, he joins or supports Padmé Amidala, Anakin Skywalker, Leia Organa, Luke Skywalker, and Obi-Wan Kenobi in various points in the saga.",
+      "English actor Kenny Baker played R2-D2 in all three original Star Wars films, and received billing credit for the character in the prequel trilogy, where Baker's role was reduced, as R2-D2 was portrayed mainly by radio controlled props and CGI models. In the sequel trilogy, Baker was credited as consultant for The Force Awakens, however Jimmy Vee also co-performed the character in some scenes. Vee later took over the role beginning in The Last Jedi.[1] R2-D2's sounds and vocal effects were created by Ben Burtt. R2-D2 was designed in artwork by Ralph McQuarrie, co-developed by John Stears and built by Tony Dyson."
+    ],
+    "idSwapi": 3
+  }
+}

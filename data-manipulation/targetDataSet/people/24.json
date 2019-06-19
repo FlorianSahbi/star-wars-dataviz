@@ -1,1 +1,18 @@
-{"people":{"name":"Bossk","height":"190","mass":"113","hair_color":"none","skin_color":"green","eye_color":"red","birth_year":"53BBY","gender":"male","homeworld":29,"films":[],"species":7,"affiliation":"dark","url":"http://swapi.co/api/people/24/","idSwapi":24}}
+{
+  "people": {
+    "name": "Bossk",
+    "height": "190",
+    "mass": "113",
+    "hair_color": "none",
+    "skin_color": "green",
+    "eye_color": "red",
+    "birth_year": "53BBY",
+    "gender": "male",
+    "homeworld": 29,
+    "films": [],
+    "species": 7,
+    "affiliation": "dark",
+    "url": "http://swapi.co/api/people/24/",
+    "idSwapi": 24
+  }
+}

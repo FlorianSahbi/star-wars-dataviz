@@ -1,1 +1,18 @@
-{"people":{"name":"IG-88","height":"200","mass":"140","hair_color":"none","skin_color":"metal","eye_color":"red","birth_year":"15BBY","gender":"none","homeworld":28,"films":[],"species":2,"affiliation":"dark","url":"http://swapi.co/api/people/23/","idSwapi":23}}
+{
+  "people": {
+    "name": "IG-88",
+    "height": "200",
+    "mass": "140",
+    "hair_color": "none",
+    "skin_color": "metal",
+    "eye_color": "red",
+    "birth_year": "15BBY",
+    "gender": "none",
+    "homeworld": 28,
+    "films": [],
+    "species": 2,
+    "affiliation": "dark",
+    "url": "http://swapi.co/api/people/23/",
+    "idSwapi": 23
+  }
+}

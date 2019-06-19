@@ -1,1 +1,20 @@
-{"people":{"name":"Orn free taa","gender":"male","homeworld":37,"films":[2],"species":15,"affiliation":"dark","url":null,"desc":[],"idSwapi":99938,"height":null,"mass":null,"skin_color":null,"eye_color":null,"birth_year":null}}
+{
+  "people": {
+    "name": "Orn free taa",
+    "gender": "male",
+    "homeworld": 37,
+    "films": [
+      5
+    ],
+    "species": 15,
+    "affiliation": "dark",
+    "url": null,
+    "desc": [],
+    "idSwapi": 99938,
+    "height": null,
+    "mass": null,
+    "skin_color": null,
+    "eye_color": null,
+    "birth_year": null
+  }
+}

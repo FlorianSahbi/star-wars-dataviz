@@ -14,9 +14,9 @@ con.connect(function (err) {
     console.log("Connected!");
 });
 
-fs.readdir(`./newInteractions`, (err, files) => {
+fs.readdir(`../newInteractions`, (err, files) => {
     files.forEach(file => {
-        fs.readFile(`./newInteractions/${file}`, (err, data) => {
+        fs.readFile(`../newInteractions/${file}`, (err, data) => {
             data = JSON.parse(data);
 
         

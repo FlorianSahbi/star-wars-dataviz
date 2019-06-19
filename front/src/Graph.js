@@ -55,7 +55,7 @@ class Graph extends Component {
     //     console.log(res.data)
     //     this.setState({ activeData: res.data });
     //   })
-    this.setState({ activeData: data, activeEpisode: episodeId });
+    this.setState({ activeData: data, activeEpisode: episodeId, activeNode: null });
   };
 
   renderFilters = () => {

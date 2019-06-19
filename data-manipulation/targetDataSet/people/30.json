@@ -1,1 +1,18 @@
-{"people":{"name":"Wicket Systri Warrick","height":"88","mass":"20","hair_color":"brown","skin_color":"brown","eye_color":"brown","birth_year":"8BBY","gender":"male","homeworld":7,"films":[],"species":9,"affiliation":"light","url":"http://swapi.co/api/people/30/","idSwapi":30}}
+{
+  "people": {
+    "name": "Wicket Systri Warrick",
+    "height": "88",
+    "mass": "20",
+    "hair_color": "brown",
+    "skin_color": "brown",
+    "eye_color": "brown",
+    "birth_year": "8BBY",
+    "gender": "male",
+    "homeworld": 7,
+    "films": [],
+    "species": 9,
+    "affiliation": "light",
+    "url": "http://swapi.co/api/people/30/",
+    "idSwapi": 30
+  }
+}

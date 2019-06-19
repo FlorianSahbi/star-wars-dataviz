@@ -1,1 +1,15 @@
-{"people":{"name":"Arvel Crynyd","hair_color":"brown","skin_color":"fair","eye_color":"brown","gender":"male","homeworld":28,"films":[],"species":1,"affiliation":"light","url":"http://swapi.co/api/people/29/","idSwapi":29}}
+{
+  "people": {
+    "name": "Arvel Crynyd",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "brown",
+    "gender": "male",
+    "homeworld": 28,
+    "films": [],
+    "species": 1,
+    "affiliation": "light",
+    "url": "http://swapi.co/api/people/29/",
+    "idSwapi": 29
+  }
+}

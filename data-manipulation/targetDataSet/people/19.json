@@ -1,1 +1,17 @@
-{"people":{"name":"Jek Tono Porkins","height":"180","mass":"110","hair_color":"brown","skin_color":"fair","eye_color":"blue","gender":"male","homeworld":26,"films":[],"species":1,"affiliation":"light","url":"http://swapi.co/api/people/19/","idSwapi":19}}
+{
+  "people": {
+    "name": "Jek Tono Porkins",
+    "height": "180",
+    "mass": "110",
+    "hair_color": "brown",
+    "skin_color": "fair",
+    "eye_color": "blue",
+    "gender": "male",
+    "homeworld": 26,
+    "films": [],
+    "species": 1,
+    "affiliation": "light",
+    "url": "http://swapi.co/api/people/19/",
+    "idSwapi": 19
+  }
+}

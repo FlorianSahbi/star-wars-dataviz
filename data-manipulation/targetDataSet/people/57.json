@@ -1,1 +1,16 @@
-{"people":{"name":"Yarael Poof","height":"264","hair_color":"none","skin_color":"white","eye_color":"yellow","gender":"male","homeworld":48,"films":[],"species":25,"affiliation":"light","url":"http://swapi.co/api/people/57/","idSwapi":57}}
+{
+  "people": {
+    "name": "Yarael Poof",
+    "height": "264",
+    "hair_color": "none",
+    "skin_color": "white",
+    "eye_color": "yellow",
+    "gender": "male",
+    "homeworld": 48,
+    "films": [],
+    "species": 25,
+    "affiliation": "light",
+    "url": "http://swapi.co/api/people/57/",
+    "idSwapi": 57
+  }
+}

@@ -1,1 +1,17 @@
-{"people":{"name":"Dexter Jettster","height":"198","mass":"102","hair_color":"none","skin_color":"brown","eye_color":"yellow","gender":"male","homeworld":55,"films":[],"species":31,"affiliation":"neutral","url":"http://swapi.co/api/people/71/","idSwapi":71}}
+{
+  "people": {
+    "name": "Dexter Jettster",
+    "height": "198",
+    "mass": "102",
+    "hair_color": "none",
+    "skin_color": "brown",
+    "eye_color": "yellow",
+    "gender": "male",
+    "homeworld": 55,
+    "films": [],
+    "species": 31,
+    "affiliation": "neutral",
+    "url": "http://swapi.co/api/people/71/",
+    "idSwapi": 71
+  }
+}

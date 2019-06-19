@@ -1,1 +1,20 @@
-{"people":{"name":"Rieekan","gender":"male","homeworld":2,"films":[5],"species":1,"affiliation":"light","url":null,"desc":[],"idSwapi":9996,"height":null,"mass":null,"skin_color":null,"eye_color":null,"birth_year":null}}
+{
+  "people": {
+    "name": "Rieekan",
+    "gender": "male",
+    "homeworld": 2,
+    "films": [
+      2
+    ],
+    "species": 1,
+    "affiliation": "light",
+    "url": null,
+    "desc": [],
+    "idSwapi": 9996,
+    "height": null,
+    "mass": null,
+    "skin_color": null,
+    "eye_color": null,
+    "birth_year": null
+  }
+}

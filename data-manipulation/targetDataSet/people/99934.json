@@ -1,1 +1,20 @@
-{"people":{"name":"General ceel","gender":"male","homeworld":8,"films":[1],"species":12,"affiliation":"light","url":null,"desc":[],"idSwapi":99934,"height":null,"mass":null,"skin_color":null,"eye_color":null,"birth_year":null}}
+{
+  "people": {
+    "name": "General ceel",
+    "gender": "male",
+    "homeworld": 8,
+    "films": [
+      4
+    ],
+    "species": 12,
+    "affiliation": "light",
+    "url": null,
+    "desc": [],
+    "idSwapi": 99934,
+    "height": null,
+    "mass": null,
+    "skin_color": null,
+    "eye_color": null,
+    "birth_year": null
+  }
+}

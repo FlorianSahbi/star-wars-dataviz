@@ -97,7 +97,7 @@ const nullChar = [{ oldName: 'ODD BALL', name: 'Odd ball', idSwapi: 9990 },
 nullChar.forEach(char => {
     let data = {
         "people": {
-            "name":  char.name,
+            "name": char.name,
             "gender": null,
             "homeworld": null,
             "films": [],

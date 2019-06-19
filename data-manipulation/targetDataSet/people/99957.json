@@ -1,1 +1,20 @@
-{"people":{"name":"Jess","gender":"female","homeworld":null,"films":[7],"species":1,"affiliation":"light","url":null,"desc":[],"idSwapi":99957,"height":null,"mass":null,"skin_color":null,"eye_color":null,"birth_year":null}}
+{
+  "people": {
+    "name": "Jess",
+    "gender": "female",
+    "homeworld": null,
+    "films": [
+      7
+    ],
+    "species": 1,
+    "affiliation": "light",
+    "url": null,
+    "desc": [],
+    "idSwapi": 99957,
+    "height": null,
+    "mass": null,
+    "skin_color": null,
+    "eye_color": null,
+    "birth_year": null
+  }
+}
